@@ -51,10 +51,6 @@ export default function Navbar() {
                 <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-[var(--ink)] block leading-none">
                   DIGITAL MUSE
                 </span>
-                <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-mono font-semibold uppercase tracking-wider bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--accent)]/20">
-                  <ShieldCheck className="w-2.5 h-2.5 text-[var(--accent)]" />
-                  ASI Verified
-                </span>
               </div>
               <span className="text-[10px] sm:text-xs text-[var(--ink-muted)] tracking-wider uppercase font-medium">
                 Adaptive Heritage &amp; Lineage

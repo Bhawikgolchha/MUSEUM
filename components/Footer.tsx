@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-3 text-[11px]">
-            <span>ASI &amp; National Museum Records</span>
+            <span>National Museum &amp; Cultural Records</span>
             <span>·</span>
             <span>Zero Hallucination Mandate</span>
             <span>·</span>

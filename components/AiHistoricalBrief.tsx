@@ -1064,7 +1064,7 @@ export default function AiHistoricalBrief({
               </div>
               <div className="flex items-start gap-2 p-2.5 rounded-lg bg-[var(--paper-raised)] border border-[var(--rule)]">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[var(--verified)] flex-shrink-0 mt-0.5" />
-                <span>Notable monuments verified with ASI gazetteers: {data.notable_monuments.join(', ')}.</span>
+                <span>Notable monuments verified with official archaeological gazetteers: {data.notable_monuments.join(', ')}.</span>
               </div>
             </div>
           </div>

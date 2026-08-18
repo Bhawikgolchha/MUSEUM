@@ -185,7 +185,7 @@ export default function CollectionPage() {
             {/* Curatorial Accreditation Pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--accent-soft)] text-[var(--accent)] text-xs font-mono font-semibold uppercase tracking-wider border border-[var(--accent)]/20 shadow-2xs">
               <ShieldCheck className="w-4 h-4 text-[var(--accent)] shrink-0" />
-              <span>Verifiable Museum Interpretation · ASI Benchmark</span>
+              <span>Verifiable Museum Interpretation</span>
             </div>
 
             {/* Editorial Title with Modern Serif Fraunces */}
@@ -301,7 +301,7 @@ export default function CollectionPage() {
                   </span>
                 </div>
                 <span className="px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-[var(--verified-soft)] text-[var(--verified)] border border-[var(--verified)]/20">
-                  ASI Benchmark
+                  Canonical Plate
                 </span>
               </div>
 
