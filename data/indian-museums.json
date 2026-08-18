@@ -39,8 +39,9 @@
       "email": "contact@nationalmuseumindia.gov.in",
       "website": "https://nationalmuseumindia.gov.in"
     },
-    "thumbnail_url": "/images/dancing_girl.jpg",
+    "thumbnail_url": "/images/museums/delhi_national_museum.jpg",
     "gallery_urls": [
+      "/images/museums/delhi_national_museum.jpg",
       "/images/dancing_girl.jpg",
       "/images/ashoka_lion_capital.jpg"
     ],
@@ -91,8 +92,9 @@
       "phone": "+91 44 2819 3238",
       "website": "https://govtmuseumchennai.org"
     },
-    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "thumbnail_url": "/images/museums/chennai_egmore_museum.jpg",
     "gallery_urls": [
+      "/images/museums/chennai_egmore_museum.jpg",
       "/images/chola_nataraja.jpg"
     ],
     "description": "Established in 1851, India's second oldest museum houses the world's most famous collection of Chola Bronzes, including the iconic Nataraja, alongside the Amaravati Buddhist sculptural gallery.",
@@ -142,8 +144,9 @@
       "phone": "+91 612 254 5022",
       "website": "https://biharmuseum.org"
     },
-    "thumbnail_url": "/images/didarganj_yakshi.jpg",
+    "thumbnail_url": "/images/museums/bihar_museum_patna.jpg",
     "gallery_urls": [
+      "/images/museums/bihar_museum_patna.jpg",
       "/images/didarganj_yakshi.jpg"
     ],
     "description": "State-of-the-art Maki and Associates designed world-class museum celebrating the deep heritage of ancient Magadha, Pataliputra, and the Mauryan masterpiece Didarganj Yakshi.",
@@ -191,8 +194,9 @@
       "phone": "+91 542 259 5095",
       "website": "https://asi.nic.in"
     },
-    "thumbnail_url": "/images/ashoka_lion_capital.jpg",
+    "thumbnail_url": "/images/museums/sarnath_archaeological_museum.jpg",
     "gallery_urls": [
+      "/images/museums/sarnath_archaeological_museum.jpg",
       "/images/ashoka_lion_capital.jpg",
       "/images/sarnath_buddha.jpg"
     ],
@@ -244,8 +248,9 @@
       "phone": "+91 33 2252 1790",
       "website": "https://indianmuseumkolkata.org"
     },
-    "thumbnail_url": "/images/sultanganj_buddha.jpg",
+    "thumbnail_url": "/images/museums/indian_museum_kolkata.jpg",
     "gallery_urls": [
+      "/images/museums/indian_museum_kolkata.jpg",
       "/images/sultanganj_buddha.jpg"
     ],
     "description": "Founded in 1814 by the Asiatic Society of Bengal, it is the ninth oldest museum in the world and the largest in India, featuring monumental Bharhut Buddhist railings, fossils, and antiquities.",
@@ -295,8 +300,9 @@
       "phone": "+91 22 2284 4484",
       "website": "https://csmvs.in"
     },
-    "thumbnail_url": "/images/sarnath_buddha.jpg",
+    "thumbnail_url": "/images/museums/csmvs_mumbai.jpg",
     "gallery_urls": [
+      "/images/museums/csmvs_mumbai.jpg",
       "/images/sarnath_buddha.jpg"
     ],
     "description": "UNESCO-recognized Indo-Saracenic masterpiece holding over 70,000 treasures of Indian art, Himalayan bronzes, European paintings, and natural history specimens in South Mumbai.",
@@ -343,8 +349,9 @@
       "phone": "+91 80 2286 6414",
       "website": "https://vismuseum.gov.in"
     },
-    "thumbnail_url": "/images/dancing_girl.jpg",
+    "thumbnail_url": "/images/museums/vitm_bengaluru.jpg",
     "gallery_urls": [
+      "/images/museums/vitm_bengaluru.jpg",
       "/images/dancing_girl.jpg"
     ],
     "description": "Dynamic interactive science centre with full-scale Wright Brothers simulator, Engine Hall, Space Gallery, and hands-on technological experiments in Cubbon Park.",
@@ -390,8 +397,9 @@
       "phone": "+91 40 2452 3211",
       "website": "https://salarjungmuseum.in"
     },
-    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "thumbnail_url": "/images/museums/salar_jung_hyderabad.jpg",
     "gallery_urls": [
+      "/images/museums/salar_jung_hyderabad.jpg",
       "/images/chola_nataraja.jpg"
     ],
     "description": "One of the world's largest one-man art collections, featuring the famous 19th-century Musical Clock, the Veiled Rebecca marble statue, and royal Nizami jade and weaponry.",
@@ -441,8 +449,9 @@
       "phone": "+91 141 257 0099",
       "website": "https://museumsrajasthan.gov.in"
     },
-    "thumbnail_url": "/images/ashoka_lion_capital.jpg",
+    "thumbnail_url": "/images/museums/albert_hall_jaipur.jpg",
     "gallery_urls": [
+      "/images/museums/albert_hall_jaipur.jpg",
       "/images/ashoka_lion_capital.jpg",
       "/images/didarganj_yakshi.jpg"
     ],
@@ -490,8 +499,9 @@
       "email": "calicomuseum@gmail.com",
       "website": "https://calicomuseum.org"
     },
-    "thumbnail_url": "/images/art-001.svg",
+    "thumbnail_url": "/images/museums/calico_museum_ahmedabad.jpg",
     "gallery_urls": [
+      "/images/museums/calico_museum_ahmedabad.jpg",
       "/images/art-001.svg"
     ],
     "description": "World's foremost museum dedicated to Indian textiles, housing an incomparable collection of Mughal court textiles, Pichhwai temple hangings, tie-dyed Patola silks, and historic regional handloom techniques.",
@@ -538,8 +548,9 @@
       "phone": "+91 471 231 6275",
       "website": "https://keralamuseum.gov.in"
     },
-    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "thumbnail_url": "/images/museums/napier_museum_thiruvananthapuram.jpg",
     "gallery_urls": [
+      "/images/museums/napier_museum_thiruvananthapuram.jpg",
       "/images/chola_nataraja.jpg"
     ],
     "description": "19th-century landmark exhibiting a unique Indo-Saracenic architectural blend of Gothic and Kerala wooden roof styling, featuring ancient bronze idols, Kathakali dance ornaments, and ivory carvings.",
@@ -585,8 +596,9 @@
       "phone": "+91 20 2448 2101",
       "website": "https://rajakelkarmuseum.org"
     },
-    "thumbnail_url": "/images/art-002.svg",
+    "thumbnail_url": "/images/museums/raja_kelkar_museum_pune.jpg",
     "gallery_urls": [
+      "/images/museums/raja_kelkar_museum_pune.jpg",
       "/images/art-002.svg"
     ],
     "description": "Extraordinary 20,000-piece collection curated by Dr. D.G. Kelkar showcasing everyday 18th and 19th-century Indian craftsmanship, including Mastani Mahal reconstruction, musical instruments, carved wooden doors, and ornate lamps.",
@@ -632,8 +644,9 @@
       "phone": "+91 294 241 9021",
       "website": "https://eternalmewar.in"
     },
-    "thumbnail_url": "/images/art-003.svg",
+    "thumbnail_url": "/images/museums/city_palace_museum_udaipur.jpg",
     "gallery_urls": [
+      "/images/museums/city_palace_museum_udaipur.jpg",
       "/images/art-003.svg"
     ],
     "description": "Monumental 400-year-old palace complex overlooking Lake Pichola, housing the Maharana Mewar historical collections including royal armory, silver pavilions, Mewar miniature paintings, and crystal gallery.",
@@ -680,8 +693,9 @@
       "phone": "+91 364 255 0457",
       "website": "https://dbcic.org"
     },
-    "thumbnail_url": "/images/art-004.svg",
+    "thumbnail_url": "/images/museums/don_bosco_museum_shillong.jpg",
     "gallery_urls": [
+      "/images/museums/don_bosco_museum_shillong.jpg",
       "/images/art-004.svg"
     ],
     "description": "Asia's largest cultural museum dedicated to the indigenous tribal heritage of the Eight Sister States of North East India, featuring 17 specialty galleries of traditional attire, weaponry, crafts, and musical instruments.",
@@ -728,8 +742,9 @@
       "phone": "+91 832 243 5334",
       "website": "https://museum.goa.gov.in"
     },
-    "thumbnail_url": "/images/art-005.svg",
+    "thumbnail_url": "/images/museums/goa_state_museum_panaji.jpg",
     "gallery_urls": [
+      "/images/museums/goa_state_museum_panaji.jpg",
       "/images/art-005.svg"
     ],
     "description": "Located in the historic Adil Shah Palace, preserving Goa's unique synthesis of Hindu Kadamba stone sculptures, Christian Indo-Portuguese sacred art, numismatics, and freedom struggle archives.",
@@ -774,8 +789,9 @@
       "phone": "+91 2714 266 220",
       "website": "https://asi.nic.in"
     },
-    "thumbnail_url": "/images/dancing_girl.jpg",
+    "thumbnail_url": "/images/museums/lothal_museum_gujarat.jpg",
     "gallery_urls": [
+      "/images/museums/lothal_museum_gujarat.jpg",
       "/images/dancing_girl.jpg"
     ],
     "description": "Site museum at the world's earliest known tidal dockyard dating to 2400 BCE, exhibiting Harappan steatite seals, carnelian bead workshops, copper tools, painted pottery, and maritime trade weights.",
@@ -821,8 +837,9 @@
       "phone": "+91 191 254 7545",
       "website": "https://jkculture.nic.in"
     },
-    "thumbnail_url": "/images/art-006.svg",
+    "thumbnail_url": "/images/museums/dogra_art_museum_jammu.jpg",
     "gallery_urls": [
+      "/images/museums/dogra_art_museum_jammu.jpg",
       "/images/art-006.svg"
     ],
     "description": "Located inside the historic Mubarak Mandi Palace, housing the world's finest collection of Pahari miniature paintings from Basohli and Kangra schools, gold-plated illustrated manuscripts, and royal Dogra armory.",
@@ -869,8 +886,9 @@
       "phone": "+91 755 266 1458",
       "website": "https://igrms.gov.in"
     },
-    "thumbnail_url": "/images/didarganj_yakshi.jpg",
+    "thumbnail_url": "/images/museums/igrms_bhopal.jpg",
     "gallery_urls": [
+      "/images/museums/igrms_bhopal.jpg",
       "/images/didarganj_yakshi.jpg"
     ],
     "description": "Sprawling 200-acre open-air anthropological museum on Shamla Hills depicting the civilizational evolution of Indian humanity, featuring life-size tribal habitats, prehistoric rock art shelters, and ethnographic crafts.",

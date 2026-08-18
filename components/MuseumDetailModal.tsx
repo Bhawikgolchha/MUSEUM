@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Sheet from './ui/Sheet';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MuseumWithDistance, getMuseumNarrationText } from '@/lib/museums';
-import { Landmark, MapPin, Clock, Ticket, Phone, Globe, Sparkles, Check, CheckCircle2, ChevronRight } from 'lucide-react';
+import { Landmark, MapPin, Clock, Ticket, Phone, Globe, Sparkles, Check, CheckCircle2, ChevronRight, Camera } from 'lucide-react';
 import ReadAloudButton from './ReadAloudButton';
 
 interface MuseumDetailModalProps {
@@ -19,10 +19,19 @@ export default function MuseumDetailModal({
   onClose,
   museum,
 }: MuseumDetailModalProps) {
+  const [activeImage, setActiveImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (museum) {
+      setActiveImage(museum.thumbnail_url || (museum.gallery_urls && museum.gallery_urls[0]) || '/images/art-001.svg');
+    }
+  }, [museum]);
+
   if (!museum) return null;
 
   const hasMuseArtifacts = museum.featured_artifacts && museum.featured_artifacts.length > 0;
   const narrationText = getMuseumNarrationText(museum);
+  const gallery = museum.gallery_urls || (museum.thumbnail_url ? [museum.thumbnail_url] : []);
 
   return (
     <Sheet
@@ -31,17 +40,44 @@ export default function MuseumDetailModal({
       title={museum.name}
       subtitle={`${museum.city}, ${museum.state} · ${museum.category.replace(/_/g, ' ').toUpperCase()}`}
     >
-      {/* Visual Gallery Thumbnail */}
-      <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-[var(--paper)] border border-[var(--rule)]">
-        <Image
-          src={museum.thumbnail_url || '/images/art-001.svg'}
-          alt={museum.name}
-          fill
-          className="object-cover"
-        />
-        <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-[var(--ink)]/90 text-white text-xs font-semibold backdrop-blur-xs">
-          {museum.governance.replace(/_/g, ' ').toUpperCase()}
+      {/* Visual Gallery Hero */}
+      <div className="space-y-2">
+        <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-[var(--paper)] border border-[var(--rule)] shadow-2xs">
+          <Image
+            src={activeImage || museum.thumbnail_url || '/images/art-001.svg'}
+            alt={museum.name}
+            fill
+            className="object-cover transition-all duration-300"
+          />
+          <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-[var(--ink)]/90 text-white text-xs font-semibold backdrop-blur-xs shadow-xs">
+            {museum.governance.replace(/_/g, ' ').toUpperCase()}
+          </div>
         </div>
+
+        {/* Gallery Thumbnails Strip */}
+        {gallery.length > 1 && (
+          <div className="flex items-center gap-2 overflow-x-auto pb-1">
+            {gallery.map((imgUrl, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setActiveImage(imgUrl)}
+                className={`relative w-16 h-12 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 cursor-pointer ${
+                  activeImage === imgUrl
+                    ? 'border-[var(--accent)] ring-2 ring-[var(--accent)]/30 scale-105'
+                    : 'border-[var(--rule)] opacity-70 hover:opacity-100'
+                }`}
+              >
+                <Image
+                  src={imgUrl}
+                  alt={`${museum.name} photo ${idx + 1}`}
+                  fill
+                  className="object-cover"
+                />
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Description & Audio Narration Bar */}

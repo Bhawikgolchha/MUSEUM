@@ -8,6 +8,7 @@ import MuseumCard from '@/components/MuseumCard';
 import MuseumDetailModal from '@/components/MuseumDetailModal';
 import { MuseumWithDistance } from '@/lib/museums';
 import ReadAloudButton from '@/components/ReadAloudButton';
+import AiHistoricalBrief from '@/components/AiHistoricalBrief';
 import { Sparkles, Heart, MapPin, Search, Landmark, Layers, ChevronRight, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -109,6 +110,9 @@ export default function ConnectToRootsPage() {
           </button>
         ))}
       </div>
+
+      {/* AI Cultural & Historical Brief */}
+      <AiHistoricalBrief pincode={pincode} />
 
       {/* Living Roots Narrative Card */}
       {rootData && (

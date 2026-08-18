@@ -1,60 +1,82 @@
-# Project: Museum Discovery Backend Heritage Service
+# Project: AI-Powered Historical Briefing Engine (PIN Code Grounded)
 
 ## Architecture
-- Framework: Next.js App Router (Next.js 16.3.1, TypeScript 5, React 19.2.8)
-- Primary Service Route: `app/api/heritage-service/route.ts` (POST & GET)
-- Subsystem Services:
-  - `lib/services/geocoding.ts`: Multi-tier geocoding resolution (LRU cache -> In-memory/DB -> National directory -> Nominatim/External provider) & multi-match disambiguation.
-  - `lib/services/artifacts.ts`: Strict PIN-linked artifact retrieval (zero fuzzy fallback), schema normalization, and `data_quality` metadata flagging.
-  - `lib/services/pii-redactor.ts`: PII sanitizer scrubbing curator/donor personal identifiers (names, emails, phone numbers).
-  - `lib/services/tts.ts`: IG API TTS client with exponential backoff retries (429, 500-504), full jitter, timeout handling, and partial failure fallback.
-  - `lib/services/logger.ts`: Security audit logger with API key masking (`ig-****1234`) and SHA-256 digest hashing.
-  - `lib/services/types.ts`: TypeScript contracts for requests, responses, artifacts, locations, TTS, and error taxonomy.
+- **Backend Service Layer (`app/api/pincode-history/route.ts`)**:
+  - `GET` and `POST` handlers accepting 6-digit Indian PIN codes.
+  - Regex validation `/^[1-9][0-9]{5}$/` returning HTTP 400 with `{ status: 'error', error: 'INVALID_PINCODE_FORMAT' }` on malformed inputs.
+  - Geocoding & hierarchy resolution via `lib/pincodes.ts`, `lib/services/geocoding.ts`, `lib/roots.ts`, and `data/indian-museums.json`.
+  - LLM Grounding pipeline via `lib/openrouter.ts` using model `openrouter/free` with JSON response mode and deterministic offline fallback.
+  - In-memory LRU cache (<10ms repeat responses, ≤20ms warm latency, verified at ~0.05ms).
+- **Frontend Presentation Layer (`app/roots/page.tsx`, `app/explore/page.tsx`, `components/`)**:
+  - `/roots` page: `<AiHistoricalBrief>` section below search bar with 3-part structured card (*Ancient Foundations*, *Living Traditions*, *Sacred Landmarks*), badges for key dynasties, traditional crafts, and notable monuments, shimmer skeleton loading, and Web Speech API narration button.
+  - `/explore` page: `<RegionalHistoricalContextBanner>` expandable banner above museum cards synchronized with spatial distances.
+  - Shared audio narration: Reusable Web Speech API integration (`components/ReadAloudButton.tsx`).
+- **E2E Testing Harness (`tests/e2e/e2e_pincode_history_runner.ts`)**:
+  - 5-Tier requirement-driven opaque-box verification suite (Feature coverage, Boundary/Corner, Cross-Feature/Performance, Real-World scenarios, Adversarial Hardening) passing 62/62 (100%).
 
 ## Feature Inventory
 | # | Feature | Description | Milestone | Source |
 |---|---------|-------------|-----------|--------|
-| 1 | Strict PIN Regex Validation | Validates 6-digit Indian PIN (`/^[1-9][0-9]{5}$/`), rejects non-digits and leading zeros with HTTP 400 `INVALID_PINCODE_FORMAT` | M1 | ORIGINAL_REQUEST §R1 |
-| 2 | Tier 1 In-Memory/DB Geocoding | Instant resolution against authoritative museum PIN dictionary and metro hubs | M1 | ORIGINAL_REQUEST §R1 |
-| 3 | Tier 2 National Postal Directory | Resolves 3-digit sorting district centroid and postal circle coordinates | M1 | ORIGINAL_REQUEST §R1 |
-| 4 | Tier 3 External Geocoder | Queries OpenStreetMap Nominatim / National Postal API for unmapped PINs | M1 | ORIGINAL_REQUEST §R1 |
-| 5 | Multi-Match Disambiguation | Returns `location_candidates` array with status `partial` when a PIN spans multiple areas | M1 | ORIGINAL_REQUEST §R1 |
-| 6 | LRU Low-Latency Cache | High-speed cache guaranteeing <=100ms response time on cached lookups | M1 | ORIGINAL_REQUEST §R1 |
-| 7 | Strict Exact-PIN Artifact Matching | Queries museum/artifact repository strictly matching PIN. ZERO fuzzy/distance fallback | M2 | ORIGINAL_REQUEST §R2 |
-| 8 | Explicit Zero-Match Reporting | Returns `museum_linked_artifacts: []`, `total_artifacts_found: 0`, and explicit indicator if no artifacts match | M2 | ORIGINAL_REQUEST §R2 |
-| 9 | Standardized Artifact Schema | Normalizes artifact records with complete metadata (id, title, description, museum info, licensing) | M2 | ORIGINAL_REQUEST §R2 |
-| 10 | Data Quality Metadata Flagging | Audits artifact records for missing critical fields and flags with `data_quality: { is_complete, missing_fields }` | M2 | ORIGINAL_REQUEST §R2 |
-| 11 | Automated PII Redaction | Scrubs curator, donor, and collector personal contact info (names, emails, phones) from text fields | M2 | ORIGINAL_REQUEST §R2 |
-| 12 | Spoken Narrative Text Composer | Assembles natural language spoken script from geographic location and artifact summaries | M3 | ORIGINAL_REQUEST §R3 |
-| 13 | IG API TTS Client | Invokes upstream IG API TTS REST endpoint with user API key, voice, language, and audio base64 output | M3 | ORIGINAL_REQUEST §R3 |
-| 14 | Exponential Backoff & Jitter | Retries transient errors (429, 500, 502, 503, 504) up to 3 times with exponential delays + jitter | M3 | ORIGINAL_REQUEST §R3 |
-| 15 | Key Masking & SHA-256 Audit | Strictly masks API keys (`ig-****1234`) and records SHA-256 hashes in audit logs | M3 | ORIGINAL_REQUEST §R3 |
-| 16 | Partial Failure Non-Fatal Degradation | Returns HTTP 200/207 with intact textual payload and error object if TTS generation fails | M3 | ORIGINAL_REQUEST §R3 |
-| 17 | Unified Heritage Service Route | Main Next.js API route (`app/api/heritage-service/route.ts`) supporting POST and GET | M4 | ORIGINAL_REQUEST §R4 |
-| 18 | Error Taxonomy & Response Modes | Standardized error taxonomy (`INVALID_PINCODE_FORMAT`, `PINCODE_NOT_FOUND`, `TTS_AUTH_ERROR`, etc.) and response modes (`text`, `tts`, `both`) | M4 | ORIGINAL_REQUEST §R4 |
-| 19 | 100% E2E Test Suite & Adversarial Hardening | Comprehensive 4-tier E2E test suite (Tiers 1-4) passing 100% + Tier 5 adversarial coverage hardening | M5 | ORIGINAL_REQUEST §Acceptance |
+| 1 | PIN Code Regex Validation | Strict validation of 6-digit PIN code `/^[1-9][0-9]{5}$/`, rejects malformed with HTTP 400 `INVALID_PINCODE_FORMAT` | M1 | ORIGINAL_REQUEST §R1 |
+| 2 | Geographic & Hierarchy Resolution | Resolves district, state, postal circle, and cultural anchors from `lib/pincodes.ts`, `lib/roots.ts`, `data/indian-museums.json` | M1 | ORIGINAL_REQUEST §R1 |
+| 3 | OpenRouter AI Synthesis | Invokes OpenRouter `openrouter/free` with grounded prompt and structured JSON schema, with deterministic offline fallback | M1 | ORIGINAL_REQUEST §R1 |
+| 4 | In-Memory Performance Caching | Fast in-memory LRU cache ensuring repeat queries respond in <10ms (SLA ≤20ms) | M1 | ORIGINAL_REQUEST §R1 |
+| 5 | Structured API Response Schema | JSON output with `pincode`, `location_name`, `state`, `district`, `postal_circle`, `historical_brief`, `key_dynasties`, `traditional_crafts`, `notable_monuments` | M1 | ORIGINAL_REQUEST §R1 |
+| 6 | 3-Part AI Brief Card on /roots | Renders 3 sections (*Ancient Foundations*, *Living Traditions*, *Sacred Landmarks*) with badges on `/roots` | M2 | ORIGINAL_REQUEST §R2 |
+| 7 | Loading Skeletons & Error Recovery on /roots | Shimmer loading skeletons during AI fetch and retry/error state handling on `/roots` | M2 | ORIGINAL_REQUEST §R2 |
+| 8 | Web Speech Audio Narration on /roots | "Read Aloud" button narrating the structured brief with speech synthesis and playing indicators | M2 | ORIGINAL_REQUEST §R2 |
+| 9 | Regional Historical Context Banner on /explore | Expandable historical banner above museum stream on `/explore` when a valid 6-digit PIN is entered | M3 | ORIGINAL_REQUEST §R3 |
+| 10 | Spatial Sync with Explore Distance Cards & Modals | Harmonizes banner with museum distance sorting and nearest-fallback modals | M3 | ORIGINAL_REQUEST §R3 |
+| 11 | Full E2E Test Suite (Tiers 1-4) & Adversarial Hardening (Tier 5) | Comprehensive opaque-box and white-box test verification passing 100% | M4 | ORIGINAL_REQUEST §Acceptance Criteria |
 
 ## Milestones
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| E2E | E2E Testing Track | Mock harness, test runner, 82+ test cases (Tiers 1-4), `TEST_INFRA.md`, `TEST_READY.md` | none | IN_PROGRESS |
-| M1 | Geocoding & Postal Hierarchy | `lib/services/geocoding.ts`, regex validation, 3-tier lookup, multi-match disambiguation, LRU cache | none | IN_PROGRESS |
-| M2 | Museum Artifacts & PII Redaction | `lib/services/artifacts.ts`, `lib/services/pii-redactor.ts`, exact matching, zero-match reporting, data_quality flagging | none | IN_PROGRESS |
-| M3 | IG API TTS & Security Logger | `lib/services/tts.ts`, `lib/services/logger.ts`, exponential backoff, key masking, SHA-256 audit, partial failure fallback | none | IN_PROGRESS |
-| M4 | Unified API Route & Payload Formatter | `app/api/heritage-service/route.ts`, request parsing, response formatting (`text`/`tts`/`both`), error taxonomy | M1, M2, M3 | PLANNED |
-| M5 | Final Acceptance & Adversarial Verification | Pass 100% of E2E test suite (Tiers 1-4) + Tier 5 adversarial stress testing | E2E, M4 | PLANNED |
-
-## Code Layout
-- `lib/services/types.ts`: Central type definitions for the backend service.
-- `lib/services/geocoding.ts`: Geocoding service with 3-tier resolution, LRU cache, and candidate lists.
-- `lib/services/artifacts.ts`: Artifact query service with exact matching, zero-match reporting, and data quality checks.
-- `lib/services/pii-redactor.ts`: PII sanitization utility for donor/curator data.
-- `lib/services/tts.ts`: IG API TTS client with retry logic, backoff, and partial degradation.
-- `lib/services/logger.ts`: Masked security logging and SHA-256 hashing.
-- `app/api/heritage-service/route.ts`: Next.js App Router API endpoint.
-- `tests/e2e/backend_service.test.ts` & `tests/e2e/e2e_backend_runner.ts`: E2E test runner and test cases.
+| M1 | Backend Historical Brief API | Build `app/api/pincode-history/route.ts` with validation, hierarchy resolution, OpenRouter grounding, caching, and fallback | none | DONE |
+| M2 | Roots Page AI Brief & Narration | Build `<AiHistoricalBrief>` component in `components/AiHistoricalBrief.tsx` and integrate into `app/roots/page.tsx` | M1 | DONE |
+| M3 | Explore Page Historical Banner | Build `<RegionalHistoricalContextBanner>` component in `components/RegionalHistoricalContextBanner.tsx` and integrate into `app/explore/page.tsx` | M1 | DONE |
+| M4 | E2E Testing & Adversarial Hardening | Verify 100% pass on Tiers 1-5, Reviewers, Challengers, and Forensic Auditor verification | M1, M2, M3 | DONE |
 
 ## Interface Contracts
-### Types (`lib/services/types.ts`)
-- `PincodeRequest`: `{ pincode: string, response_format?: 'text' | 'tts' | 'both', api_key?: string, voice?: string, language?: string, max_artifacts?: number }`
-- `PincodeResponse`: `{ status: 'success' | 'partial' | 'error', request_id: string, pincode_valid: boolean, location: LocationData | null, museum_linked_artifacts: StandardizedArtifact[], total_artifacts_found: number, tts: TTSData | null, errors: ErrorDetail[] }`
+### Client ↔ `/api/pincode-history`
+- **Request**:
+  - `GET /api/pincode-history?pincode=<6-digit-pin>`
+  - `POST /api/pincode-history` with JSON body `{ "pincode": "<6-digit-pin>" }`
+- **Response (HTTP 200 OK)**:
+  ```json
+  {
+    "status": "success",
+    "pincode": "110001",
+    "location_name": "New Delhi GPO (Central Delhi)",
+    "state": "Delhi",
+    "district": "Central Delhi",
+    "postal_circle": "Northern Region",
+    "historical_brief": {
+      "ancient_foundations": "...",
+      "living_culture_crafts": "...",
+      "famous_lore_landmarks": "...",
+      "summary_one_liner": "..."
+    },
+    "key_dynasties": ["Mughals", "Tomaras", "Chauhans"],
+    "traditional_crafts": ["Zari & Zardozi Embroidery", "Meenakari", "Ivory Carving"],
+    "notable_monuments": ["Red Fort", "Qutub Minar", "Humayun's Tomb"],
+    "cached": false,
+    "source": "openrouter_ai"
+  }
+  ```
+- **Error Response (HTTP 400 Bad Request)**:
+  ```json
+  {
+    "status": "error",
+    "error": "INVALID_PINCODE_FORMAT",
+    "message": "PIN code must be a valid 6-digit Indian postal code (/^[1-9][0-9]{5}$/)"
+  }
+  ```
+
+## Code Layout
+- `app/api/pincode-history/route.ts` - Backend endpoint (Worker M1)
+- `components/AiHistoricalBrief.tsx` - Roots UI card component (Worker M2)
+- `components/RegionalHistoricalContextBanner.tsx` - Explore banner component (Worker M3)
+- `app/roots/page.tsx` - Roots page integration (Worker M2)
+- `app/explore/page.tsx` - Explore page integration (Worker M3)
+- `tests/e2e/e2e_pincode_history_runner.ts` - E2E test runner (Test Writer M4)

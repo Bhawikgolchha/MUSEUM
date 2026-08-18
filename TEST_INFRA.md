@@ -1,51 +1,38 @@
-# E2E Test Infra: Museum Discovery Platform
+# E2E Test Infra: Digital Muse Redesign
 
 ## Test Philosophy
-- Opaque-box, requirement-driven verification derived directly from `ORIGINAL_REQUEST.md`.
-- No reliance on mock implementations or internal private variables.
-- Methodology: Category-Partition + Boundary Value Analysis + Pairwise Combinatorial Testing + Real-World Workload Testing.
+- Opaque-box, requirement-driven. Derived from `ORIGINAL_REQUEST.md`.
+- Methodology: Category-Partition + Boundary Value Analysis + Pairwise Combinatorial + Real-World Workload Testing.
+- Zero-tolerance integrity: No hardcoded test results, authentic execution of all flows.
 
----
+## Feature Inventory & Test Mapping
+| # | Feature | Requirement Source | Tier 1 (Coverage) | Tier 2 (Boundary) | Tier 3 (Pairwise) | Tier 4 (Workload) |
+|---|---|---|:---:|:---:|:---:|:---:|
+| 1 | Editorial Design Tokens & Styling | ORIGINAL_REQUEST §Visual Theme | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 2 | Modern Typography (Fraunces + Geist) | ORIGINAL_REQUEST §Visual Theme | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 3 | Anti-Slop Visual Rules | ORIGINAL_REQUEST §Acceptance Criteria | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 4 | Asymmetric Split Hero & Persona Bar | ORIGINAL_REQUEST §R1.1 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 5 | Staggered Diagonal Masonry Grid | ORIGINAL_REQUEST §R1.1 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 6 | Sticky Photo Plate & Look Closer Pins | ORIGINAL_REQUEST §R1.2 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 7 | 4-Persona Voice & 0ms Source Toggle | ORIGINAL_REQUEST §R1.2 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 8 | Slide-Over Factual Fidelity Auditor | ORIGINAL_REQUEST §R1.2 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 9 | Spatial India SVG Map & GPS Sorting | ORIGINAL_REQUEST §R1.3 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 10 | 6-Digit PIN Lineage & Web Speech TTS | ORIGINAL_REQUEST §R1.4 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
+| 11 | Curator Ingestion Studio & Claims | ORIGINAL_REQUEST §R1.5 | ✓ (5 tests) | ✓ (5 tests) | ✓ | ✓ |
 
-## Feature Inventory
-| # | Feature | Source (Requirement) | Tier 1 | Tier 2 | Tier 3 |
-|---|---------|----------------------|:------:|:------:|:------:|
-| 1 | Authentic India SVG Map Outline | ORIGINAL_REQUEST §R1 | 5 | 5 | ✓ |
-| 2 | Dynamic Zoom & Pan Controls | ORIGINAL_REQUEST §R1 | 5 | 5 | ✓ |
-| 3 | Lat/Long Museum Pin Projection | ORIGINAL_REQUEST §R1 | 5 | 5 | ✓ |
-| 4 | Complete Legacy Brand Sanitization | ORIGINAL_REQUEST §R1 | 5 | 5 | ✓ |
-| 5 | Museum Dataset Expansion (30+) | ORIGINAL_REQUEST §R2 | 5 | 5 | ✓ |
-| 6 | Collection Page Tabbed Switcher | ORIGINAL_REQUEST §R2 | 5 | 5 | ✓ |
-| 7 | Live Search & State/Category Filters | ORIGINAL_REQUEST §R2 | 5 | 5 | ✓ |
-| 8 | 6-Digit PIN Geocoding & Distance | ORIGINAL_REQUEST §R2 | 5 | 5 | ✓ |
-| 9 | Archival Narration Text Generator | ORIGINAL_REQUEST §R3 | 5 | 5 | ✓ |
-| 10 | Universal Web Speech Player Controls | ORIGINAL_REQUEST §R3 | 5 | 5 | ✓ |
-| 11 | Narration Integration across UI | ORIGINAL_REQUEST §R3 | 5 | 5 | ✓ |
-| 12 | TypeScript & Build Compilation | ORIGINAL_REQUEST §Acceptance | 5 | 5 | ✓ |
+## Test Suites Inventory
+1. `tests/e2e/e2e_pincode_history_runner.ts` (62 tests): End-to-end postal PIN validation, dynastic heritage resolution, caching, and fallback.
+2. `tests/e2e/ui_scenario_stress_runner.ts` (10 tests): Multi-step UI workflow stress tests (persona changes, search filter combinations, PIN lookups).
+3. `tests/e2e/ui_component_lifecycle_runner.ts` (4 tests): Client component mounting, unmounting, and memory lifecycle.
+4. `tests/unit/geocoding.test.ts` (86 tests): 3-tier geocoding coordinates, distance calculations, fallback behavior.
+5. `tests/unit/artifacts.test.ts` (21 tests): Artifact schema, claims structure, and sensitivity notice flags.
+6. `tests/unit/milestone2_verification.test.ts` (100 tests): Visual token verification, persona state persistence, search accuracy.
+7. `tests/unit/milestone3_explore_banner_verification.test.ts` (6 tests): Historical context banner rendering and TTS scripts.
+8. `tests/unit/tts.test.ts` (31 tests): Text-to-speech audio script formatting and speech synthesis fallbacks.
 
----
-
-## Test Architecture
-- Test Runner: Node.js / tsx automated test harness `tests/e2e/e2e_runner.ts` executing headless DOM, dataset, geodetic math, and string sanitization audits.
-- Invocation: `npx tsx tests/e2e/e2e_runner.ts`
-- Pass/Fail Semantics: Process exits with code 0 on 100% pass rate, non-zero code on any failure.
-
----
-
-## Real-World Application Scenarios (Tier 4)
-| # | Scenario | Features Exercised | Complexity |
-|---|----------|--------------------|------------|
-| 1 | Tourist explores North-to-South cultural corridor on Collection page | F5, F6, F7, F9, F11 | High |
-| 2 | User enters remote PIN code on Roots (`app/roots`) to trace ancestral heritage and nearby museums | F5, F8, F9, F11 | High |
-| 3 | Explorer pans and zooms India map from Ladakh to Kanyakumari on Explore (`app/explore`) | F1, F2, F3, F4 | High |
-| 4 | Visually impaired user listens to archival narrations across cards and detail modals | F9, F10, F11 | High |
-| 5 | End-to-end full build and brand sanitization integrity gate | F4, F12 | High |
-
----
-
-## Coverage Thresholds
-- Tier 1: ≥5 test cases per feature (Total ≥ 60 tests)
-- Tier 2: ≥5 boundary/corner cases per feature (Total ≥ 60 tests)
-- Tier 3: Pairwise feature interaction tests (Total ≥ 12 tests)
-- Tier 4: ≥5 real-world application scenarios
-- **Total Suite Minimum: ≥ 137 test cases**
+## Acceptance Thresholds
+- Tier 1: >= 55 feature-level test cases (all passing).
+- Tier 2: >= 55 boundary & edge cases (all passing).
+- Tier 3: Pairwise combination matrix (all passing).
+- Tier 4: Real-world user discovery scenarios (all passing).
+- Tier 5: Adversarial white-box tests (zero TypeScript errors, clean `npm run build`).

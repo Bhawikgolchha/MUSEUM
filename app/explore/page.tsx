@@ -13,6 +13,7 @@ import IndiaMuseumMap from '@/components/IndiaMuseumMap';
 import MuseumCard from '@/components/MuseumCard';
 import MuseumDetailModal from '@/components/MuseumDetailModal';
 import NearestMuseumModal from '@/components/NearestMuseumModal';
+import RegionalHistoricalContextBanner from '@/components/RegionalHistoricalContextBanner';
 import { Landmark, Compass, ArrowRight } from 'lucide-react';
 
 interface NearestFallbackState {
@@ -39,6 +40,14 @@ export default function ExploreMuseumsPage() {
   const [nearestFallback, setNearestFallback] = useState<NearestFallbackState | null>(null);
   const [isNearestModalOpen, setIsNearestModalOpen] = useState<boolean>(false);
   const lastPromptedPin = useRef<string | null>(null);
+
+  // Extract 6-digit PIN code from user query (direct or substring)
+  const searchedPin = useMemo(() => {
+    const clean = query.trim();
+    if (/^[1-9][0-9]{5}$/.test(clean)) return clean;
+    const match = clean.match(/\b[1-9][0-9]{5}\b/);
+    return match ? match[0] : null;
+  }, [query]);
 
   // Execute spatial search
   const { results, resolvedCenter, total } = useMemo(() => {
@@ -178,6 +187,11 @@ export default function ExploreMuseumsPage() {
 
         {/* Right / Bottom: Museum Result Cards Stream */}
         <div className="lg:col-span-6 space-y-4">
+          {/* Regional Historical Context Banner for 6-Digit PIN Search */}
+          {searchedPin && (
+            <RegionalHistoricalContextBanner pincode={searchedPin} />
+          )}
+
           <div className="flex items-center justify-between text-xs font-semibold text-[var(--ink-muted)] uppercase tracking-wider pb-1">
             <span>
               Showing {results.length} of {total} Institutions
