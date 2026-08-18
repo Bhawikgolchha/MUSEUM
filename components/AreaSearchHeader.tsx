@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Search, Navigation, SlidersHorizontal, MapPin, Check, Filter } from 'lucide-react';
-import { Coordinates } from '@/lib/museums';
+import { Search, Navigation, Check } from 'lucide-react';
 
 interface AreaSearchHeaderProps {
   query: string;

@@ -1,12 +1,26 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
-import { searchMuseums, MuseumWithDistance, Coordinates } from '@/lib/museums';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import {
+  searchMuseums,
+  Museum,
+  MuseumWithDistance,
+  Coordinates,
+  findNearestMuseumForPincode,
+} from '@/lib/museums';
 import AreaSearchHeader from '@/components/AreaSearchHeader';
 import NanoBananaMap from '@/components/NanoBananaMap';
 import MuseumCard from '@/components/MuseumCard';
 import MuseumDetailModal from '@/components/MuseumDetailModal';
-import { Landmark, Compass, MapPin, AlertCircle } from 'lucide-react';
+import NearestMuseumModal from '@/components/NearestMuseumModal';
+import { Landmark, Compass, ArrowRight } from 'lucide-react';
+
+interface NearestFallbackState {
+  searchedPin: string;
+  locationName: string;
+  nearestMuseum: MuseumWithDistance;
+  distanceKm: number;
+}
 
 export default function ExploreMuseumsPage() {
   const [query, setQuery] = useState<string>('');
@@ -21,6 +35,11 @@ export default function ExploreMuseumsPage() {
   const [selectedMuseum, setSelectedMuseum] = useState<MuseumWithDistance | null>(null);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState<boolean>(false);
 
+  // Fallback modal state for unindexed PIN code searches
+  const [nearestFallback, setNearestFallback] = useState<NearestFallbackState | null>(null);
+  const [isNearestModalOpen, setIsNearestModalOpen] = useState<boolean>(false);
+  const lastPromptedPin = useRef<string | null>(null);
+
   // Execute spatial search
   const { results, resolvedCenter, total } = useMemo(() => {
     return searchMuseums({
@@ -32,6 +51,35 @@ export default function ExploreMuseumsPage() {
       accessibilityOnly,
     });
   }, [query, centerCoordinates, radiusKm, category, openTodayOnly, accessibilityOnly]);
+
+  // Detect 6-digit PIN code search when 0 direct matches are found
+  useEffect(() => {
+    const cleanQuery = query.trim();
+    const is6DigitPin = /^[1-9][0-9]{5}$/.test(cleanQuery);
+
+    if (is6DigitPin && results.length === 0) {
+      const fallbackResult = findNearestMuseumForPincode(cleanQuery);
+      if (fallbackResult) {
+        setNearestFallback({
+          searchedPin: cleanQuery,
+          locationName: fallbackResult.regionName,
+          nearestMuseum: fallbackResult.nearestMuseum,
+          distanceKm: fallbackResult.distanceKm,
+        });
+
+        // Trigger modal once per unique unindexed PIN search
+        if (lastPromptedPin.current !== cleanQuery) {
+          setIsNearestModalOpen(true);
+          lastPromptedPin.current = cleanQuery;
+        }
+      }
+    } else {
+      if (!is6DigitPin) {
+        setNearestFallback(null);
+        lastPromptedPin.current = null;
+      }
+    }
+  }, [query, results.length]);
 
   const handleRequestGeolocation = () => {
     if (!navigator.geolocation) {
@@ -57,6 +105,22 @@ export default function ExploreMuseumsPage() {
       },
       { timeout: 8000 }
     );
+  };
+
+  const handleSelectNearestMuseum = (museum: Museum | MuseumWithDistance) => {
+    const museumWithDist: MuseumWithDistance = {
+      ...museum,
+      distance_km: nearestFallback ? nearestFallback.distanceKm : 0,
+    };
+    setSelectedMuseum(museumWithDist);
+    setCenterCoordinates(museum.coordinates);
+    setQuery(museum.name);
+    setIsNearestModalOpen(false);
+  };
+
+  const handleExpandRadius = () => {
+    setRadiusKm(100);
+    setIsNearestModalOpen(false);
   };
 
   return (
@@ -107,7 +171,6 @@ export default function ExploreMuseumsPage() {
             selectedMuseum={selectedMuseum}
             onSelectMuseum={(m) => {
               setSelectedMuseum(m);
-              // Scroll to corresponding card on mobile
             }}
             centerCoordinates={resolvedCenter || centerCoordinates}
           />
@@ -143,29 +206,54 @@ export default function ExploreMuseumsPage() {
             </div>
           ) : (
             /* Empty State */
-            <div className="p-8 rounded-2xl bg-[var(--paper-raised)] border border-[var(--rule)] text-center space-y-3">
+            <div className="p-8 rounded-2xl bg-[var(--paper-raised)] border border-[var(--rule)] text-center space-y-4">
               <div className="w-12 h-12 rounded-xl bg-[var(--accent-soft)] text-[var(--accent)] flex items-center justify-center mx-auto">
                 <Landmark className="w-6 h-6" />
               </div>
               <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">
-                No museums found in this radius
+                {nearestFallback
+                  ? `No museum situated directly in PIN ${nearestFallback.searchedPin}`
+                  : 'No museums found in this radius'}
               </h3>
               <p className="text-xs text-[var(--ink-muted)] max-w-sm mx-auto leading-relaxed">
-                Try expanding your search radius to 50 km or 100 km, or select one of the major cultural hubs above.
+                {nearestFallback
+                  ? `The region ${nearestFallback.locationName} has no direct museum on file. The closest partner institution is ${nearestFallback.nearestMuseum.name} (${nearestFallback.distanceKm.toFixed(1)} km away).`
+                  : 'Try expanding your search radius to 50 km or 100 km, or select one of the major cultural hubs above.'}
               </p>
-              <button
-                type="button"
-                onClick={() => {
-                  setRadiusKm(100);
-                  setCategory('all');
-                  setOpenTodayOnly(false);
-                  setAccessibilityOnly(false);
-                  setQuery('');
-                }}
-                className="px-4 py-2 rounded-xl bg-[var(--accent)] text-white text-xs font-semibold hover:bg-[var(--accent)]/90 transition-colors"
-              >
-                Reset Filters &amp; Expand Radius
-              </button>
+
+              {nearestFallback ? (
+                <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setIsNearestModalOpen(true)}
+                    className="px-4 py-2.5 rounded-xl border border-[var(--rule)] text-[var(--ink)] text-xs font-semibold hover:bg-[var(--paper)] transition-colors"
+                  >
+                    View Fallback Details
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleSelectNearestMuseum(nearestFallback.nearestMuseum)}
+                    className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[var(--accent)] text-white text-xs font-semibold hover:bg-[var(--accent)]/90 transition-colors shadow-xs"
+                  >
+                    <span>Switch to {nearestFallback.nearestMuseum.name.split('(')[0].trim()}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setRadiusKm(100);
+                    setCategory('all');
+                    setOpenTodayOnly(false);
+                    setAccessibilityOnly(false);
+                    setQuery('');
+                  }}
+                  className="px-4 py-2 rounded-xl bg-[var(--accent)] text-white text-xs font-semibold hover:bg-[var(--accent)]/90 transition-colors"
+                >
+                  Reset Filters &amp; Expand Radius
+                </button>
+              )}
             </div>
           )}
         </div>
@@ -177,6 +265,20 @@ export default function ExploreMuseumsPage() {
         onClose={() => setIsDetailModalOpen(false)}
         museum={selectedMuseum}
       />
+
+      {/* Nearest Museum Spatial Fallback Modal */}
+      {nearestFallback && (
+        <NearestMuseumModal
+          isOpen={isNearestModalOpen}
+          onClose={() => setIsNearestModalOpen(false)}
+          searchedPin={nearestFallback.searchedPin}
+          locationName={nearestFallback.locationName}
+          nearestMuseum={nearestFallback.nearestMuseum}
+          distanceKm={nearestFallback.distanceKm}
+          onSelectNearest={handleSelectNearestMuseum}
+          onExpandRadius={handleExpandRadius}
+        />
+      )}
     </div>
   );
 }

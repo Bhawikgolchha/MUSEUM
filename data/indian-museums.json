@@ -366,5 +366,588 @@
     "muse_collection_id": "c-salarjung-001",
     "source": "Salar Jung Board",
     "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-jai-001",
+    "name": "Albert Hall Museum (Central Museum), Jaipur",
+    "vernacular_names": {
+      "hi": "अल्बर्ट हॉल संग्रहालय, जयपुर"
+    },
+    "address": "Ram Niwas Garden, Adarsh Nagar",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302004",
+    "coordinates": {
+      "lat": 26.9116,
+      "lon": 75.8195
+    },
+    "category": "archaeology",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "09:00 - 17:00 & 19:00 - 22:00",
+      "closed_on": ["Holi"],
+      "timings": "Open Daily (9:00 AM – 5:00 PM, Night Viewing 7:00 PM – 10:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 40,
+      "foreign_inr": 300
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible Ground Floor",
+      "Ramps at Main Courtyard Entrance",
+      "Braille Orientation Signage"
+    ],
+    "contact": {
+      "phone": "+91 141 257 0099",
+      "website": "https://museumsrajasthan.gov.in"
+    },
+    "thumbnail_url": "/images/ashoka_lion_capital.jpg",
+    "gallery_urls": [
+      "/images/ashoka_lion_capital.jpg",
+      "/images/didarganj_yakshi.jpg"
+    ],
+    "description": "Oldest museum in Rajasthan, designed by Sir Samuel Swinton Jacob in Indo-Saracenic style, renowned for its 2,300-year-old Egyptian mummy Tutu, exquisite Persian carpets, miniature paintings, and brass metalwork.",
+    "artifact_count_approx": 24000,
+    "muse_collection_id": "c-jaipur-001",
+    "source": "Department of Archaeology & Museums, Rajasthan",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-ahm-001",
+    "name": "Calico Museum of Textiles, Ahmedabad",
+    "vernacular_names": {
+      "gu": "કેલિકો મ્યુઝિયમ ઓફ ટેક્સટાઇલ્સ, અમદાવાદ"
+    },
+    "address": "The Retreat, Airport Road, Shahibaug",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "pincode": "380004",
+    "coordinates": {
+      "lat": 23.0573,
+      "lon": 72.5937
+    },
+    "category": "textiles_crafts",
+    "governance": "private_trust",
+    "opening_hours": {
+      "schedule": "10:30 - 13:00",
+      "closed_on": ["Wednesday", "National Holidays"],
+      "timings": "Thursday to Tuesday (10:30 AM – 1:00 PM, Guided Tour Only)"
+    },
+    "entry_fee": {
+      "is_free": true,
+      "domestic_inr": 0,
+      "foreign_inr": 0
+    },
+    "accessibility_features": [
+      "Guided Tactile Textile Sessions",
+      "Wheelchair Accessible Courtyards"
+    ],
+    "contact": {
+      "phone": "+91 79 2286 8172",
+      "email": "calicomuseum@gmail.com",
+      "website": "https://calicomuseum.org"
+    },
+    "thumbnail_url": "/images/art-001.svg",
+    "gallery_urls": [
+      "/images/art-001.svg"
+    ],
+    "description": "World's foremost museum dedicated to Indian textiles, housing an incomparable collection of Mughal court textiles, Pichhwai temple hangings, tie-dyed Patola silks, and historic regional handloom techniques.",
+    "artifact_count_approx": 15000,
+    "muse_collection_id": "c-calico-001",
+    "source": "Sarabhai Foundation",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-trv-001",
+    "name": "Napier Museum, Thiruvananthapuram",
+    "vernacular_names": {
+      "ml": "നേപ്പിയർ മ്യൂസിയം, തിരുവനന്തപുരം"
+    },
+    "address": "Museum Compound, Kanakakkunnu, LMS Vellayambalam Road",
+    "city": "Thiruvananthapuram",
+    "state": "Kerala",
+    "pincode": "695033",
+    "coordinates": {
+      "lat": 8.5089,
+      "lon": 76.9554
+    },
+    "category": "art_sculpture",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 16:45",
+      "closed_on": ["Monday", "Wednesday Forenoon"],
+      "timings": "Tuesday to Sunday (10:00 AM – 4:45 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 200
+    },
+    "accessibility_features": [
+      "Ramped Entrance",
+      "Tactile Wood Carvings Display",
+      "Shaded Botanical Pathways"
+    ],
+    "contact": {
+      "phone": "+91 471 231 6275",
+      "website": "https://keralamuseum.gov.in"
+    },
+    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "gallery_urls": [
+      "/images/chola_nataraja.jpg"
+    ],
+    "description": "19th-century landmark exhibiting a unique Indo-Saracenic architectural blend of Gothic and Kerala wooden roof styling, featuring ancient bronze idols, Kathakali dance ornaments, and ivory carvings.",
+    "artifact_count_approx": 18000,
+    "muse_collection_id": "c-napier-001",
+    "source": "Department of Museums and Zoos, Kerala",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-pun-001",
+    "name": "Raja Dinkar Kelkar Museum, Pune",
+    "vernacular_names": {
+      "mr": "राजा दिनकर केळकर संग्रहालय, पुणे"
+    },
+    "address": "1377-78, Kamal Kunj, Natu Baug, Off Bajirao Road, Shukrawar Peth",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "pincode": "411002",
+    "coordinates": {
+      "lat": 18.5113,
+      "lon": 73.8542
+    },
+    "category": "art_sculpture",
+    "governance": "private_trust",
+    "opening_hours": {
+      "schedule": "10:00 - 17:30",
+      "closed_on": ["National Holidays"],
+      "timings": "Open Daily (10:00 AM – 5:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 100,
+      "foreign_inr": 400
+    },
+    "accessibility_features": [
+      "Elevator Access to Upper Galleries",
+      "Audio Tour Guide",
+      "Braille Labels"
+    ],
+    "contact": {
+      "phone": "+91 20 2448 2101",
+      "website": "https://rajakelkarmuseum.org"
+    },
+    "thumbnail_url": "/images/art-002.svg",
+    "gallery_urls": [
+      "/images/art-002.svg"
+    ],
+    "description": "Extraordinary 20,000-piece collection curated by Dr. D.G. Kelkar showcasing everyday 18th and 19th-century Indian craftsmanship, including Mastani Mahal reconstruction, musical instruments, carved wooden doors, and ornate lamps.",
+    "artifact_count_approx": 20000,
+    "muse_collection_id": "c-kelkar-001",
+    "source": "Raja Dinkar Kelkar Museum Trust",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-uda-001",
+    "name": "City Palace Museum, Udaipur",
+    "vernacular_names": {
+      "hi": "सिटी पैलेस संग्रहालय, उदयपुर"
+    },
+    "address": "Old City, City Palace Complex",
+    "city": "Udaipur",
+    "state": "Rajasthan",
+    "pincode": "313001",
+    "coordinates": {
+      "lat": 24.5764,
+      "lon": 73.6835
+    },
+    "category": "memorial_historic",
+    "governance": "private_trust",
+    "opening_hours": {
+      "schedule": "09:00 - 21:00",
+      "closed_on": ["Holi"],
+      "timings": "Open 7 Days a Week (9:00 AM – 9:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 400,
+      "foreign_inr": 400
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible Ground Courtyards",
+      "Battery-Operated Transfer Vehicles",
+      "Audio Guides in 7 Languages"
+    ],
+    "contact": {
+      "phone": "+91 294 241 9021",
+      "website": "https://eternalmewar.in"
+    },
+    "thumbnail_url": "/images/art-003.svg",
+    "gallery_urls": [
+      "/images/art-003.svg"
+    ],
+    "description": "Monumental 400-year-old palace complex overlooking Lake Pichola, housing the Maharana Mewar historical collections including royal armory, silver pavilions, Mewar miniature paintings, and crystal gallery.",
+    "artifact_count_approx": 32000,
+    "muse_collection_id": "c-udaipur-001",
+    "source": "Maharana of Mewar Charitable Foundation",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-shl-001",
+    "name": "Don Bosco Museum of Indigenous Cultures, Shillong",
+    "vernacular_names": {
+      "en": "Don Bosco Centre for Indigenous Cultures, Shillong"
+    },
+    "address": "Mawlai Phudmuri, Near Sacred Heart Church",
+    "city": "Shillong",
+    "state": "Meghalaya",
+    "pincode": "793008",
+    "coordinates": {
+      "lat": 25.5947,
+      "lon": 91.8906
+    },
+    "category": "multidisciplinary",
+    "governance": "private_trust",
+    "opening_hours": {
+      "schedule": "09:30 - 17:30",
+      "closed_on": ["Sunday", "National Holidays"],
+      "timings": "Monday to Saturday (9:30 AM – 5:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 100,
+      "foreign_inr": 250
+    },
+    "accessibility_features": [
+      "Elevator Serving All 7 Hexagonal Floors",
+      "Wheelchair Ramps",
+      "Tactile Exhibits"
+    ],
+    "contact": {
+      "phone": "+91 364 255 0457",
+      "website": "https://dbcic.org"
+    },
+    "thumbnail_url": "/images/art-004.svg",
+    "gallery_urls": [
+      "/images/art-004.svg"
+    ],
+    "description": "Asia's largest cultural museum dedicated to the indigenous tribal heritage of the Eight Sister States of North East India, featuring 17 specialty galleries of traditional attire, weaponry, crafts, and musical instruments.",
+    "artifact_count_approx": 16000,
+    "muse_collection_id": "c-donbosco-001",
+    "source": "Don Bosco Centre for Indigenous Cultures",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-pan-001",
+    "name": "Goa State Museum, Panaji",
+    "vernacular_names": {
+      "gom": "गोंय राज्य संग्रहालय, पणजी"
+    },
+    "address": "Old Secretariat Building, Adil Shah Palace, MG Road",
+    "city": "Panaji",
+    "state": "Goa",
+    "pincode": "403001",
+    "coordinates": {
+      "lat": 15.4989,
+      "lon": 73.8278
+    },
+    "category": "archaeology",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "09:30 - 17:30",
+      "closed_on": ["Saturday", "Sunday", "Public Holidays"],
+      "timings": "Monday to Friday (9:30 AM – 5:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": true,
+      "domestic_inr": 0,
+      "foreign_inr": 0
+    },
+    "accessibility_features": [
+      "Ground Floor Wheelchair Access",
+      "Braille Gallery Panels"
+    ],
+    "contact": {
+      "phone": "+91 832 243 5334",
+      "website": "https://museum.goa.gov.in"
+    },
+    "thumbnail_url": "/images/art-005.svg",
+    "gallery_urls": [
+      "/images/art-005.svg"
+    ],
+    "description": "Located in the historic Adil Shah Palace, preserving Goa's unique synthesis of Hindu Kadamba stone sculptures, Christian Indo-Portuguese sacred art, numismatics, and freedom struggle archives.",
+    "artifact_count_approx": 10000,
+    "muse_collection_id": "c-goa-001",
+    "source": "Directorate of Museum, Government of Goa",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-lot-001",
+    "name": "Archaeological Museum Lothal",
+    "vernacular_names": {
+      "gu": "પુરાતત્વીય સંગ્રહાલય લોથલ"
+    },
+    "address": "Harappan Port Site, Saragwala Village, Dholka Taluka",
+    "city": "Lothal",
+    "state": "Gujarat",
+    "pincode": "382230",
+    "coordinates": {
+      "lat": 22.5222,
+      "lon": 72.2494
+    },
+    "category": "archaeology",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "10:00 - 17:00",
+      "closed_on": ["Friday"],
+      "timings": "Saturday to Thursday (10:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 25,
+      "foreign_inr": 300
+    },
+    "accessibility_features": [
+      "Ramped Entrance to Museum Pavilion",
+      "Tactile Model of Harappan Tidal Dockyard"
+    ],
+    "contact": {
+      "phone": "+91 2714 266 220",
+      "website": "https://asi.nic.in"
+    },
+    "thumbnail_url": "/images/dancing_girl.jpg",
+    "gallery_urls": [
+      "/images/dancing_girl.jpg"
+    ],
+    "description": "Site museum at the world's earliest known tidal dockyard dating to 2400 BCE, exhibiting Harappan steatite seals, carnelian bead workshops, copper tools, painted pottery, and maritime trade weights.",
+    "artifact_count_approx": 5000,
+    "muse_collection_id": "c-lothal-001",
+    "source": "Archaeological Survey of India",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-jam-001",
+    "name": "Dogra Art Museum, Jammu",
+    "vernacular_names": {
+      "doi": "डोगरा आर्ट म्यूजियम, जम्मू"
+    },
+    "address": "Pink Hall, Mubarak Mandi Palace Complex",
+    "city": "Jammu",
+    "state": "Jammu and Kashmir",
+    "pincode": "180001",
+    "coordinates": {
+      "lat": 32.7412,
+      "lon": 74.8717
+    },
+    "category": "art_sculpture",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 16:30",
+      "closed_on": ["Monday", "State Holidays"],
+      "timings": "Tuesday to Sunday (10:00 AM – 4:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Courtyard Ramp Access",
+      "Guided Audio Tours"
+    ],
+    "contact": {
+      "phone": "+91 191 254 7545",
+      "website": "https://jkculture.nic.in"
+    },
+    "thumbnail_url": "/images/art-006.svg",
+    "gallery_urls": [
+      "/images/art-006.svg"
+    ],
+    "description": "Located inside the historic Mubarak Mandi Palace, housing the world's finest collection of Pahari miniature paintings from Basohli and Kangra schools, gold-plated illustrated manuscripts, and royal Dogra armory.",
+    "artifact_count_approx": 7200,
+    "muse_collection_id": "c-dogra-001",
+    "source": "Directorate of Archives, Archaeology & Museums, J&K",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-bho-001",
+    "name": "Indira Gandhi Rashtriya Manav Sangrahalaya (IGRMS), Bhopal",
+    "vernacular_names": {
+      "hi": "इंदिरा गांधी राष्ट्रीय मानव संग्रहालय, भोपाल"
+    },
+    "address": "Shamla Hills, Near Upper Lake",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "462013",
+    "coordinates": {
+      "lat": 23.2312,
+      "lon": 77.3860
+    },
+    "category": "multidisciplinary",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "10:00 - 18:00",
+      "closed_on": ["Monday", "National Holidays"],
+      "timings": "Tuesday to Sunday (10:00 AM – 6:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 50,
+      "foreign_inr": 200
+    },
+    "accessibility_features": [
+      "Battery-Operated Eco Carts",
+      "Paved Wheelchair Trails",
+      "Sensory Village Exhibit"
+    ],
+    "contact": {
+      "phone": "+91 755 266 1458",
+      "website": "https://igrms.gov.in"
+    },
+    "thumbnail_url": "/images/didarganj_yakshi.jpg",
+    "gallery_urls": [
+      "/images/didarganj_yakshi.jpg"
+    ],
+    "description": "Sprawling 200-acre open-air anthropological museum on Shamla Hills depicting the civilizational evolution of Indian humanity, featuring life-size tribal habitats, prehistoric rock art shelters, and ethnographic crafts.",
+    "artifact_count_approx": 35000,
+    "muse_collection_id": "c-igrms-001",
+    "source": "Ministry of Culture, Government of India",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-bhu-001",
+    "name": "Odisha State Museum, Bhubaneswar",
+    "vernacular_names": {
+      "or": "ଓଡ଼ିଶା ରାଜ୍ୟ ସଂଗ୍ରହାଳୟ, ଭୁବନେଶ୍ୱର"
+    },
+    "address": "BJB Nagar, Lewis Road",
+    "city": "Bhubaneswar",
+    "state": "Odisha",
+    "pincode": "751014",
+    "coordinates": {
+      "lat": 20.2546,
+      "lon": 85.8390
+    },
+    "category": "archaeology",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 17:00",
+      "closed_on": ["Monday", "Government Holidays"],
+      "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Ramp Access to Archaeology & Manuscript Halls",
+      "Audio Guides",
+      "Braille Labels"
+    ],
+    "contact": {
+      "phone": "+91 674 243 1597",
+      "website": "https://odishamuseum.nic.in"
+    },
+    "thumbnail_url": "/images/sultanganj_buddha.jpg",
+    "gallery_urls": [
+      "/images/sultanganj_buddha.jpg"
+    ],
+    "description": "Renowned for holding India's most extensive repository of ancient illustrated Palm Leaf Manuscripts, medieval Orissan stone sculpture galleries, copper-plate grants, and traditional tribal musical instruments.",
+    "artifact_count_approx": 56000,
+    "muse_collection_id": "c-odisha-001",
+    "source": "Odisha State Museum Directorate",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-guw-001",
+    "name": "Assam State Museum, Guwahati",
+    "vernacular_names": {
+      "as": "অসম ৰাজ্যিক সংগ্ৰহালয়, গুৱাহাটী"
+    },
+    "address": "South End of Dighalipukhuri Tank, Ambari",
+    "city": "Guwahati",
+    "state": "Assam",
+    "pincode": "781001",
+    "coordinates": {
+      "lat": 26.1866,
+      "lon": 91.7516
+    },
+    "category": "archaeology",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 17:00",
+      "closed_on": ["Monday", "2nd & 4th Saturday", "State Holidays"],
+      "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Ground Floor Wheelchair Accessible",
+      "Audio Guide Application",
+      "Braille Information Kits"
+    ],
+    "contact": {
+      "phone": "+91 361 254 0405",
+      "website": "https://museums.assam.gov.in"
+    },
+    "thumbnail_url": "/images/art-001.svg",
+    "gallery_urls": [
+      "/images/art-001.svg"
+    ],
+    "description": "Premier ethnographic and archaeological museum of Northeast India, showcasing 5th–12th century Kamarupa stone sculptures, Ahom royal weaponry, terracotta temple tiles, and tribal textile looms.",
+    "artifact_count_approx": 14000,
+    "muse_collection_id": "c-assam-001",
+    "source": "Directorate of Museums, Assam",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-koc-001",
+    "name": "Hill Palace Museum, Tripunithura, Kochi",
+    "vernacular_names": {
+      "ml": "ഹിൽ പാലസ് മ്യൂസിയം, തൃപ്പൂണിത്തുറ"
+    },
+    "address": "Hill Palace Road, Irumpanam, Tripunithura",
+    "city": "Kochi",
+    "state": "Kerala",
+    "pincode": "682301",
+    "coordinates": {
+      "lat": 9.9529,
+      "lon": 76.3639
+    },
+    "category": "memorial_historic",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "09:30 - 16:30",
+      "closed_on": ["Monday"],
+      "timings": "Tuesday to Sunday (9:30 AM – 4:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 30,
+      "foreign_inr": 300
+    },
+    "accessibility_features": [
+      "Ramp Access to Main Palace Ground Level",
+      "Guided Tour Assist",
+      "Spacious Botanical Grounds"
+    ],
+    "contact": {
+      "phone": "+91 484 277 7995",
+      "website": "https://keralatourism.org"
+    },
+    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "gallery_urls": [
+      "/images/chola_nataraja.jpg"
+    ],
+    "description": "Largest archaeological museum in Kerala, comprising a 54-acre complex of 49 traditional buildings built in 1865, exhibiting the royal throne and gold crown of the Kochi Rajas, Kudakkallu megaliths, and rare stone sculptures.",
+    "artifact_count_approx": 19000,
+    "muse_collection_id": "c-kochi-001",
+    "source": "Centre for Heritage Studies, Kerala",
+    "last_updated": "2026-08-18T10:00:00Z"
   }
 ]
