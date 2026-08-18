@@ -234,7 +234,8 @@ export function findNearestMuseumForPincode(pincode: string): {
   searchedPin: string;
   regionName: string;
 } | null {
-  const cleanPin = (pincode || '').trim().replace(/\D/g, '');
+  if (typeof pincode !== 'string') return null;
+  const cleanPin = pincode.trim();
   if (!/^[1-9][0-9]{5}$/.test(cleanPin)) {
     return null;
   }

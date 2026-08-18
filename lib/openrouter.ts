@@ -26,8 +26,8 @@ export async function callOpenRouter(
     throw new Error('OPENROUTER_API_KEY is not set');
   }
 
-  // Default to OpenRouter Free tier model
-  const model = options.model || 'google/gemini-2.0-flash-exp:free';
+  // Default to OpenRouter Free router model
+  const model = options.model || process.env.OPENROUTER_MODEL || 'openrouter/free';
 
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',

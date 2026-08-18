@@ -396,7 +396,7 @@ CRITICAL DOCENT INSTRUCTIONS:
         { role: 'user', content: userQuery },
       ];
 
-      const model = process.env.OPENROUTER_MODEL || 'google/gemini-2.0-flash-exp:free';
+      const model = process.env.OPENROUTER_MODEL || 'openrouter/free';
       const aiReply = await callOpenRouter(openRouterMessages, {
         model,
         temperature: 0.3,
