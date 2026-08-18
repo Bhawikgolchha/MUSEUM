@@ -14,7 +14,7 @@ async function fetchUrl(urlPath: string, options: RequestInit = {}): Promise<{ s
   return { status: res.status, text };
 }
 
-async function waitForServer(retries = 30): Promise<boolean> {
+async function waitForServer(retries = 60): Promise<boolean> {
   for (let i = 0; i < retries; i++) {
     try {
       const res = await fetch(`${BASE_URL}/`);
@@ -32,26 +32,32 @@ async function waitForServer(retries = 30): Promise<boolean> {
 async function runVerification() {
   console.log('--- Starting Next.js Production Server for Route Verification ---');
   
+  let serverLogs = '';
+  const isWin = process.platform === 'win32';
   const serverProc: ChildProcess = spawn(
-    'npx',
-    ['next', 'start', '-p', String(PORT)],
+    isWin ? 'cmd.exe' : 'npx',
+    isWin ? ['/c', 'npx next start -p 3012'] : ['next', 'start', '-p', String(PORT)],
     {
-      shell: true,
       stdio: 'pipe',
       cwd: process.cwd(),
     }
   );
 
   serverProc.stdout?.on('data', (d) => {
-    // console.log(`[next stdout] ${d.toString()}`);
+    serverLogs += d.toString();
   });
   serverProc.stderr?.on('data', (d) => {
-    // console.error(`[next stderr] ${d.toString()}`);
+    serverLogs += d.toString();
   });
 
   const isReady = await waitForServer();
   if (!isReady) {
-    serverProc.kill();
+    if (process.platform === 'win32') {
+      spawn('taskkill', ['/pid', String(serverProc.pid), '/f', '/t']);
+    } else {
+      serverProc.kill('SIGTERM');
+    }
+    console.error('Server output:\n', serverLogs);
     throw new Error(`Server failed to start on port ${PORT} within timeout`);
   }
 
