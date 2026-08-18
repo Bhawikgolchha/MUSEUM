@@ -44,56 +44,56 @@ const CULTURAL_REGIONS: CulturalRegion[] = [
   {
     id: 'himalayan',
     name: 'Himalayan Frontier',
-    subtitle: 'Kashmir, Ladakh, Kangra, Garhwal',
-    eras: 'Namgyal · Karkota · Katyuri',
-    color: '#3B82F6',
-    path: 'M 220, 85 Q 310, 20 375, 55 C 405, 80 405, 110 395, 160 C 385, 180 375, 200 405, 220 Q 320, 210 242, 195 C 248, 175 240, 150 240, 135 C 225, 125 215, 105 220, 85 Z',
-    labelPoint: { x: 320, y: 120 },
+    subtitle: 'Kashmir, Ladakh, Himachal, Uttarakhand',
+    eras: 'Namgyal · Karkota · Katyuri · Dogra',
+    color: '#2563EB',
+    path: 'M 250, 150 C 270, 90 315, 30 360, 45 C 410, 60 415, 120 405, 165 C 390, 200 435, 255 420, 280 C 375, 250 330, 230 290, 220 C 255, 200 240, 180 250, 150 Z',
+    labelPoint: { x: 330, y: 130 },
   },
   {
     id: 'indus_sapta',
     name: 'Indus & Sapta Sindhu',
-    subtitle: 'Punjab, Haryana, Rajasthan, Thar',
-    eras: 'Harappan · Vedic Kuru · Rajput',
+    subtitle: 'Punjab, Haryana, Rajasthan, Thar & Gujarat',
+    eras: 'Harappan · Vedic Kuru · Gurjara-Pratihara · Rajput',
     color: '#9C6644',
-    path: 'M 115, 345 C 135, 315 170, 290 205, 255 C 220, 235 235, 215 405, 220 Q 380, 330 330, 420 Q 230, 460 160, 490 C 130, 500 70, 490 20, 460 C 35, 440 70, 430 115, 430 Z',
-    labelPoint: { x: 190, y: 360 },
+    path: 'M 290, 220 C 330, 230 360, 250 350, 310 C 330, 380 280, 430 240, 465 C 190, 500 130, 560 65, 505 C 35, 470 60, 440 95, 400 C 145, 330 200, 270 250, 220 Z',
+    labelPoint: { x: 190, y: 350 },
   },
   {
     id: 'gangetic',
     name: 'Gangetic Heartland',
-    subtitle: 'Aryavarta, Magadha, Awadh, Bengal',
-    eras: 'Maurya · Gupta · Pala · Mughal',
+    subtitle: 'Aryavarta, Magadha, Awadh, Bengal & Odisha',
+    eras: 'Maurya · Sunga · Gupta · Pala · Sena · Mughal',
     color: '#D97706',
-    path: 'M 405, 220 C 425, 235 450, 245 580, 345 C 630, 355 685, 350 715, 350 Q 730, 410 710, 490 Q 640, 520 540, 500 Q 420, 480 330, 420 Q 380, 330 405, 220 Z',
-    labelPoint: { x: 530, y: 380 },
+    path: 'M 350, 310 C 400, 290 440, 280 490, 310 C 560, 340 640, 340 705, 330 C 715, 370 700, 440 690, 485 C 640, 525 570, 550 500, 480 C 430, 440 375, 375 350, 310 Z',
+    labelPoint: { x: 520, y: 380 },
   },
   {
     id: 'deccan',
     name: 'Deccan Plateau',
-    subtitle: 'Maharashtra, Northern Karnataka, Telangana',
-    eras: 'Satavahana · Rashtrakuta · Chalukya · Maratha',
+    subtitle: 'Maharashtra, Telangana, North Karnataka, Andhra',
+    eras: 'Satavahana · Rashtrakuta · Chalukya · Kakatiya · Maratha',
     color: '#1F5F5B',
-    path: 'M 160, 490 Q 230, 460 330, 420 Q 420, 480 540, 500 Q 640, 520 710, 490 C 715, 535 640, 555 580, 615 C 555, 645 520, 670 490, 690 Q 350, 720 220, 660 C 178, 620 175, 580 170, 535 C 145, 535 105, 565 85, 555 C 65, 545 50, 525 45, 508 Q 110, 490 160, 490 Z',
-    labelPoint: { x: 380, y: 590 },
+    path: 'M 175, 565 C 240, 465 350, 440 500, 480 C 585, 555 530, 630 465, 685 C 380, 715 285, 690 200, 670 C 175, 630 165, 590 175, 565 Z',
+    labelPoint: { x: 350, y: 580 },
   },
   {
     id: 'dravidian',
     name: 'Dravidian Heartland',
-    subtitle: 'Tamil Nadu, Kerala, Southern Karnataka',
-    eras: 'Pallava · Chola · Pandya · Chera · Vijayanagara',
+    subtitle: 'Tamil Nadu, Kerala, South Karnataka',
+    eras: 'Sangam · Pallava · Imperial Chola · Pandya · Chera · Hoysala',
     color: '#7C3AED',
-    path: 'M 220, 660 Q 350, 720 490, 690 C 460, 715 435, 755 425, 790 C 420, 815 410, 880 385, 945 C 365, 955 335, 981 C 305, 950 245, 820 C 215, 755 210, 730 220, 660 Z',
-    labelPoint: { x: 340, y: 800 },
+    path: 'M 200, 670 C 285, 690 380, 715 465, 685 C 445, 745 425, 820 410, 860 C 370, 920 335, 950 310, 920 C 270, 840 220, 750 200, 670 Z',
+    labelPoint: { x: 330, y: 790 },
   },
   {
     id: 'northeast',
     name: 'North-East & Brahmaputra',
-    subtitle: 'Assam, Meghalaya, Seven Sisters',
-    eras: 'Kamarupa · Ahom · Dimasa · Manikya',
+    subtitle: 'Assam, Meghalaya, Arunachal, Seven Sisters',
+    eras: 'Kamarupa · Ahom · Dimasa · Koch · Manikya',
     color: '#059669',
-    path: 'M 715, 350 C 740, 355 780, 355 810, 345 C 845, 310 880, 295 950, 280 C 985, 315 945, 365 925, 385 C 895, 435 880, 480 845, 520 C 825, 475 755, 415 720, 430 C 710, 470 710, 510 715, 535 Q 715, 430 715, 350 Z',
-    labelPoint: { x: 840, y: 390 },
+    path: 'M 705, 330 C 730, 315 780, 325 820, 280 C 880, 250 945, 275 930, 350 C 900, 410 860, 475 820, 420 C 780, 400 730, 415 705, 330 Z',
+    labelPoint: { x: 825, y: 355 },
   },
 ];
 
@@ -120,45 +120,44 @@ export default function IndiaMuseumMap({
   const [zoom, setZoom] = useState<number>(1);
   const [pan, setPan] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState<boolean>(false);
-  const [showCulturalRegions, setShowCulturalRegions] = useState<boolean>(true);
+  const [showCulturalRegions, setShowCulturalRegions] = useState<boolean>(false);
   const [hoveredRegionId, setHoveredRegionId] = useState<string | null>(null);
   const [selectedRegionId, setSelectedRegionId] = useState<string | null>(null);
 
   const dragStartRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Calibrated geographic bounds for Indian Subcontinent (viewBox 0 0 1000 1000):
+  // Geographic projection bounds for Indian Subcontinent:
+  // Longitude: 68.0°E to 97.5°E (Span: 29.5°)
   // Latitude: 7.0°N to 37.5°N (Span: 30.5°)
-  // Longitude: 67.0°E to 97.5°E (Span: 30.5°)
+  const minLon = 68.0;
+  const maxLon = 97.5;
   const minLat = 7.0;
   const maxLat = 37.5;
-  const minLon = 67.0;
-  const maxLon = 97.5;
 
   const projectToPercent = useCallback((lat: number, lon: number) => {
     const x = ((lon - minLon) / (maxLon - minLon)) * 100;
     // Invert Y because latitude increases northward (upward)
     const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
     return {
-      x: Math.max(1, Math.min(99, x)),
-      y: Math.max(1, Math.min(99, y)),
+      x: Math.max(2, Math.min(98, x)),
+      y: Math.max(2, Math.min(98, y)),
     };
   }, []);
 
-  // When centerCoordinates changes (e.g. from GPS or Focus click), smoothly pan to it
+  // Smooth center on coordinate updates
   useEffect(() => {
     if (centerCoordinates && containerRef.current) {
       const { x: pctX, y: pctY } = projectToPercent(centerCoordinates.lat, centerCoordinates.lon);
       const width = containerRef.current.clientWidth;
       const height = containerRef.current.clientHeight;
-      // Calculate pixel offset relative to center (50%, 50%)
       const targetPanX = ((50 - pctX) / 100) * width * zoom;
       const targetPanY = ((50 - pctY) / 100) * height * zoom;
       setPan({ x: targetPanX, y: targetPanY });
     }
   }, [centerCoordinates, projectToPercent, zoom]);
 
-  // Zoom handlers (1x to 4x)
+  // Zoom controls (1x to 4x)
   const handleZoomIn = () => {
     setZoom((prev) => Math.min(4, Number((prev + 0.5).toFixed(2))));
   };
@@ -206,7 +205,7 @@ export default function IndiaMuseumMap({
     setIsDragging(false);
   };
 
-  // Touch pan handlers for mobile/tablet
+  // Touch pan handlers
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     if (e.touches.length === 1) {
       setIsDragging(true);
@@ -229,7 +228,6 @@ export default function IndiaMuseumMap({
     setIsDragging(false);
   };
 
-  // Handle region click to focus and filter
   const handleRegionClick = (region: CulturalRegion) => {
     if (selectedRegionId === region.id) {
       setSelectedRegionId(null);
@@ -254,23 +252,23 @@ export default function IndiaMuseumMap({
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className={`relative w-full h-[520px] sm:h-[580px] lg:h-[700px] rounded-2xl overflow-hidden bg-[#F4EFE6] border border-[var(--rule)] shadow-inner flex flex-col justify-between select-none ${
+      className={`relative w-full h-[540px] sm:h-[620px] lg:h-[720px] rounded-3xl overflow-hidden bg-[#FAF7F0] border border-[var(--hairline-strong)] shadow-museum flex flex-col justify-between select-none ${
         isDragging ? 'cursor-grabbing' : 'cursor-grab'
       }`}
       aria-label="Interactive India Spatial Heritage Map Canvas"
     >
-      {/* Topographic Background Grid Pattern */}
+      {/* Background Topographic Dot Pattern */}
       <div
-        className="absolute inset-0 opacity-20 pointer-events-none"
+        className="absolute inset-0 opacity-25 pointer-events-none"
         style={{
           backgroundImage:
-            'radial-gradient(#1F5F5B 1.2px, transparent 1.2px), radial-gradient(#1F5F5B 1.2px, #F4EFE6 1.2px)',
+            'radial-gradient(#1F5F5B 1px, transparent 1px), radial-gradient(#1F5F5B 1px, #FAF7F0 1px)',
           backgroundSize: '24px 24px',
           backgroundPosition: '0 0, 12px 12px',
         }}
       />
 
-      {/* Shared Transformed Canvas Layer for SVG Vector Map & Geographic Markers */}
+      {/* Transformed Map & Markers Canvas */}
       <div
         className="absolute inset-0 origin-center transition-transform duration-150 ease-out"
         style={{
@@ -278,124 +276,199 @@ export default function IndiaMuseumMap({
           transformOrigin: '50% 50%',
         }}
       >
-        {/* Authentic High-Fidelity SVG Map of India (1000 x 1000 ViewBox) */}
+        {/* Authoritative High-Precision SVG Map of India (1000 x 1000 ViewBox) */}
         <svg
           viewBox="0 0 1000 1000"
-          preserveAspectRatio="none"
           className="absolute inset-0 w-full h-full"
-          style={{ filter: 'drop-shadow(0 8px 24px rgba(31,95,91,0.08))' }}
+          style={{ filter: 'drop-shadow(0 12px 32px rgba(31,95,91,0.08))' }}
         >
           <defs>
-            {/* Cartographic Landmass Gradient */}
-            <linearGradient id="indiaLandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#EBE3D6" stopOpacity="0.96" />
-              <stop offset="45%" stopColor="#E4DAC8" stopOpacity="0.96" />
-              <stop offset="100%" stopColor="#DCCEBB" stopOpacity="0.96" />
+            {/* Landmass Shading Gradient */}
+            <linearGradient id="indiaLandfill" x1="15%" y1="5%" x2="85%" y2="95%">
+              <stop offset="0%" stopColor="#F5EFE4" />
+              <stop offset="50%" stopColor="#EDE5D6" />
+              <stop offset="100%" stopColor="#E2D8C5" />
             </linearGradient>
 
-            {/* River Glow Gradient */}
-            <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#1F5F5B" stopOpacity="0.65" />
-              <stop offset="100%" stopColor="#2A7B76" stopOpacity="0.85" />
+            {/* Sacred Rivers Gradient */}
+            <linearGradient id="riverFlow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#1F5F5B" stopOpacity="0.75" />
+              <stop offset="100%" stopColor="#2A7B76" stopOpacity="0.9" />
             </linearGradient>
 
-            {/* Patina Highlight Filter */}
-            <filter id="patinaGlow" x="-20%" y="-20%" width="140%" height="140%">
-              <feGaussianBlur stdDeviation="3" result="blur" />
+            <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="2.5" result="blur" />
               <feComposite in="SourceGraphic" in2="blur" operator="over" />
             </filter>
           </defs>
 
-          {/* 1. Geographic Graticule Coordinate Lines & Lat/Long References */}
+          {/* 1. Geographic Graticule Coordinate Grid */}
           <g
             className="text-[var(--ink-muted)] pointer-events-none"
-            opacity="0.16"
+            opacity="0.18"
             stroke="currentColor"
-            strokeWidth="0.8"
+            strokeWidth="0.75"
             strokeDasharray="4,4"
           >
-            {/* Longitude Meridians (70°E, 75°E, 80°E, 85°E, 90°E, 95°E) */}
-            <line x1="98.4" y1="30" x2="98.4" y2="970" />
-            <line x1="262.3" y1="30" x2="262.3" y2="970" />
-            <line x1="426.2" y1="30" x2="426.2" y2="970" />
-            <line x1="590.2" y1="30" x2="590.2" y2="970" />
-            <line x1="754.1" y1="30" x2="754.1" y2="970" />
-            <line x1="918.0" y1="30" x2="918.0" y2="970" />
+            {/* Longitude Meridians: 70°E, 75°E, 80°E, 85°E, 90°E, 95°E */}
+            <line x1="68" y1="20" x2="68" y2="980" />
+            <line x1="237" y1="20" x2="237" y2="980" />
+            <line x1="407" y1="20" x2="407" y2="980" />
+            <line x1="576" y1="20" x2="576" y2="980" />
+            <line x1="746" y1="20" x2="746" y2="980" />
+            <line x1="915" y1="20" x2="915" y2="980" />
 
-            {/* Latitude Parallels (35°N, 30°N, 25°N, 20°N, 15°N, 10°N) */}
-            <line x1="30" y1="82.0" x2="970" y2="82.0" />
-            <line x1="30" y1="245.9" x2="970" y2="245.9" />
-            <line x1="30" y1="409.8" x2="970" y2="409.8" />
-            <line x1="30" y1="573.8" x2="970" y2="573.8" />
-            <line x1="30" y1="737.7" x2="970" y2="737.7" />
-            <line x1="30" y1="901.6" x2="970" y2="901.6" />
+            {/* Latitude Parallels: 35°N, 30°N, 25°N, 20°N, 15°N, 10°N */}
+            <line x1="20" y1="82" x2="980" y2="82" />
+            <line x1="20" y1="246" x2="980" y2="246" />
+            <line x1="20" y1="410" x2="980" y2="410" />
+            <line x1="20" y1="574" x2="980" y2="574" />
+            <line x1="20" y1="738" x2="980" y2="738" />
+            <line x1="20" y1="902" x2="980" y2="902" />
 
-            {/* Tropic of Cancer (23.5° N = y: 459.0) */}
+            {/* Tropic of Cancer (23.5° N) */}
             <line
-              x1="30"
-              y1="459.0"
-              x2="970"
-              y2="459.0"
+              x1="20"
+              y1="459"
+              x2="980"
+              y2="459"
               stroke="#9C6644"
               strokeWidth="1.2"
               strokeDasharray="6,4"
-              opacity="0.4"
+              opacity="0.45"
             />
           </g>
 
-          {/* Graticule Text Labels */}
+          {/* Graticule Labels */}
           <g
-            className="text-[var(--ink-muted)] fill-current pointer-events-none"
-            opacity="0.38"
-            fontSize="9"
-            fontFamily="monospace"
+            className="text-[var(--ink-muted)] fill-current pointer-events-none select-none font-mono text-[9px]"
+            opacity="0.45"
           >
-            <text x="98.4" y="24" textAnchor="middle">70°E</text>
-            <text x="262.3" y="24" textAnchor="middle">75°E</text>
-            <text x="426.2" y="24" textAnchor="middle">80°E</text>
-            <text x="590.2" y="24" textAnchor="middle">85°E</text>
-            <text x="754.1" y="24" textAnchor="middle">90°E</text>
-            <text x="918.0" y="24" textAnchor="middle">95°E</text>
+            <text x="68" y="24" textAnchor="middle">70°E</text>
+            <text x="237" y="24" textAnchor="middle">75°E</text>
+            <text x="407" y="24" textAnchor="middle">80°E</text>
+            <text x="576" y="24" textAnchor="middle">85°E</text>
+            <text x="746" y="24" textAnchor="middle">90°E</text>
+            <text x="915" y="24" textAnchor="middle">95°E</text>
 
-            <text x="26" y="85" textAnchor="end">35°N</text>
-            <text x="26" y="249" textAnchor="end">30°N</text>
-            <text x="26" y="413" textAnchor="end">25°N</text>
-            <text x="26" y="577" textAnchor="end">20°N</text>
-            <text x="26" y="741" textAnchor="end">15°N</text>
-            <text x="26" y="905" textAnchor="end">10°N</text>
+            <text x="22" y="85" textAnchor="end">35°N</text>
+            <text x="22" y="249" textAnchor="end">30°N</text>
+            <text x="22" y="413" textAnchor="end">25°N</text>
+            <text x="22" y="577" textAnchor="end">20°N</text>
+            <text x="22" y="741" textAnchor="end">15°N</text>
+            <text x="22" y="905" textAnchor="end">10°N</text>
 
-            <text x="975" y="462" textAnchor="end" fill="#9C6644" opacity="0.8">
+            <text x="975" y="455" textAnchor="end" fill="#9C6644" fontWeight="bold">
               Tropic of Cancer (23.5°N)
             </text>
           </g>
 
-          {/* 2. Authentic Vector Outline of Mainland India */}
+          {/* 2. Official Boundary Contour of India (Mainland Territory) */}
           <path
-            d="M 310, 13 C 330, 25 350, 45 375, 55 C 390, 60 405, 80 405, 110 C 400, 125 385, 140 395, 160 C 385, 180 375, 200 405, 220 C 425, 235 440, 240 450, 245 C 480, 270 530, 310 580, 345 C 630, 355 660, 360 685, 350 C 685, 340 690, 315 705, 315 C 715, 315 715, 335 715, 350 C 740, 355 780, 355 810, 345 C 820, 335 845, 310 880, 295 C 920, 285 950, 280 985, 315 C 965, 340 945, 365 925, 385 C 905, 405 895, 435 890, 455 C 880, 480 860, 515 845, 520 C 835, 500 825, 475 800, 470 C 780, 455 750, 440 755, 415 C 765, 395 735, 395 720, 430 C 710, 470 710, 510 715, 535 C 680, 535 650, 535 640, 555 C 625, 575 605, 595 580, 615 C 555, 645 520, 670 490, 690 C 460, 715 435, 755 425, 790 C 420, 815 415, 845 410, 880 C 405, 905 400, 930 385, 945 C 365, 955 350, 965 335, 981 C 320, 970 305, 950 292, 920 C 280, 885 260, 850 245, 820 C 230, 785 215, 755 210, 730 C 200, 700 185, 660 178, 620 C 175, 580 175, 550 170, 535 C 160, 520 150, 520 145, 535 C 130, 555 105, 565 85, 555 C 65, 545 50, 525 45, 508 C 55, 495 80, 485 100, 485 C 80, 485 45, 480 20, 460 C 35, 440 70, 430 115, 430 C 120, 400 110, 365 115, 345 C 135, 315 170, 290 205, 255 C 220, 235 235, 215 242, 195 C 248, 175 240, 150 240, 135 C 225, 125 215, 105 220, 85 C 230, 60 270, 35 310, 13 Z"
-            fill="url(#indiaLandGradient)"
+            d="M 325, 20
+               C 340, 25 365, 45 378, 55
+               C 395, 70 412, 105 408, 140
+               C 405, 160 385, 185 395, 210
+               C 405, 225 430, 240 440, 250
+               C 465, 275 520, 310 575, 340
+               C 620, 350 660, 355 690, 345
+               C 695, 335 700, 310 710, 310
+               C 720, 310 722, 328 725, 340
+               C 745, 345 780, 348 810, 338
+               C 825, 325 850, 295 885, 275
+               C 920, 260 955, 268 970, 290
+               C 955, 320 935, 355 918, 380
+               C 900, 405 888, 435 880, 460
+               C 870, 490 850, 520 835, 525
+               C 820, 500 810, 465 785, 460
+               C 765, 445 735, 430 740, 405
+               C 750, 385 725, 385 710, 420
+               C 700, 460 700, 500 705, 525
+               C 675, 525 645, 525 635, 545
+               C 620, 565 600, 585 575, 605
+               C 550, 635 515, 660 485, 680
+               C 455, 705 430, 745 420, 780
+               C 415, 805 410, 835 405, 870
+               C 400, 895 395, 920 380, 935
+               C 360, 948 345, 958 330, 970
+               C 315, 960 300, 940 288, 910
+               C 275, 875 255, 840 240, 810
+               C 225, 775 210, 745 205, 720
+               C 195, 690 180, 650 174, 610
+               C 170, 570 170, 540 165, 525
+               C 155, 510 145, 510 140, 525
+               C 125, 545 100, 555 80, 545
+               C 60, 535 45, 515 40, 498
+               C 50, 485 75, 475 95, 475
+               C 75, 475 40, 470 15, 450
+               C 30, 430 65, 420 110, 420
+               C 115, 390 105, 355 110, 335
+               C 130, 305 165, 280 200, 245
+               C 215, 225 230, 205 238, 185
+               C 244, 165 236, 140 236, 125
+               C 220, 115 210, 95 215, 75
+               C 225, 50 265, 28 305, 15
+               Z"
+            fill="url(#indiaLandfill)"
             stroke="#1F5F5B"
-            strokeWidth="2.4"
+            strokeWidth="2.5"
             strokeLinejoin="round"
             strokeLinecap="round"
           />
 
-          {/* 3. Island Territories (Andaman & Nicobar Islands, Lakshadweep) */}
-          <g fill="#E4DAC8" stroke="#1F5F5B" strokeWidth="1.8" strokeLinejoin="round">
-            {/* Andaman & Nicobar Archipelago */}
-            <path d="M 846, 795 C 852, 795 854, 825 848, 835 C 842, 835 840, 805 846, 795 Z" />
-            <path d="M 840, 850 C 846, 850 847, 875 841, 878 C 836, 878 835, 855 840, 850 Z" />
-            <path d="M 832, 888 C 838, 888 838, 902 833, 902 C 828, 902 828, 888 832, 888 Z" />
-            <path d="M 842, 938 C 847, 938 847, 948 842, 948 C 837, 948 837, 938 842, 938 Z" />
-            <path d="M 872, 975 C 880, 975 882, 995 874, 995 C 868, 995 866, 980 872, 975 Z" />
+          {/* 3. Internal State & Territorial Demarcations */}
+          <g stroke="#1F5F5B" strokeWidth="0.8" strokeOpacity="0.32" fill="none" strokeDasharray="3,3">
+            {/* Jammu, Kashmir & Ladakh */}
+            <path d="M 238, 185 C 280, 180 340, 190 395, 210" />
+            <path d="M 320, 45 C 330, 100 320, 150 335, 200" />
+            
+            {/* Punjab, Haryana & Rajasthan */}
+            <path d="M 200, 245 C 240, 260 280, 270 330, 275" />
+            <path d="M 240, 260 C 250, 330 260, 400 240, 465" />
+            <path d="M 110, 335 C 160, 350 210, 380 240, 465" />
 
-            {/* Lakshadweep Archipelago */}
-            <path d="M 172, 858 C 176, 858 176, 866 172, 866 C 168, 866 168, 858 172, 858 Z" />
-            <path d="M 170, 892 C 176, 892 176, 904 171, 904 C 166, 904 166, 892 170, 892 Z" />
-            <path d="M 205, 888 C 210, 888 210, 915 204, 915 C 199, 915 199, 888 205, 888 Z" />
-            <path d="M 182, 968 C 187, 968 187, 978 182, 978 C 177, 978 177, 968 182, 968 Z" />
+            {/* Gujarat (Kathiawar / Saurashtra & Kutch) */}
+            <path d="M 110, 420 C 130, 450 145, 490 165, 525" />
+            <path d="M 40, 498 C 80, 505 120, 515 140, 525" />
+
+            {/* Uttar Pradesh, Bihar, Gangetic Plain */}
+            <path d="M 330, 275 C 370, 310 430, 340 500, 360" />
+            <path d="M 500, 360 C 560, 370 630, 380 690, 345" />
+
+            {/* Central India & Deccan (Madhya Pradesh, Maharashtra) */}
+            <path d="M 240, 465 C 320, 470 410, 475 500, 480" />
+            <path d="M 170, 570 C 260, 580 370, 590 485, 610" />
+
+            {/* South India (Karnataka, Andhra, Telangana, Tamil Nadu, Kerala) */}
+            <path d="M 174, 610 C 230, 630 310, 640 405, 650" />
+            <path d="M 205, 720 C 280, 735 360, 745 420, 780" />
+            <path d="M 240, 810 C 290, 825 340, 835 405, 870" />
+            <path d="M 288, 910 C 310, 920 340, 930 380, 935" />
+
+            {/* Odisha, Bengal, North East */}
+            <path d="M 575, 605 C 600, 570 620, 530 635, 545" />
+            <path d="M 690, 345 C 700, 380 705, 450 705, 525" />
+            <path d="M 725, 340 C 760, 360 800, 375 880, 460" />
           </g>
 
-          {/* 4. Cultural Historical Regions Layer (Indus, Gangetic, Deccan, Dravidian, Himalayan, North-East) */}
+          {/* 4. Island Territories (Andaman & Nicobar Islands, Lakshadweep) */}
+          <g fill="#EDE5D6" stroke="#1F5F5B" strokeWidth="1.8" strokeLinejoin="round">
+            {/* Andaman Archipelago */}
+            <path d="M 850, 795 C 856, 795 858, 825 852, 835 C 846, 835 844, 805 850, 795 Z" />
+            <path d="M 844, 850 C 850, 850 851, 875 845, 878 C 840, 878 839, 855 844, 850 Z" />
+            <path d="M 836, 888 C 842, 888 842, 902 837, 902 C 832, 902 832, 888 836, 888 Z" />
+            {/* Nicobar Archipelago */}
+            <path d="M 846, 938 C 851, 938 851, 948 846, 948 C 841, 948 841, 938 846, 938 Z" />
+            <path d="M 876, 975 C 884, 975 886, 995 878, 995 C 872, 995 870, 980 876, 975 Z" />
+
+            {/* Lakshadweep Archipelago */}
+            <circle cx="170" cy="855" r="3.5" />
+            <circle cx="168" cy="890" r="3.5" />
+            <circle cx="202" cy="885" r="4.5" />
+            <circle cx="180" cy="965" r="3.5" />
+          </g>
+
+          {/* 5. Cultural Historical Regions Layer (Toggleable) */}
           {showCulturalRegions && (
             <g className="transition-opacity duration-300">
               {CULTURAL_REGIONS.map((region) => {
@@ -414,13 +487,12 @@ export default function IndiaMuseumMap({
                     <path
                       d={region.path}
                       fill={region.color}
-                      fillOpacity={isActive ? 0.22 : 0.08}
+                      fillOpacity={isActive ? 0.18 : 0.06}
                       stroke={region.color}
                       strokeWidth={isActive ? 2 : 1}
-                      strokeDasharray={isActive ? 'none' : '5,4'}
+                      strokeDasharray={isActive ? 'none' : '4,4'}
                       className="transition-all duration-200"
                     />
-                    {/* Region Label */}
                     <text
                       x={region.labelPoint.x}
                       y={region.labelPoint.y}
@@ -430,8 +502,8 @@ export default function IndiaMuseumMap({
                       fontFamily="serif"
                       fontWeight="bold"
                       letterSpacing="0.06em"
-                      className="pointer-events-none transition-all duration-200"
-                      style={{ textShadow: '0 1px 3px rgba(255,255,255,0.8)' }}
+                      className="pointer-events-none select-none transition-all duration-200"
+                      style={{ textShadow: '0 1px 4px rgba(255,255,255,0.9)' }}
                     >
                       {region.name.toUpperCase()}
                     </text>
@@ -441,84 +513,70 @@ export default function IndiaMuseumMap({
             </g>
           )}
 
-          {/* 5. Major Historic Heritage River Overlays (7 Sacred Arteries + Indus) */}
-          <g fill="none" stroke="url(#riverGradient)" strokeLinecap="round" strokeLinejoin="round" className="pointer-events-none">
-            {/* 1. Sacred Ganga */}
+          {/* 6. Major Historic Heritage Rivers */}
+          <g fill="none" stroke="url(#riverFlow)" strokeLinecap="round" strokeLinejoin="round" className="pointer-events-none opacity-85">
+            {/* Ganga */}
             <path
               id="river-ganga"
-              d="M 390, 216 Q 365, 248 437, 362 T 487, 395 T 524, 398 T 594, 390 T 655, 403 T 701, 416 T 725, 490"
+              d="M 390, 216 Q 410, 270 470, 330 T 540, 365 T 620, 375 T 680, 420 T 700, 490"
               strokeWidth="2.2"
-              strokeOpacity="0.8"
             />
-            {/* 2. Yamuna */}
+            {/* Yamuna */}
             <path
               id="river-yamuna"
-              d="M 377, 213 Q 335, 291 361, 338 T 487, 395"
+              d="M 360, 210 Q 340, 260 360, 310 T 430, 360 T 540, 365"
               strokeWidth="1.8"
-              strokeOpacity="0.75"
             />
-            {/* 3. Mighty Brahmaputra */}
+            {/* Brahmaputra */}
             <path
               id="river-brahmaputra"
-              d="M 900, 295 Q 915, 330 811, 372 T 753, 377 T 760, 460"
+              d="M 940, 280 Q 880, 310 820, 345 T 740, 360 T 710, 440"
               strokeWidth="2.4"
-              strokeOpacity="0.8"
             />
-            {/* 4. Narmada */}
+            {/* Narmada */}
             <path
               id="river-narmada"
-              d="M 482, 485 Q 424, 485 352, 485 T 196, 516"
+              d="M 490, 480 Q 400, 485 300, 495 T 165, 525"
               strokeWidth="1.9"
-              strokeOpacity="0.75"
             />
-            {/* 5. Godavari */}
+            {/* Godavari */}
             <path
               id="river-godavari"
-              d="M 213, 575 Q 337, 603 370, 619 T 455, 650 T 485, 672"
+              d="M 210, 580 Q 320, 600 420, 620 T 540, 630"
               strokeWidth="2.0"
-              strokeOpacity="0.75"
             />
-            {/* 6. Krishna */}
+            {/* Krishna */}
             <path
               id="river-krishna"
-              d="M 186, 642 Q 245, 677 324, 698 T 442, 687 T 455, 700"
+              d="M 200, 650 Q 280, 670 380, 680 T 480, 690"
               strokeWidth="1.9"
-              strokeOpacity="0.75"
             />
-            {/* 7. Kaveri */}
+            {/* Kaveri */}
             <path
               id="river-kaveri"
-              d="M 279, 788 Q 317, 826 350, 858 T 400, 875"
+              d="M 260, 800 Q 320, 830 370, 850 T 410, 860"
               strokeWidth="1.8"
-              strokeOpacity="0.75"
             />
           </g>
 
-          {/* River Label Typography */}
+          {/* River Typography */}
           <g
-            className="text-[var(--accent)] fill-current pointer-events-none"
-            opacity="0.8"
-            fontSize="8.5"
-            fontFamily="serif"
-            fontStyle="italic"
-            fontWeight="bold"
+            className="text-[var(--accent)] fill-current pointer-events-none select-none font-serif italic text-[8.5px] font-bold"
+            opacity="0.85"
           >
-            <text x="545" y="385" textAnchor="middle">Ganga</text>
-            <text x="345" y="325" textAnchor="middle">Yamuna</text>
-            <text x="825" y="360" textAnchor="middle">Brahmaputra</text>
-            <text x="320" y="478" textAnchor="middle">Narmada</text>
-            <text x="385" y="610" textAnchor="middle">Godavari</text>
-            <text x="350" y="690" textAnchor="middle">Krishna</text>
-            <text x="340" y="850" textAnchor="middle">Kaveri</text>
+            <text x="560" y="355" textAnchor="middle">Ganga</text>
+            <text x="360" y="300" textAnchor="middle">Yamuna</text>
+            <text x="830" y="335" textAnchor="middle">Brahmaputra</text>
+            <text x="330" y="488" textAnchor="middle">Narmada</text>
+            <text x="380" y="605" textAnchor="middle">Godavari</text>
+            <text x="360" y="675" textAnchor="middle">Krishna</text>
+            <text x="350" y="840" textAnchor="middle">Kaveri</text>
           </g>
 
-          {/* 6. Regional Ocean & Maritime Labels */}
+          {/* 7. Oceanic Body Typography */}
           <g
-            className="text-[var(--ink-muted)] fill-current select-none pointer-events-none"
-            opacity="0.32"
-            fontSize="10"
-            fontFamily="serif"
-            letterSpacing="0.16em"
+            className="text-[var(--ink-muted)] fill-current select-none pointer-events-none font-serif text-[10px] tracking-[0.2em]"
+            opacity="0.35"
           >
             <text x="100" y="700" textAnchor="middle" transform="rotate(-90 100 700)">
               ARABIAN SEA
@@ -529,28 +587,27 @@ export default function IndiaMuseumMap({
             <text x="500" y="985" textAnchor="middle">INDIAN OCEAN</text>
           </g>
 
-          {/* 7. Compass Rose & Scale Accents */}
-          <g className="text-[var(--accent)] pointer-events-none" opacity="0.75">
-            {/* North Indicator */}
-            <g transform="translate(890, 90)">
+          {/* 8. Compass Rose */}
+          <g className="text-[var(--accent)] pointer-events-none" opacity="0.8">
+            <g transform="translate(895, 90)">
               <circle
                 cx="0"
                 cy="0"
-                r="24"
+                r="22"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.2"
                 strokeDasharray="2,2"
               />
-              <polygon points="0,-20 6,-3 0,0 -6,-3" fill="currentColor" />
-              <polygon points="0,20 6,3 0,0 -6,3" fill="currentColor" opacity="0.4" />
-              <polygon points="20,0 3,6 0,0 3,-6" fill="currentColor" opacity="0.4" />
-              <polygon points="-20,0 -3,6 0,0 -3,-6" fill="currentColor" opacity="0.4" />
+              <polygon points="0,-18 5,-2 0,0 -5,-2" fill="currentColor" />
+              <polygon points="0,18 5,2 0,0 -5,2" fill="currentColor" opacity="0.4" />
+              <polygon points="18,0 2,5 0,0 2,-5" fill="currentColor" opacity="0.4" />
+              <polygon points="-18,0 -2,5 0,0 -2,-5" fill="currentColor" opacity="0.4" />
               <text
                 x="0"
-                y="-25"
+                y="-23"
                 textAnchor="middle"
-                fontSize="12"
+                fontSize="11"
                 fontFamily="serif"
                 fontWeight="bold"
                 fill="currentColor"
@@ -559,26 +616,20 @@ export default function IndiaMuseumMap({
               </text>
             </g>
 
-            {/* Cartographic Scale Bar */}
-            <g transform="translate(80, 940)">
+            {/* Scale Bar */}
+            <g transform="translate(75, 945)">
               <line x1="0" y1="0" x2="120" y2="0" stroke="currentColor" strokeWidth="2.5" />
               <line x1="0" y1="-4" x2="0" y2="4" stroke="currentColor" strokeWidth="1.5" />
               <line x1="60" y1="-3" x2="60" y2="3" stroke="currentColor" strokeWidth="1.5" />
               <line x1="120" y1="-4" x2="120" y2="4" stroke="currentColor" strokeWidth="1.5" />
-              <text x="0" y="-8" fontSize="8" fontFamily="monospace" fill="currentColor">0</text>
-              <text x="60" y="-8" fontSize="8" fontFamily="monospace" textAnchor="middle" fill="currentColor">250km</text>
-              <text x="120" y="-8" fontSize="8" fontFamily="monospace" textAnchor="end" fill="currentColor">500km</text>
+              <text x="0" y="-7" fontSize="8" fontFamily="monospace" fill="currentColor">0</text>
+              <text x="60" y="-7" fontSize="8" fontFamily="monospace" textAnchor="middle" fill="currentColor">250km</text>
+              <text x="120" y="-7" fontSize="8" fontFamily="monospace" textAnchor="end" fill="currentColor">500km</text>
             </g>
-
-            {/* Corner Precision Marks */}
-            <circle cx="50" cy="50" r="2" fill="currentColor" opacity="0.4" />
-            <circle cx="950" cy="50" r="2" fill="currentColor" opacity="0.4" />
-            <circle cx="50" cy="950" r="2" fill="currentColor" opacity="0.4" />
-            <circle cx="950" cy="950" r="2" fill="currentColor" opacity="0.4" />
           </g>
         </svg>
 
-        {/* Mathematically Synced Geographic Museum Markers */}
+        {/* Mathematically Projected Museum Markers */}
         <div className="absolute inset-0 pointer-events-none">
           {museums.map((museum) => {
             const { x, y } = projectToPercent(museum.coordinates.lat, museum.coordinates.lon);
@@ -614,19 +665,19 @@ export default function IndiaMuseumMap({
                   className="relative group focus:outline-none rounded-full cursor-pointer"
                   aria-label={`${museum.name}, ${museum.city}`}
                 >
-                  {/* Patina Pulsing Ring when Hovered or Selected */}
+                  {/* Pulsing ring when active */}
                   {isHighlighted && (
                     <span className="absolute -inset-3 rounded-full bg-[var(--accent)]/35 animate-ping pointer-events-none" />
                   )}
 
-                  {/* Pin Bubble with Category Color Accent */}
+                  {/* Pin Bubble */}
                   <div
                     className={`relative flex items-center justify-center p-2 rounded-full border shadow-md transition-all duration-200 group-hover:scale-120 ${
                       isHighlighted
                         ? 'bg-[var(--accent)] text-white border-white ring-4 ring-[var(--accent)]/35 shadow-lg'
                         : hasMuse
-                        ? 'bg-[var(--paper-raised)] text-[var(--accent)] border-[var(--accent)] ring-2 ring-[var(--accent)]/20 shadow-sm'
-                        : 'bg-[var(--paper-raised)] text-[var(--ink)] border-[var(--rule)] hover:border-[var(--accent)]'
+                        ? 'bg-[var(--paper-surface)] text-[var(--accent)] border-[var(--accent)] ring-2 ring-[var(--accent)]/20 shadow-sm'
+                        : 'bg-[var(--paper-surface)] text-[var(--ink)] border-[var(--hairline)] hover:border-[var(--accent)]'
                     }`}
                   >
                     <MapPin
@@ -634,24 +685,24 @@ export default function IndiaMuseumMap({
                       style={{ color: isHighlighted ? '#FFFFFF' : hasMuse ? 'var(--accent)' : catStyle.bg }}
                     />
 
-                    {/* Masterwork Star Indicator */}
+                    {/* Masterwork Dot */}
                     {hasMuse && !isHighlighted && (
-                      <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-[var(--verified)] border-2 border-white ring-1 ring-[var(--verified)]/40" />
+                      <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-[var(--accent-bronze)] border-2 border-white ring-1 ring-[var(--accent-bronze)]/40" />
                     )}
                   </div>
 
-                  {/* Marker Tooltip on Hover / Active Selection */}
+                  {/* Hover Tooltip Card */}
                   <div
                     className={`absolute left-1/2 -translate-x-1/2 bottom-full mb-2.5 whitespace-nowrap px-3.5 py-2.5 rounded-xl text-xs font-medium shadow-xl transition-all duration-150 pointer-events-none z-50 min-w-[180px] max-w-[260px] ${
                       isHighlighted
                         ? 'bg-[var(--ink)] text-[var(--paper)] opacity-100 scale-100 translate-y-0'
-                        : 'bg-[var(--paper-raised)] text-[var(--ink)] border border-[var(--rule)] opacity-0 scale-95 translate-y-1 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0'
+                        : 'bg-[var(--paper-surface)] text-[var(--ink)] border border-[var(--hairline)] opacity-0 scale-95 translate-y-1 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0'
                     }`}
                   >
                     <div className="font-serif font-semibold text-xs leading-tight flex items-center justify-between gap-1.5 pb-1 border-b border-white/10">
                       <span className="truncate">{museum.name.split(',')[0]}</span>
                       {hasMuse && (
-                        <Sparkles className="w-3 h-3 text-[#E2B13C] flex-shrink-0" />
+                        <Sparkles className="w-3 h-3 text-[var(--accent-bronze)] flex-shrink-0" />
                       )}
                     </div>
                     <div className="text-[10.5px] flex items-center justify-between gap-2 mt-1.5 font-sans">
@@ -673,7 +724,7 @@ export default function IndiaMuseumMap({
                         ⚡ {museum.distance_km} km away
                       </div>
                     )}
-                    {/* Tooltip bottom pointer arrow */}
+                    {/* Arrow */}
                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[var(--ink)]" />
                   </div>
                 </button>
@@ -686,7 +737,7 @@ export default function IndiaMuseumMap({
       {/* Map Control HUD Top Left */}
       <div className="relative z-30 p-3.5 flex flex-wrap items-center justify-between gap-2 pointer-events-auto">
         <div className="flex items-center gap-2">
-          <div className="px-3.5 py-2 rounded-xl bg-[var(--paper-raised)]/95 backdrop-blur-md border border-[var(--rule)] text-xs font-semibold text-[var(--ink)] flex items-center gap-2.5 shadow-sm">
+          <div className="px-3.5 py-2 rounded-xl bg-[var(--paper-surface)]/95 backdrop-blur-md border border-[var(--hairline)] text-xs font-semibold text-[var(--ink)] flex items-center gap-2.5 shadow-sm">
             <Layers className="w-4 h-4 text-[var(--accent)]" />
             <span className="font-serif tracking-tight">India Spatial Canvas</span>
             <span className="text-[10px] px-2 py-0.5 rounded-md bg-[var(--accent-soft)] text-[var(--accent)] uppercase font-mono font-bold tracking-wider">
@@ -701,7 +752,7 @@ export default function IndiaMuseumMap({
             className={`px-3 py-2 rounded-xl text-xs font-semibold border transition-all flex items-center gap-1.5 shadow-sm cursor-pointer ${
               showCulturalRegions
                 ? 'bg-[var(--accent)] text-white border-[var(--accent)]'
-                : 'bg-[var(--paper-raised)]/95 backdrop-blur-md text-[var(--ink-muted)] border-[var(--rule)] hover:text-[var(--ink)]'
+                : 'bg-[var(--paper-surface)]/95 backdrop-blur-md text-[var(--ink-muted)] border-[var(--hairline)] hover:text-[var(--ink)]'
             }`}
             title="Toggle Cultural & Dynastic Regions Overlay"
           >
@@ -726,25 +777,20 @@ export default function IndiaMuseumMap({
       {/* Map Control HUD Bottom (Pan/Zoom HUD & Legend) */}
       <div className="relative z-30 p-3.5 flex items-end justify-between gap-3 pointer-events-auto">
         {/* Legend */}
-        <div className="px-3.5 py-2.5 rounded-xl bg-[var(--paper-raised)]/95 backdrop-blur-md border border-[var(--rule)] text-[11px] text-[var(--ink-muted)] space-y-1.5 shadow-sm hidden sm:block">
+        <div className="px-3.5 py-2.5 rounded-xl bg-[var(--paper-surface)]/95 backdrop-blur-md border border-[var(--hairline)] text-[11px] text-[var(--ink-muted)] space-y-1.5 shadow-sm hidden sm:block">
           <div className="flex items-center gap-2 text-[var(--ink)] font-medium">
             <span className="w-2.5 h-2.5 rounded-full bg-[var(--accent)]" />
-            <span>Verified Institution ({museums.length})</span>
+            <span>Museum Repository ({museums.length})</span>
           </div>
-          <div className="flex items-center gap-2 text-[var(--verified)] font-medium">
-            <span className="w-2.5 h-2.5 rounded-full bg-[var(--verified)]" />
-            <span>Muse Masterworks Exhibit</span>
-          </div>
-          <div className="flex items-center gap-2 text-[#2A7B76]">
-            <span className="w-4 h-0.5 bg-[#2A7B76] rounded-full" />
-            <span>7 Sacred River Overlays</span>
+          <div className="flex items-center gap-2 text-[var(--accent-bronze)] font-medium">
+            <span className="w-2.5 h-2.5 rounded-full bg-[var(--accent-bronze)]" />
+            <span>Muse Masterwork Exhibition</span>
           </div>
         </div>
 
-        {/* Dynamic Zoom, Pan, & Reset Controls */}
-        <div className="flex items-center gap-1.5 bg-[var(--paper-raised)]/95 backdrop-blur-md border border-[var(--rule)] rounded-xl p-1.5 shadow-sm">
-          {/* Zoom Factor Indicator */}
-          <div className="px-2.5 py-1 text-[11px] font-mono font-semibold text-[var(--ink)] border-r border-[var(--rule)]">
+        {/* Zoom & Reset Controls */}
+        <div className="flex items-center gap-1.5 bg-[var(--paper-surface)]/95 backdrop-blur-md border border-[var(--hairline)] rounded-xl p-1.5 shadow-sm">
+          <div className="px-2.5 py-1 text-[11px] font-mono font-semibold text-[var(--ink)] border-r border-[var(--hairline)]">
             {Math.round(zoom * 100)}%
           </div>
 
@@ -754,7 +800,7 @@ export default function IndiaMuseumMap({
             disabled={zoom >= 4}
             aria-label="Zoom in"
             title="Zoom in (+)"
-            className="p-2 rounded-lg text-[var(--ink)] hover:bg-[var(--rule)]/40 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+            className="p-2 rounded-lg text-[var(--ink)] hover:bg-[var(--paper-subtle)] disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
           >
             <ZoomIn className="w-4 h-4" />
           </button>
@@ -765,7 +811,7 @@ export default function IndiaMuseumMap({
             disabled={zoom <= 1}
             aria-label="Zoom out"
             title="Zoom out (-)"
-            className="p-2 rounded-lg text-[var(--ink)] hover:bg-[var(--rule)]/40 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+            className="p-2 rounded-lg text-[var(--ink)] hover:bg-[var(--paper-subtle)] disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
           >
             <ZoomOut className="w-4 h-4" />
           </button>
@@ -775,7 +821,7 @@ export default function IndiaMuseumMap({
             onClick={handleResetView}
             aria-label="Reset view"
             title="Reset pan & zoom"
-            className="p-2 rounded-lg text-[var(--ink)] hover:bg-[var(--rule)]/40 transition-colors cursor-pointer"
+            className="p-2 rounded-lg text-[var(--ink)] hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer"
           >
             <RotateCcw className="w-4 h-4" />
           </button>
