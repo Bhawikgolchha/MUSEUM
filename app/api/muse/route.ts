@@ -93,7 +93,7 @@ Output must be a strictly valid JSON object conforming to:
             { role: 'user', content: userPrompt },
           ],
           {
-            model: 'anthropic/claude-3.5-sonnet',
+            model: process.env.OPENROUTER_MODEL || 'google/gemini-2.0-flash-exp:free',
             temperature: 0.3,
             max_tokens: 1500,
             response_format: { type: 'json_object' },

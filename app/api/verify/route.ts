@@ -66,6 +66,50 @@ Instructions:
 }
 `;
 
+    // 1. Try OpenRouter if key is present
+    if (process.env.OPENROUTER_API_KEY) {
+      try {
+        const rawJson = await callOpenRouter(
+          [{ role: 'user', content: prompt }],
+          {
+            model: process.env.OPENROUTER_MODEL || 'google/gemini-2.0-flash-exp:free',
+            temperature: 0.0,
+            max_tokens: 1000,
+            response_format: { type: 'json_object' },
+          }
+        );
+
+        const cleanJson = rawJson.substring(
+          rawJson.indexOf('{'),
+          rawJson.lastIndexOf('}') + 1
+        );
+        const parsed = JSON.parse(cleanJson);
+
+        const total = artifact.claims.length;
+        const covered = (parsed.claims || []).filter(
+          (c: any) => c.status === 'covered'
+        ).length;
+        const hasContradiction = (parsed.claims || []).some(
+          (c: any) => c.status === 'contradicted'
+        );
+        const verdict = !hasContradiction && covered === total ? 'pass' : 'fail';
+
+        const report: FidelityReport = {
+          verdict,
+          covered,
+          total,
+          claims: parsed.claims || [],
+        };
+
+        return NextResponse.json(report, { status: 200 });
+      } catch (orErr) {
+        console.warn('OpenRouter API verify call failed, trying Anthropic direct or local:', orErr);
+      }
+    }
+
+    const client = getAnthropicClient();
+    if (client) {
+      try {
         const response = await client.messages.create({
           model: 'claude-3-5-sonnet-20241022',
           max_tokens: 1000,
