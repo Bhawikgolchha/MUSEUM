@@ -17,7 +17,10 @@
     "governance": "national_asi",
     "opening_hours": {
       "schedule": "10:00 - 18:00",
-      "closed_on": ["Monday", "National Holidays"],
+      "closed_on": [
+        "Monday",
+        "National Holidays"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 6:00 PM)"
     },
     "entry_fee": {
@@ -44,7 +47,9 @@
     "description": "India's premier cultural repository housing over 200,000 works of art spanning 5,000 years of civilization, from the Indus Valley Dancing Girl to sacred Buddhist relics and Mughal miniature paintings.",
     "artifact_count_approx": 200000,
     "muse_collection_id": "art-001",
-    "featured_artifacts": ["art-001"],
+    "featured_artifacts": [
+      "art-001"
+    ],
     "source": "National Museum Official Directory",
     "last_updated": "2026-08-18T10:00:00Z"
   },
@@ -66,7 +71,10 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "09:30 - 17:00",
-      "closed_on": ["Friday", "National Holidays"],
+      "closed_on": [
+        "Friday",
+        "National Holidays"
+      ],
       "timings": "Saturday to Thursday (9:30 AM – 5:00 PM)"
     },
     "entry_fee": {
@@ -90,7 +98,9 @@
     "description": "Established in 1851, India's second oldest museum houses the world's most famous collection of Chola Bronzes, including the iconic Nataraja, alongside the Amaravati Buddhist sculptural gallery.",
     "artifact_count_approx": 46000,
     "muse_collection_id": "art-002",
-    "featured_artifacts": ["art-002"],
+    "featured_artifacts": [
+      "art-002"
+    ],
     "source": "Government Museum Registry",
     "last_updated": "2026-08-18T10:00:00Z"
   },
@@ -112,7 +122,9 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "10:00 - 17:00",
-      "closed_on": ["Monday"],
+      "closed_on": [
+        "Monday"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
     },
     "entry_fee": {
@@ -137,7 +149,9 @@
     "description": "State-of-the-art Maki and Associates designed world-class museum celebrating the deep heritage of ancient Magadha, Pataliputra, and the Mauryan masterpiece Didarganj Yakshi.",
     "artifact_count_approx": 25000,
     "muse_collection_id": "art-003",
-    "featured_artifacts": ["art-003"],
+    "featured_artifacts": [
+      "art-003"
+    ],
     "source": "Bihar Museum Official",
     "last_updated": "2026-08-18T10:00:00Z"
   },
@@ -159,7 +173,9 @@
     "governance": "national_asi",
     "opening_hours": {
       "schedule": "09:00 - 17:00",
-      "closed_on": ["Friday"],
+      "closed_on": [
+        "Friday"
+      ],
       "timings": "Saturday to Thursday (9:00 AM – 5:00 PM)"
     },
     "entry_fee": {
@@ -183,7 +199,10 @@
     "description": "Oldest site museum of the Archaeological Survey of India (ASI), housing the original 3rd century BCE Lion Capital of Ashoka (National Emblem of India) and masterworks of Gupta Buddhist art.",
     "artifact_count_approx": 6800,
     "muse_collection_id": "art-004",
-    "featured_artifacts": ["art-004", "art-005"],
+    "featured_artifacts": [
+      "art-004",
+      "art-005"
+    ],
     "source": "Archaeological Survey of India",
     "last_updated": "2026-08-18T10:00:00Z"
   },
@@ -205,7 +224,10 @@
     "governance": "national_asi",
     "opening_hours": {
       "schedule": "10:00 - 18:00",
-      "closed_on": ["Monday", "National Holidays"],
+      "closed_on": [
+        "Monday",
+        "National Holidays"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 6:00 PM)"
     },
     "entry_fee": {
@@ -229,6 +251,10 @@
     "description": "Founded in 1814 by the Asiatic Society of Bengal, it is the ninth oldest museum in the world and the largest in India, featuring monumental Bharhut Buddhist railings, fossils, and antiquities.",
     "artifact_count_approx": 100000,
     "muse_collection_id": "c-kolkata-001",
+    "featured_artifacts": [
+      "art-007",
+      "art-008"
+    ],
     "source": "Indian Museum Official",
     "last_updated": "2026-08-18T10:00:00Z"
   },
@@ -250,7 +276,9 @@
     "governance": "private_trust",
     "opening_hours": {
       "schedule": "10:15 - 18:00",
-      "closed_on": ["National Holidays"],
+      "closed_on": [
+        "National Holidays"
+      ],
       "timings": "Open 7 Days a week (10:15 AM – 6:00 PM)"
     },
     "entry_fee": {
@@ -295,7 +323,10 @@
     "governance": "national_asi",
     "opening_hours": {
       "schedule": "09:30 - 18:00",
-      "closed_on": ["Diwali", "Ganesh Chaturthi"],
+      "closed_on": [
+        "Diwali",
+        "Ganesh Chaturthi"
+      ],
       "timings": "Open Daily (9:30 AM – 6:00 PM)"
     },
     "entry_fee": {
@@ -340,7 +371,9 @@
     "governance": "national_asi",
     "opening_hours": {
       "schedule": "10:00 - 17:00",
-      "closed_on": ["Friday"],
+      "closed_on": [
+        "Friday"
+      ],
       "timings": "Saturday to Thursday (10:00 AM – 5:00 PM)"
     },
     "entry_fee": {
@@ -364,6 +397,10 @@
     "description": "One of the world's largest one-man art collections, featuring the famous 19th-century Musical Clock, the Veiled Rebecca marble statue, and royal Nizami jade and weaponry.",
     "artifact_count_approx": 43000,
     "muse_collection_id": "c-salarjung-001",
+    "featured_artifacts": [
+      "art-009",
+      "art-010"
+    ],
     "source": "Salar Jung Board",
     "last_updated": "2026-08-18T10:00:00Z"
   },
@@ -385,7 +422,9 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "09:00 - 17:00 & 19:00 - 22:00",
-      "closed_on": ["Holi"],
+      "closed_on": [
+        "Holi"
+      ],
       "timings": "Open Daily (9:00 AM – 5:00 PM, Night Viewing 7:00 PM – 10:00 PM)"
     },
     "entry_fee": {
@@ -431,7 +470,10 @@
     "governance": "private_trust",
     "opening_hours": {
       "schedule": "10:30 - 13:00",
-      "closed_on": ["Wednesday", "National Holidays"],
+      "closed_on": [
+        "Wednesday",
+        "National Holidays"
+      ],
       "timings": "Thursday to Tuesday (10:30 AM – 1:00 PM, Guided Tour Only)"
     },
     "entry_fee": {
@@ -476,7 +518,10 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "10:00 - 16:45",
-      "closed_on": ["Monday", "Wednesday Forenoon"],
+      "closed_on": [
+        "Monday",
+        "Wednesday Forenoon"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 4:45 PM)"
     },
     "entry_fee": {
@@ -521,7 +566,9 @@
     "governance": "private_trust",
     "opening_hours": {
       "schedule": "10:00 - 17:30",
-      "closed_on": ["National Holidays"],
+      "closed_on": [
+        "National Holidays"
+      ],
       "timings": "Open Daily (10:00 AM – 5:30 PM)"
     },
     "entry_fee": {
@@ -566,7 +613,9 @@
     "governance": "private_trust",
     "opening_hours": {
       "schedule": "09:00 - 21:00",
-      "closed_on": ["Holi"],
+      "closed_on": [
+        "Holi"
+      ],
       "timings": "Open 7 Days a Week (9:00 AM – 9:00 PM)"
     },
     "entry_fee": {
@@ -611,7 +660,10 @@
     "governance": "private_trust",
     "opening_hours": {
       "schedule": "09:30 - 17:30",
-      "closed_on": ["Sunday", "National Holidays"],
+      "closed_on": [
+        "Sunday",
+        "National Holidays"
+      ],
       "timings": "Monday to Saturday (9:30 AM – 5:30 PM)"
     },
     "entry_fee": {
@@ -656,7 +708,11 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "09:30 - 17:30",
-      "closed_on": ["Saturday", "Sunday", "Public Holidays"],
+      "closed_on": [
+        "Saturday",
+        "Sunday",
+        "Public Holidays"
+      ],
       "timings": "Monday to Friday (9:30 AM – 5:30 PM)"
     },
     "entry_fee": {
@@ -700,7 +756,9 @@
     "governance": "national_asi",
     "opening_hours": {
       "schedule": "10:00 - 17:00",
-      "closed_on": ["Friday"],
+      "closed_on": [
+        "Friday"
+      ],
       "timings": "Saturday to Thursday (10:00 AM – 5:00 PM)"
     },
     "entry_fee": {
@@ -744,7 +802,10 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "10:00 - 16:30",
-      "closed_on": ["Monday", "State Holidays"],
+      "closed_on": [
+        "Monday",
+        "State Holidays"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 4:30 PM)"
     },
     "entry_fee": {
@@ -782,13 +843,16 @@
     "pincode": "462013",
     "coordinates": {
       "lat": 23.2312,
-      "lon": 77.3860
+      "lon": 77.386
     },
     "category": "multidisciplinary",
     "governance": "national_asi",
     "opening_hours": {
       "schedule": "10:00 - 18:00",
-      "closed_on": ["Monday", "National Holidays"],
+      "closed_on": [
+        "Monday",
+        "National Holidays"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 6:00 PM)"
     },
     "entry_fee": {
@@ -827,13 +891,16 @@
     "pincode": "751014",
     "coordinates": {
       "lat": 20.2546,
-      "lon": 85.8390
+      "lon": 85.839
     },
     "category": "archaeology",
     "governance": "state_government",
     "opening_hours": {
       "schedule": "10:00 - 17:00",
-      "closed_on": ["Monday", "Government Holidays"],
+      "closed_on": [
+        "Monday",
+        "Government Holidays"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
     },
     "entry_fee": {
@@ -878,7 +945,11 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "10:00 - 17:00",
-      "closed_on": ["Monday", "2nd & 4th Saturday", "State Holidays"],
+      "closed_on": [
+        "Monday",
+        "2nd & 4th Saturday",
+        "State Holidays"
+      ],
       "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
     },
     "entry_fee": {
@@ -923,7 +994,9 @@
     "governance": "state_government",
     "opening_hours": {
       "schedule": "09:30 - 16:30",
-      "closed_on": ["Monday"],
+      "closed_on": [
+        "Monday"
+      ],
       "timings": "Tuesday to Sunday (9:30 AM – 4:30 PM)"
     },
     "entry_fee": {
@@ -948,6 +1021,682 @@
     "artifact_count_approx": 19000,
     "muse_collection_id": "c-kochi-001",
     "source": "Centre for Heritage Studies, Kerala",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-chd-001",
+    "name": "Government Museum and Art Gallery, Chandigarh",
+    "vernacular_names": {
+      "hi": "सरकारी संग्रहालय एवं कला दीर्घा, चंडीगढ़",
+      "pa": "ਸਰਕਾਰੀ ਅਜਾਇਬ ਘਰ ਅਤੇ ਆਰਟ ਗੈਲਰੀ"
+    },
+    "address": "Sector 10-C, Jan Marg",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "pincode": "160011",
+    "coordinates": {
+      "lat": 30.749,
+      "lon": 76.7865
+    },
+    "category": "art_sculpture",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 16:30",
+      "closed_on": [
+        "Monday",
+        "National Holidays"
+      ],
+      "timings": "Tuesday to Sunday (10:00 AM – 4:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 150
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible Ramp",
+      "Elevator Access",
+      "Guided Tours"
+    ],
+    "contact": {
+      "phone": "+91 172 2740261",
+      "email": "museum-chd@nic.in",
+      "website": "http://chdmuseum.gov.in"
+    },
+    "thumbnail_url": "/images/ashoka_lion_capital.jpg",
+    "gallery_urls": [
+      "/images/ashoka_lion_capital.jpg",
+      "/images/sarnath_buddha.jpg"
+    ],
+    "description": "Designed by iconic architect Le Corbusier, this premier institution houses world-famous Gandhara sculptures, Pahari and Rajasthani miniature paintings, and modern Indian masterworks.",
+    "artifact_count_approx": 10000,
+    "muse_collection_id": "c-chd-001",
+    "source": "Chandigarh Tourism & Museum Archives",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-asr-001",
+    "name": "The Partition Museum, Amritsar",
+    "vernacular_names": {
+      "pa": "ਵੰਡ ਦਾ ਅਜਾਇਬ ਘਰ, ਅੰਮ੍ਰਿਤਸਰ",
+      "hi": "विभाजन संग्रहालय, अमृतसर"
+    },
+    "address": "Town Hall, Katra Ahluwalia",
+    "city": "Amritsar",
+    "state": "Punjab",
+    "pincode": "143001",
+    "coordinates": {
+      "lat": 31.6258,
+      "lon": 74.8765
+    },
+    "category": "memorial_historic",
+    "governance": "trust_private",
+    "opening_hours": {
+      "schedule": "10:00 - 18:00",
+      "closed_on": [
+        "Monday"
+      ],
+      "timings": "Tuesday to Sunday (10:00 AM – 6:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 10,
+      "foreign_inr": 250
+    },
+    "accessibility_features": [
+      "Wheelchair Ramps",
+      "Audio-Visual Stations",
+      "Braille Information Panels"
+    ],
+    "contact": {
+      "phone": "+91 183 252 0001",
+      "email": "info@partitionmuseum.org",
+      "website": "https://www.partitionmuseum.org"
+    },
+    "thumbnail_url": "/images/art-001.svg",
+    "gallery_urls": [
+      "/images/art-001.svg"
+    ],
+    "description": "The world's first museum dedicated to the memory of the 1947 Partition of British India, housing poignant personal oral histories, documents, letters, and refugee artifacts.",
+    "artifact_count_approx": 5000,
+    "muse_collection_id": "c-pun-001",
+    "source": "The Arts and Cultural Heritage Trust",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-leh-001",
+    "name": "Hall of Fame & Heritage Museum, Leh",
+    "vernacular_names": {
+      "hi": "हॉल ऑफ फेम संग्रहालय, लेह"
+    },
+    "address": "Leh-Kargil Road, near Leh Airport",
+    "city": "Leh",
+    "state": "Ladakh",
+    "pincode": "194101",
+    "coordinates": {
+      "lat": 34.1359,
+      "lon": 77.5385
+    },
+    "category": "maritime_military",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "09:00 - 19:00",
+      "closed_on": [],
+      "timings": "Open All Days (9:00 AM – 7:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 100,
+      "foreign_inr": 300
+    },
+    "accessibility_features": [
+      "Paved Walkways",
+      "Information Kiosks",
+      "Rest Benches"
+    ],
+    "contact": {
+      "phone": "+91 1982 252 080",
+      "website": "https://leh.nic.in"
+    },
+    "thumbnail_url": "/images/art-002.svg",
+    "gallery_urls": [
+      "/images/art-002.svg"
+    ],
+    "description": "Maintained in the high Himalayas of Leh, this museum commemorates the valor of Indian soldiers in high-altitude warfare alongside displays on Ladakhi culture, biodiversity, and royal history.",
+    "artifact_count_approx": 2500,
+    "muse_collection_id": "c-lad-001",
+    "source": "Ladakh UT Tourism & Heritage Bureau",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-shi-001",
+    "name": "Himachal State Museum, Shimla",
+    "vernacular_names": {
+      "hi": "हिमाचल राज्य संग्रहालय, शिमला"
+    },
+    "address": "Chaura Maidan, near Peterhoff",
+    "city": "Shimla",
+    "state": "Himachal Pradesh",
+    "pincode": "171004",
+    "coordinates": {
+      "lat": 31.1044,
+      "lon": 77.1511
+    },
+    "category": "multidisciplinary",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 17:00",
+      "closed_on": [
+        "Monday",
+        "Second Saturday"
+      ],
+      "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible Ground Floor",
+      "Guided Audio Tours"
+    ],
+    "contact": {
+      "phone": "+91 177 280 5044",
+      "email": "statemuseumshimla@gmail.com",
+      "website": "https://himachalstatemuseum.in"
+    },
+    "thumbnail_url": "/images/art-003.svg",
+    "gallery_urls": [
+      "/images/art-003.svg"
+    ],
+    "description": "Perched on Inverarm Hill, this museum preserves rich collections of Pahari stone sculptures, bronze idols, traditional Himachali jewelry, weapons, and Kangra miniature paintings.",
+    "artifact_count_approx": 12000,
+    "muse_collection_id": "c-hp-001",
+    "source": "Department of Language & Culture Himachal Pradesh",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-deh-001",
+    "name": "Forest Research Institute (FRI) Museums, Dehradun",
+    "vernacular_names": {
+      "hi": "वन अनुसंधान संस्थान संग्रहालय, देहरादून"
+    },
+    "address": "Kaulagarh Road, Chakrata Road",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "pincode": "248006",
+    "coordinates": {
+      "lat": 30.3427,
+      "lon": 77.9995
+    },
+    "category": "natural_history",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "09:30 - 17:00",
+      "closed_on": [
+        "National Holidays"
+      ],
+      "timings": "All Days (9:30 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 40,
+      "foreign_inr": 150
+    },
+    "accessibility_features": [
+      "Paved Heritage Corridor",
+      "Tactile Wood Exhibits",
+      "Braille Forest Walkway"
+    ],
+    "contact": {
+      "phone": "+91 135 275 7021",
+      "email": "dir_fri@icfre.org",
+      "website": "https://fri.icfre.gov.in"
+    },
+    "thumbnail_url": "/images/art-004.svg",
+    "gallery_urls": [
+      "/images/art-004.svg"
+    ],
+    "description": "Housed inside a magnificent Greco-Roman colonial landmark, FRI features six dedicated museums of timber, pathology, entomology, non-wood forest products, silviculture, and social forestry.",
+    "artifact_count_approx": 18000,
+    "muse_collection_id": "c-uk-001",
+    "source": "Indian Council of Forestry Research and Education (ICFRE)",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-pry-001",
+    "name": "Allahabad Museum, Prayagraj",
+    "vernacular_names": {
+      "hi": "इलाहाबाद संग्रहालय, प्रयागराज"
+    },
+    "address": "Chandrashekhar Azad Park, Kamla Nehru Road",
+    "city": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "pincode": "211002",
+    "coordinates": {
+      "lat": 25.4549,
+      "lon": 81.8547
+    },
+    "category": "archaeology",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "10:30 - 16:30",
+      "closed_on": [
+        "Monday",
+        "Gazetted Holidays"
+      ],
+      "timings": "Tuesday to Sunday (10:30 AM – 4:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 50,
+      "foreign_inr": 500
+    },
+    "accessibility_features": [
+      "Wheelchair Ramps",
+      "Tactile Gallery",
+      "Audio Guide Application"
+    ],
+    "contact": {
+      "phone": "+91 532 246 0880",
+      "email": "allahabadmuseum@rediffmail.com",
+      "website": "https://theallahabadmuseum.com"
+    },
+    "thumbnail_url": "/images/sarnath_buddha.jpg",
+    "gallery_urls": [
+      "/images/sarnath_buddha.jpg",
+      "/images/ashoka_lion_capital.jpg"
+    ],
+    "description": "A National Museum under the Ministry of Culture, notable for its unique collection of Bharhut and Bhita terracotta sculptures, Chandrashekhar Azad's Colt pistol, and miniature painting gallery.",
+    "artifact_count_approx": 70000,
+    "muse_collection_id": "c-up-002",
+    "source": "Ministry of Culture, Government of India",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-ran-001",
+    "name": "State Museum Hotwar (Ranchi Museum)",
+    "vernacular_names": {
+      "hi": "राज्य संग्रहालय होटवार, रांची"
+    },
+    "address": "Mega Sports Complex, Khelgaon, Hotwar",
+    "city": "Ranchi",
+    "state": "Jharkhand",
+    "pincode": "834009",
+    "coordinates": {
+      "lat": 23.3857,
+      "lon": 85.3789
+    },
+    "category": "multidisciplinary",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:30 - 16:30",
+      "closed_on": [
+        "Monday",
+        "Government Holidays"
+      ],
+      "timings": "Tuesday to Sunday (10:30 AM – 4:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Wheelchair Elevators",
+      "Tactile Exhibits",
+      "Spacious Pathways"
+    ],
+    "contact": {
+      "phone": "+91 651 227 0012",
+      "email": "statemuseumranchi@gmail.com",
+      "website": "https://ranchi.nic.in"
+    },
+    "thumbnail_url": "/images/art-005.svg",
+    "gallery_urls": [
+      "/images/art-005.svg"
+    ],
+    "description": "Jharkhand's chief museum showcasing tribal lifestyle exhibits (Santhal, Munda, Oraon), stone sculptures from medieval temples, terracotta figurines, and ancient metallurgical tools.",
+    "artifact_count_approx": 6500,
+    "muse_collection_id": "c-jhk-001",
+    "source": "Department of Tourism, Art & Culture Jharkhand",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-rai-001",
+    "name": "Mahant Ghasidas Memorial Museum, Raipur",
+    "vernacular_names": {
+      "hi": "महंत घासीदास स्मारक संग्रहालय, रायपुर"
+    },
+    "address": "Near Raj Bhavan, Civil Lines",
+    "city": "Raipur",
+    "state": "Chhattisgarh",
+    "pincode": "492001",
+    "coordinates": {
+      "lat": 21.2427,
+      "lon": 81.6376
+    },
+    "category": "archaeology",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 17:00",
+      "closed_on": [
+        "Monday",
+        "Public Holidays"
+      ],
+      "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 10,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Ramp Entry",
+      "Rest Areas",
+      "Guided Tours"
+    ],
+    "contact": {
+      "phone": "+91 771 223 4872",
+      "website": "https://cgculture.in"
+    },
+    "thumbnail_url": "/images/art-006.svg",
+    "gallery_urls": [
+      "/images/art-006.svg"
+    ],
+    "description": "One of the oldest museums in central India (established 1875), exhibiting Sirpur Buddhist bronzes, Kalachuri sculptures, Bastar tribal crafts, and ancient inscriptions.",
+    "artifact_count_approx": 15000,
+    "muse_collection_id": "c-cg-001",
+    "source": "Chhattisgarh Directorate of Culture & Archaeology",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-imp-001",
+    "name": "Manipur State Museum, Imphal",
+    "vernacular_names": {
+      "mni": "মণিপুর ষ্টেট মিউজিয়ম",
+      "hi": "मणिपुर राज्य संग्रहालय, इम्फाल"
+    },
+    "address": "Kangla Pat, near Polo Ground, Thangal Bazar",
+    "city": "Imphal",
+    "state": "Manipur",
+    "pincode": "795001",
+    "coordinates": {
+      "lat": 24.8077,
+      "lon": 93.9388
+    },
+    "category": "multidisciplinary",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 16:30",
+      "closed_on": [
+        "Monday",
+        "Second Saturday",
+        "Holidays"
+      ],
+      "timings": "Tuesday to Sunday (10:00 AM – 4:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Step-free Ground Access",
+      "Guided Tour Guides"
+    ],
+    "contact": {
+      "phone": "+91 385 245 0053",
+      "website": "https://imphalwest.nic.in"
+    },
+    "thumbnail_url": "/images/art-001.svg",
+    "gallery_urls": [
+      "/images/art-001.svg"
+    ],
+    "description": "Inaugurated in 1969 by Prime Minister Indira Gandhi, this museum exhibits royal Meitei royal attire, gold-plated Hiyang Hiren (royal boat), tribal ornaments, and natural history specimens.",
+    "artifact_count_approx": 8000,
+    "muse_collection_id": "c-man-001",
+    "source": "Department of Art and Culture, Manipur",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-gan-001",
+    "name": "Namgyal Institute of Tibetology & Museum, Gangtok",
+    "vernacular_names": {
+      "hi": "नामग्याल तिब्बत विज्ञान संस्थान, गंगटोक"
+    },
+    "address": "Deorali, Gangtok",
+    "city": "Gangtok",
+    "state": "Sikkim",
+    "pincode": "737102",
+    "coordinates": {
+      "lat": 27.316,
+      "lon": 88.6046
+    },
+    "category": "art_sculpture",
+    "governance": "trust_private",
+    "opening_hours": {
+      "schedule": "10:00 - 16:00",
+      "closed_on": [
+        "Sunday",
+        "Second Saturday"
+      ],
+      "timings": "Monday to Saturday (10:00 AM – 4:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 50,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Paved Grounds",
+      "Audio Presentation",
+      "Tactile Thangka Replicas"
+    ],
+    "contact": {
+      "phone": "+91 3592 281 247",
+      "email": "tibetologysikkim@gmail.com",
+      "website": "https://tibetology.net"
+    },
+    "thumbnail_url": "/images/sarnath_buddha.jpg",
+    "gallery_urls": [
+      "/images/sarnath_buddha.jpg"
+    ],
+    "description": "A world-renowned center for Vajrayana Buddhist study and Tibetan culture, housing rare 11th-century Sanskrit manuscripts, gilded bronze statues, ritual thangkas, and Buddhist antiquities.",
+    "artifact_count_approx": 6000,
+    "muse_collection_id": "c-sik-001",
+    "source": "Namgyal Institute of Tibetology Trust",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-pbl-001",
+    "name": "Samudrika Naval Marine Museum, Port Blair",
+    "vernacular_names": {
+      "hi": "समुद्रिका नौसेना समुद्री संग्रहालय, पोर्ट ब्लेयर"
+    },
+    "address": "Haddo Road, Delanipur",
+    "city": "Port Blair",
+    "state": "Andaman and Nicobar Islands",
+    "pincode": "744102",
+    "coordinates": {
+      "lat": 11.6711,
+      "lon": 92.7265
+    },
+    "category": "natural_history",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "09:00 - 17:00",
+      "closed_on": [
+        "Monday"
+      ],
+      "timings": "Tuesday to Sunday (9:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 50,
+      "foreign_inr": 100
+    },
+    "accessibility_features": [
+      "Wheelchair Ramps",
+      "Aquarium Visual Signage",
+      "Accessible Restrooms"
+    ],
+    "contact": {
+      "phone": "+91 3192 232 384",
+      "website": "https://www.andaman.gov.in"
+    },
+    "thumbnail_url": "/images/art-002.svg",
+    "gallery_urls": [
+      "/images/art-002.svg"
+    ],
+    "description": "Managed by the Indian Navy, this museum offers five specialized rooms detailing island geography, Jarawa and Sentinelese anthropology, marine ecosystems, coral biodiversity, and sea shells.",
+    "artifact_count_approx": 3500,
+    "muse_collection_id": "c-an-001",
+    "source": "Indian Navy & Andaman Administration",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-bho-002",
+    "name": "Madhya Pradesh Tribal Museum, Bhopal",
+    "vernacular_names": {
+      "hi": "मध्य प्रदेश जनजातीय संग्रहालय, भोपाल"
+    },
+    "address": "Shyamla Hills Road, near Regional Science Centre",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "pincode": "462002",
+    "coordinates": {
+      "lat": 23.2344,
+      "lon": 77.3878
+    },
+    "category": "textiles_crafts",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "12:00 - 20:00",
+      "closed_on": [
+        "Monday"
+      ],
+      "timings": "Tuesday to Sunday (12:00 PM – 8:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 400
+    },
+    "accessibility_features": [
+      "Full Wheelchair Access",
+      "Tactile Art Installations",
+      "Interactive Folk Theater"
+    ],
+    "contact": {
+      "phone": "+91 755 243 0083",
+      "email": "tribalmuseumbhopal@gmail.com",
+      "website": "https://mptribalmuseum.com"
+    },
+    "thumbnail_url": "/images/didarganj_yakshi.jpg",
+    "gallery_urls": [
+      "/images/didarganj_yakshi.jpg"
+    ],
+    "description": "An immersive experiential museum celebrating the art, cosmological myths, architecture, and folklore of seven indigenous tribes of central India (Gond, Bhil, Baiga, Korku, Sahariya, Kol, Bhariya).",
+    "artifact_count_approx": 8500,
+    "muse_collection_id": "c-mp-002",
+    "source": "Tribal Welfare Department Madhya Pradesh",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-mys-001",
+    "name": "Mysore Palace Museum (Amba Vilas), Mysuru",
+    "vernacular_names": {
+      "kn": "ಮೈಸೂರು ಅರಮನೆ ವಸ್ತುಸಂಗ್ರಹಾಲಯ",
+      "hi": "मैसूर महल संग्रहालय"
+    },
+    "address": "Sayyaji Rao Road, Agrahara",
+    "city": "Mysuru",
+    "state": "Karnataka",
+    "pincode": "570001",
+    "coordinates": {
+      "lat": 12.3051,
+      "lon": 76.6552
+    },
+    "category": "memorial_historic",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 17:30",
+      "closed_on": [],
+      "timings": "Open All Days (10:00 AM – 5:30 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 100,
+      "foreign_inr": 500
+    },
+    "accessibility_features": [
+      "Battery Buggies",
+      "Elevator in Royal Court",
+      "Tactile Heritage Models"
+    ],
+    "contact": {
+      "phone": "+91 821 242 1051",
+      "email": "palacemysore@gmail.com",
+      "website": "https://mysorepalace.karnataka.gov.in"
+    },
+    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "gallery_urls": [
+      "/images/chola_nataraja.jpg"
+    ],
+    "description": "Seat of the Wadiyar dynasty, showcasing royal ceremonial weaponry, the Golden Throne (Chinnada Simhasana), stained glass pavilions, and Tanjore oil paintings by Raja Ravi Varma.",
+    "artifact_count_approx": 22000,
+    "muse_collection_id": "c-kar-002",
+    "source": "Mysore Palace Board, Government of Karnataka",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-vij-001",
+    "name": "Bapu Museum (Victoria Jubilee Museum), Vijayawada",
+    "vernacular_names": {
+      "te": "బాపు మ్యూజియం, విజయవాడ",
+      "hi": "बापू संग्रहालय, विजयवाड़ा"
+    },
+    "address": "MG Road, Buckinghampet",
+    "city": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "520002",
+    "coordinates": {
+      "lat": 16.5085,
+      "lon": 80.6334
+    },
+    "category": "archaeology",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:30 - 17:00",
+      "closed_on": [
+        "Friday"
+      ],
+      "timings": "Saturday to Thursday (10:30 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 50,
+      "foreign_inr": 200
+    },
+    "accessibility_features": [
+      "Wheelchair Ramps",
+      "Interactive AR/VR Touchscreens",
+      "Audio Guide App"
+    ],
+    "contact": {
+      "phone": "+91 866 257 7755",
+      "website": "https://aparchaeology.gov.in"
+    },
+    "thumbnail_url": "/images/ashoka_lion_capital.jpg",
+    "gallery_urls": [
+      "/images/ashoka_lion_capital.jpg"
+    ],
+    "description": "Modernized state archaeological museum displaying Satavahana and Ikshvaku limestone sculptures from Amaravati and Nagarjunakonda, medieval bronzes, weaponry, and rare pre-historic microliths.",
+    "artifact_count_approx": 9000,
+    "muse_collection_id": "c-ap-001",
+    "source": "Department of Archaeology and Museums, Andhra Pradesh",
     "last_updated": "2026-08-18T10:00:00Z"
   }
 ]

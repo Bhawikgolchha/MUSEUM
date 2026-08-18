@@ -1,6 +1,13 @@
-import { getAllMuseums, MuseumWithDistance } from './museums';
+import {
+  getAllMuseums,
+  MuseumWithDistance,
+  calculateHaversineDistance,
+  isMuseumOpenToday,
+  Coordinates,
+} from './museums';
 import { getAllArtifacts } from './artifacts';
 import { Artifact } from './types';
+import { resolvePinToCoordinates } from './pincodes';
 
 export interface RootConnection {
   regionName: string;
@@ -223,6 +230,105 @@ export const POSTAL_CIRCLE_MAP: Record<
     artifactId: 'art-001',
     museumId: 'mus-in-shl-001',
   },
+  '16': {
+    state: 'Chandigarh Tri-City',
+    era: 'Gandhara & Modernist Heritage',
+    heritage: 'Indus Valley to Modernist Crossroads',
+    story: 'Your region unites ancient Gandharan Buddhist sculptures with iconic modern architectural heritage and vibrant Punjabi craft culture.',
+    craft: 'Gandharan stone carving, Phulkari embroidery, and architectural design.',
+    artifactId: 'art-004',
+    museumId: 'mus-in-chd-001',
+  },
+  '17': {
+    state: 'Himachal Pradesh (Shimla / Hills)',
+    era: 'Pahari Kingdoms & Himalayan Devbhumi',
+    heritage: 'Pahari Miniature & Himalayan Temple Arts',
+    story: 'Your roots lie in the sacred valleys of Himachal, where royal hill courts fostered delicate Kangra paintings and intricate wooden pagoda temple architectures.',
+    craft: 'Kangra miniature painting, Kullu shawls, and Chamba Rumal embroidery.',
+    artifactId: 'art-004',
+    museumId: 'mus-in-shi-001',
+  },
+  '19': {
+    state: 'Ladakh & Kashmir (Leh / Kargil)',
+    era: 'Silk Route Passes & Trans-Himalayan Buddhist Kingdoms',
+    heritage: 'High Mountain Heritage & Vajrayana Lineage',
+    story: 'Your ancestral mountains formed the legendary artery of Silk Route trade, preserving millennium-old Buddhist monastery murals, thangkas, and high-altitude courage.',
+    craft: 'Pashmina spinning, Thangka painting, and Ladakhi repoussé metalwork.',
+    artifactId: 'art-004',
+    museumId: 'mus-in-leh-001',
+  },
+  '21': {
+    state: 'Uttar Pradesh (Prayagraj / Central)',
+    era: 'Gupta Classical Golden Age & Triveni Sangam',
+    heritage: 'Vedic-Classical Convergence',
+    story: 'Your soil lies at the sacred confluence of holy rivers, flourishing during the Gupta and Mauryan epochs with Bharhut terracotta and classical Sanskrit literature.',
+    craft: 'Bharhut terracotta, Moonj basketry, and stone masonry.',
+    artifactId: 'art-004',
+    museumId: 'mus-in-pry-001',
+  },
+  '24': {
+    state: 'Uttarakhand (Dehradun / Garhwal)',
+    era: 'Katyuri & Garhwal Himalayan Kingdoms',
+    heritage: 'Garhwal Pahari School & Sacred Himalayan Forests',
+    story: 'Your roots arise from the sacred Garhwal and Kumaon Himalayas, where forest wisdom and mountain court painters created exquisite natural landscapes.',
+    craft: 'Aipan ritual folk art, Ringal bamboo craft, and Pahari wood carving.',
+    artifactId: 'art-004',
+    museumId: 'mus-in-deh-001',
+  },
+  '49': {
+    state: 'Chhattisgarh (Raipur / Bastar)',
+    era: 'Dakshina Kosala, Sirpur & Tribal Bastar Heritage',
+    heritage: 'Dokra Lost-Wax Heartland & Sirpur Buddhist Horizon',
+    story: 'Your land is the ancient heart of Dokra lost-wax bronze casting and magnificent 7th-century Sirpur brick and stone monastic complexes.',
+    craft: 'Bastar Bell Metal (Dokra), wrought iron craft, and Kosa silk weaving.',
+    artifactId: 'art-001',
+    museumId: 'mus-in-rai-001',
+  },
+  '52': {
+    state: 'Andhra Pradesh (Vijayawada / Amaravati)',
+    era: 'Satavahana, Ikshvaku & Eastern Chalukya Epochs',
+    heritage: 'Amaravati Stupa & Krishna River Civilizations',
+    story: 'Your heritage gave birth to the magnificent Amaravati School of Art along the Krishna River, radiating limestone Buddhist mastery across South Asia.',
+    craft: 'Kalamkari hand-painted textiles, Kondapalli wooden toys, and brass casting.',
+    artifactId: 'art-004',
+    museumId: 'mus-in-vij-001',
+  },
+  '57': {
+    state: 'Karnataka (Mysuru / Coastal)',
+    era: 'Wadiyar Dynasty & Hoysala Architecture',
+    heritage: 'Karnataka Royal & Maritime Zenith',
+    story: 'Your ancestors built the soaring ivory and teak palaces of Mysuru and the filigree soapstone temples of the Deccan plateau.',
+    craft: 'Mysore rosewood inlay, sandalwood carving, and Mysore silk.',
+    artifactId: 'art-002',
+    museumId: 'mus-in-mys-001',
+  },
+  '73': {
+    state: 'Sikkim & North Bengal (Gangtok)',
+    era: 'Namgyal Dynasty & Vajrayana Buddhist Tradition',
+    heritage: 'Himalayan Kingdom & Silk Passes',
+    story: 'Your soil is guarded by Kangchenjunga, where centuries of sacred Buddhist learning, silk thangkas, and gilded monastic metallurgy thrive.',
+    craft: 'Thangka painting, Lepcha wood carving, and carpet weaving.',
+    artifactId: 'art-005',
+    museumId: 'mus-in-gan-001',
+  },
+  '74': {
+    state: 'Andaman & Nicobar Islands (Port Blair)',
+    era: 'Indigenous Maritime & Island Civilizations',
+    heritage: 'Bay of Bengal Oceanic Heritage',
+    story: 'Your islands represent millennia of harmonious indigenous ecological wisdom and historic maritime crossroads of the Indian Ocean.',
+    craft: 'Shell craft, cane and bamboo craft, and coconut shell carvings.',
+    artifactId: 'art-001',
+    museumId: 'mus-in-pbl-001',
+  },
+  '83': {
+    state: 'Jharkhand (Ranchi / Chota Nagpur)',
+    era: 'Santhal, Munda & Ancient Metallurgical Traditions',
+    heritage: 'Chota Nagpur Tribal Civilizations',
+    story: 'Your roots run deep into the mineral-rich soils of Chota Nagpur, home to ancient iron smelters, prehistoric Sohrai cave murals, and vibrant tribal lore.',
+    craft: 'Sohrai and Kohbar wall art, Dokra metalcraft, and bamboo weaves.',
+    artifactId: 'art-001',
+    museumId: 'mus-in-ran-001',
+  },
   '80': {
     state: 'Bihar (Patna / Nalanda / Gaya)',
     era: 'Mauryan Empire, Nalanda University & Magadha',
@@ -243,17 +349,53 @@ export function resolveRootsByPincode(pincode: string): RootConnection {
   const allArtifacts = getAllArtifacts();
   const allMuseums = getAllMuseums();
 
+  // Resolve user coordinates from PIN
+  const resolved = cleanPin.length === 6 ? resolvePinToCoordinates(cleanPin) : null;
+  const userCoords: Coordinates = resolved
+    ? resolved.coords
+    : { lat: 28.6139, lon: 77.2090 }; // default Delhi center
+
+  // Calculate live Haversine distance to all museums and sort by proximity
+  const museumsWithDistance: MuseumWithDistance[] = allMuseums.map((m) => {
+    const dist = calculateHaversineDistance(
+      userCoords.lat,
+      userCoords.lon,
+      m.coordinates.lat,
+      m.coordinates.lon
+    );
+    return {
+      ...m,
+      distance_km: dist,
+      isOpenToday: isMuseumOpenToday(m.opening_hours.closed_on),
+    };
+  });
+
+  museumsWithDistance.sort((a, b) => (a.distance_km ?? 0) - (b.distance_km ?? 0));
+
   const artifact = allArtifacts.find((a) => a.id === matched.artifactId) || allArtifacts[0];
-  const museum = allMuseums.find((m) => m.id === matched.museumId) || allMuseums[0];
+
+  // Pick primary museum (either the matched one with computed distance or the closest)
+  const matchedMuseum = museumsWithDistance.find((m) => m.id === matched.museumId);
+  const primaryNearby: MuseumWithDistance[] = matchedMuseum ? [matchedMuseum] : [];
+  for (const m of museumsWithDistance) {
+    if (primaryNearby.length >= 3) break;
+    if (!primaryNearby.some((existing) => existing.id === m.id)) {
+      primaryNearby.push(m);
+    }
+  }
+
+  const regionName = resolved
+    ? `${resolved.locationName} (${cleanPin})`
+    : `${matched.state} (PIN prefix ${prefix2}xxxx)`;
 
   return {
-    regionName: `${matched.state} (PIN prefix ${prefix2}xxxx)`,
+    regionName,
     state: matched.state,
     civilizationalEra: matched.era,
     dynasticHeritage: matched.heritage,
     culturalStory: matched.story,
     craftsTradition: matched.craft,
     highlightArtifacts: [artifact],
-    nearbyMuseums: [museum as any],
+    nearbyMuseums: primaryNearby,
   };
 }

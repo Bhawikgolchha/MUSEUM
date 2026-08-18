@@ -97,6 +97,64 @@ export const EXACT_PIN_COORDINATES: Record<string, { coords: Coordinates; locati
     locationName: 'Tripunithura, Kochi, Kerala',
   },
 
+  // 14 Expanded Museum PINs across India (M2 additions)
+  '160011': {
+    coords: { lat: 30.7490, lon: 76.7865 },
+    locationName: 'Sector 10, Chandigarh',
+  },
+  '143001': {
+    coords: { lat: 31.6258, lon: 74.8765 },
+    locationName: 'Town Hall / Katra Ahluwalia, Amritsar, Punjab',
+  },
+  '194101': {
+    coords: { lat: 34.1359, lon: 77.5385 },
+    locationName: 'Leh-Kargil Road / Leh Airport, Ladakh',
+  },
+  '171004': {
+    coords: { lat: 31.1044, lon: 77.1511 },
+    locationName: 'Chaura Maidan, Shimla, Himachal Pradesh',
+  },
+  '248006': {
+    coords: { lat: 30.3427, lon: 77.9995 },
+    locationName: 'Kaulagarh / FRI Campus, Dehradun, Uttarakhand',
+  },
+  '211002': {
+    coords: { lat: 25.4549, lon: 81.8547 },
+    locationName: 'Chandrashekhar Azad Park, Prayagraj, Uttar Pradesh',
+  },
+  '834009': {
+    coords: { lat: 23.3857, lon: 85.3789 },
+    locationName: 'Hotwar / Khelgaon, Ranchi, Jharkhand',
+  },
+  '492001': {
+    coords: { lat: 21.2427, lon: 81.6376 },
+    locationName: 'Civil Lines / Raj Bhavan, Raipur, Chhattisgarh',
+  },
+  '795001': {
+    coords: { lat: 24.8077, lon: 93.9388 },
+    locationName: 'Kangla Pat / Thangal Bazar, Imphal, Manipur',
+  },
+  '737102': {
+    coords: { lat: 27.3160, lon: 88.6046 },
+    locationName: 'Deorali, Gangtok, Sikkim',
+  },
+  '744102': {
+    coords: { lat: 11.6711, lon: 92.7265 },
+    locationName: 'Haddo / Delanipur, Port Blair, Andaman & Nicobar',
+  },
+  '462002': {
+    coords: { lat: 23.2344, lon: 77.3878 },
+    locationName: 'Shyamla Hills / TT Nagar, Bhopal, Madhya Pradesh',
+  },
+  '570001': {
+    coords: { lat: 12.3051, lon: 76.6552 },
+    locationName: 'Agrahara / Mysore Palace, Mysuru, Karnataka',
+  },
+  '520002': {
+    coords: { lat: 16.5085, lon: 80.6334 },
+    locationName: 'Buckinghampet / MG Road, Vijayawada, Andhra Pradesh',
+  },
+
   // Key metro / city central postal hubs & GPOs
   '110001': {
     coords: { lat: 28.6328, lon: 77.2197 },

@@ -419,8 +419,11 @@ export async function runTier5Tests(): Promise<TestResult[]> {
       const northProbe = findNearestMuseum({ lat: 35.5, lon: 75.0 }, allMuseums);
       assert(Boolean(northProbe.nearestMuseum), 'Must resolve nearest museum for northern probe');
       assert(
-        northProbe.nearestMuseum.id.includes('jam') || northProbe.nearestMuseum.state.includes('Jammu'),
-        `Northern probe should resolve to Jammu museum, got: ${northProbe.nearestMuseum.name}`
+        northProbe.nearestMuseum.id.includes('jam') ||
+        northProbe.nearestMuseum.state.includes('Jammu') ||
+        northProbe.nearestMuseum.state.includes('Ladakh') ||
+        northProbe.nearestMuseum.id.includes('leh'),
+        `Northern probe should resolve to Jammu/Ladakh museum, got: ${northProbe.nearestMuseum.name}`
       );
 
       // 2. Extreme South Probe: Southern tip / Indian Ocean (6.5°N, 77.0°E)
@@ -442,8 +445,9 @@ export async function runTier5Tests(): Promise<TestResult[]> {
       // 4. Extreme East Probe: Easternmost Arunachal/Assam border (27.5°N, 95.5°E)
       const eastProbe = findNearestMuseum({ lat: 27.5, lon: 95.5 }, allMuseums);
       assert(Boolean(eastProbe.nearestMuseum), 'Must resolve nearest museum for eastern probe');
+      const neStates = ['Assam', 'Meghalaya', 'Manipur', 'Sikkim', 'Arunachal Pradesh', 'Nagaland', 'Mizoram', 'Tripura'];
       assert(
-        eastProbe.nearestMuseum.state === 'Assam' || eastProbe.nearestMuseum.state === 'Meghalaya',
+        neStates.includes(eastProbe.nearestMuseum.state),
         `Eastern probe should resolve to NE museum, got: ${eastProbe.nearestMuseum.name}`
       );
 

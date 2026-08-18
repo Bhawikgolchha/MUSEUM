@@ -346,5 +346,140 @@
         "hedge": null
       }
     ]
+  },
+  {
+    "id": "art-007",
+    "museumName": "Indian Museum, Kolkata",
+    "museumId": "mus-in-kol-001",
+    "pincode": "700016",
+    "title": "Bharhut Stupa Railings & Gateway",
+    "imageUrl": "/images/sultanganj_buddha.jpg",
+    "curatorAltText": "2nd-century BCE red sandstone carved railings and torana gateway from the Buddhist stupa at Bharhut.",
+    "period": "c. 2nd Century BCE",
+    "material": "Red Sandstone",
+    "culture": "Shunga Period, Central India",
+    "provenanceLine": "Excavated at Bharhut by Alexander Cunningham in 1874; permanently installed in the Bharhut Gallery of the Indian Museum, Kolkata.",
+    "canonicalText": "Discovered in 1874 by Sir Alexander Cunningham at Bharhut, these monumental 2nd-century BCE red sandstone railings and gateway (torana) represent a foundational landmark of early Buddhist narrative art. Preserved inside the Indian Museum in Kolkata, the intricate bas-reliefs illustrate Jataka tales of Gautama Buddha's previous births, guardian Yaksha and Yakshi figures, and symbolic representations of dharma.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Discovered in 1874 by Sir Alexander Cunningham at Bharhut.",
+        "type": "provenance",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c2",
+        "text": "Dated to circa the 2nd century BCE during the Shunga period.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c3",
+        "text": "Carved from red sandstone featuring high-relief narrative medallions.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      }
+    ]
+  },
+  {
+    "id": "art-008",
+    "museumName": "Indian Museum, Kolkata",
+    "museumId": "mus-in-kol-001",
+    "pincode": "700016",
+    "title": "Gandhara Fasting Siddhartha",
+    "imageUrl": "/images/sultanganj_buddha.jpg",
+    "curatorAltText": "An ancient Gandharan gray schist sculpture depicting the emaciated ascetic Siddhartha during his meditation.",
+    "period": "c. 2nd–3rd Century CE",
+    "material": "Gray Schist",
+    "culture": "Gandhara Art (Kushan Era)",
+    "provenanceLine": "Recovered from ancient Gandhara monastic excavations; accessioned into the Indian Museum archaeological gallery.",
+    "canonicalText": "Dating to the 2nd to 3rd century CE Kushan era, this masterwork of Greco-Buddhist Gandhara sculpture captures Prince Siddhartha during his period of severe ascetic penance before achieving enlightenment. Sculpted from dark gray schist, every rib and vein is rendered with astonishing anatomical realism.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Dating to circa the 2nd to 3rd century CE during the Kushan era.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c2",
+        "text": "Carved from dark gray schist in the Greco-Buddhist Gandharan style.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      }
+    ]
+  },
+  {
+    "id": "art-009",
+    "museumName": "Salar Jung Museum",
+    "museumId": "mus-in-hyd-001",
+    "pincode": "500002",
+    "title": "Veiled Rebecca",
+    "imageUrl": "/images/chola_nataraja.jpg",
+    "curatorAltText": "Neoclassical white Carrara marble statue of the biblical Rebecca draped in a translucent marble veil.",
+    "period": "1876 CE",
+    "material": "Carrara Marble",
+    "culture": "Neoclassical Italian Sculpture (Giovanni Maria Benzoni)",
+    "provenanceLine": "Sculpted in Rome in 1876 by Giovanni Maria Benzoni; purchased by Salar Jung I during his European journey; now on permanent display at Salar Jung Museum, Hyderabad.",
+    "canonicalText": "Acquired in Rome in 1876, the Veiled Rebecca is the undisputed highlight of the European sculpture collection at the Salar Jung Museum in Hyderabad. Carved by Italian neoclassical master Giovanni Maria Benzoni from flawless white Carrara marble, the statue achieves the near-miraculous visual effect of a delicate, transparent veil clinging to the subject's face and bridal gown.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Sculpted in Rome in 1876 by Italian sculptor Giovanni Maria Benzoni.",
+        "type": "provenance",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c2",
+        "text": "Carved from a single block of white Carrara marble.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      }
+    ]
+  },
+  {
+    "id": "art-010",
+    "museumName": "Salar Jung Museum",
+    "museumId": "mus-in-hyd-001",
+    "pincode": "500002",
+    "title": "Mughal Emperor Jahangir Dagger",
+    "imageUrl": "/images/ashoka_lion_capital.jpg",
+    "curatorAltText": "17th-century white nephrite jade hilt dagger inscribed with the titles of Emperor Jahangir and Noor Jahan.",
+    "period": "c. 1620 CE",
+    "material": "Nephrite Jade, Damascus Steel, Gold inlay",
+    "culture": "Mughal Empire (Court of Jahangir)",
+    "provenanceLine": "Commissioned for the royal Mughal imperial treasury; preserved in the Salar Jung royal armory collection.",
+    "canonicalText": "Crafted around 1620 CE for the fourth Mughal Emperor Jahangir, this ceremonial dagger represents the pinnacle of royal lapidary craft. The hilt is carved from pure mutton-fat white nephrite jade into a stylized animal head, intricately inlaid with gold floral arabesques and precious stones.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Crafted around 1620 CE during the reign of Mughal Emperor Jahangir.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c2",
+        "text": "Features a carved white nephrite jade hilt with gold damascene blade.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      }
+    ]
   }
 ]

@@ -23,3 +23,9 @@ changed what I did?*
 - **Why:** Premature sanitization before format validation masked malformed query formats.
 - **How it was corrected:** Enforced strict regex validation `/^[1-9][0-9]{5}$/` on trimmed strings in `lib/museums.ts` and `lib/pincodes.ts`, and verified against 92 adversarial cases.
 - **Prevention:** Validate strict string schema contracts before sanitizing or mutating input tokens.
+
+## 2026-08-18 — Map zoom controls disconnected and placeholder mock vector line
+- **What went wrong:** Magnifying zoom controls updated state but were not bound to SVG/canvas transform, and map rendering used placeholder dot patterns and dummy path without authentic Indian geographic boundaries.
+- **Why:** `zoomLevel` state was unconnected to DOM styling and lacked a calibrated geographic projection matrix and SVG cartography.
+- **How it was corrected:** Created `IndiaMuseumMap.tsx` with authentic high-fidelity SVG contours (mainland India, island archipelagos, river systems, terrain ridges), integrated dynamic pan & zoom (1x-4x) with touch/mouse dragging, purged all "NanoBanana" text, added tabbed museum browsing on Collection page, and integrated Web Speech API narration across all 35 museums.
+- **Prevention:** Always bind interactive state to actual rendering transforms and test visual scaling via mechanical state machine test suites.

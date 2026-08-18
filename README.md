@@ -17,10 +17,10 @@
 - **Factual Fidelity Auditor:** Every claim from the curator's atomic fact checklist is audited against the adapted text. If a claim is contradicted, the system automatically engages a safe fallback to the museum's verbatim original words.
 - **Source Toggle:** 0ms instant toggle between the *Muse Version* and verbatim *Museum Original*.
 
-### 🗺️ 2. Find Museums by Area (NanoBanana Spatial Canvas)
+### 🗺️ 2. Find Museums by Area (India Spatial Heritage Canvas)
 - **Multi-Modal Search:** Discover museums across India by city (*Delhi*, *Chennai*, *Kolkata*, *Mumbai*, *Patna*, *Varanasi*, *Bengaluru*, *Hyderabad*), landmark, or 6-digit postal PIN code.
 - **HTML5 Geolocation ("Near Me"):** Instant proximity sorting with customizable radius ($5\text{ km}$, $10\text{ km}$, $25\text{ km}$, $50\text{ km}$, $100\text{ km}$).
-- **Interactive Heritage Map:** NanoBanana visual map with custom heritage pins, cluster collapsing, and bidirectional card-pin synchronization.
+- **Interactive Heritage Map:** High-fidelity SVG vector map of India with calibrated coordinates, pan/zoom controls, custom heritage pins, and bidirectional card-pin synchronization.
 
 ### 🌿 3. Connect to Your Roots (Living Lineage Discovery)
 - **PIN Code Lineage:** Maps any Indian PIN code to its ancestral postal circle and civilizational era (*Chola/Pandya*, *Mauryan/Magadha*, *Indus-Saraswati*, *Gupta Golden Age*, *Maratha*, *Pala-Sena*, *Kakatiya*, *Vijayanagara*).
@@ -39,7 +39,7 @@
 - **Typography:** Source Serif 4 (Canonical Museum Voice) + Inter (Muse Adapted Voice & UI)
 - **AI Models:** OpenRouter Free Tier (`google/gemini-2.0-flash-exp:free`, `openrouter/auto`) + Anthropic Claude 3.5 Sonnet + 54 Precomputed Offline Fallbacks
 - **Backend / Database:** Supabase PostgreSQL Schema + Local Fallback
-- **Spatial Map Engine:** NanoBanana Canvas
+- **Spatial Map Engine:** India Spatial Heritage Canvas (SVG Vector Engine)
 
 ---
 

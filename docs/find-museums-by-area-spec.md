@@ -2,7 +2,7 @@
 
 **Feature Name:** Find Museums by Area  
 **Target Region:** India (Domestic Geographic Scope)  
-**Visuals & Map Provider:** NanoBanana  
+**Visuals & Map Provider:** India Spatial Canvas  
 **Status:** Ready for Implementation  
 
 ---
@@ -84,14 +84,14 @@ The "Find Museums by Area" feature enables users to discover, filter, and explor
 
 ### 3.3 UI / UX Layout & Synchronization
 - **Dual-Pane Split View:**
-  - *Desktop (≥1025px):* 55% NanoBanana Interactive Map (left/top) + 45% Scrollable Museum Result Cards (right).
-  - *Mobile (<1025px):* Full-width NanoBanana Map with draggable bottom sheet or segmented "Map / List" toggle.
+  - *Desktop (≥1025px):* 55% India Spatial Canvas Interactive Map (left/top) + 45% Scrollable Museum Result Cards (right).
+  - *Mobile (<1025px):* Full-width India Spatial Canvas Map with draggable bottom sheet or segmented "Map / List" toggle.
 - **Bidirectional Map-List Sync:**
   - Hovering / tapping a card highlights and bounces the map marker.
-  - Tapping a map marker scrolls the corresponding card into view and opens the NanoBanana marker popup.
+  - Tapping a map marker scrolls the corresponding card into view and opens the India Spatial Canvas marker popup.
   - Pan / Zoom on map updates the search results when "Search as I move the map" is toggled on.
 - **Marker Clustering:** Dynamic clustering for dense urban areas (e.g., Central Delhi, Kolkata Heritage District, South Mumbai).
-- **Museum Detail Modal / Drawer:** Shows high-resolution NanoBanana thumbnail gallery, address, contact, hours table, accessibility audit, and direct link to the Digital Muse interpretation engine.
+- **Museum Detail Modal / Drawer:** Shows high-resolution India Spatial Canvas thumbnail gallery, address, contact, hours table, accessibility audit, and direct link to the Digital Muse interpretation engine.
 
 ---
 
@@ -219,7 +219,7 @@ The "Find Museums by Area" feature enables users to discover, filter, and explor
              ↓
 [4. Ranking & Tie-Breaking Engine]
              ↓
-[5. Paginated JSON Result + NanoBanana Marker Layer]
+[5. Paginated JSON Result + India Spatial Canvas Marker Layer]
 ```
 
 ### 5.2 Haversine Distance Formula
@@ -252,13 +252,13 @@ S = W_d \cdot (1 - \frac{d}{r}) + W_c \cdot C_{score} + W_p \cdot P_{score} + W_
 
 ---
 
-## 6. Visuals Integration with NanoBanana
+## 6. Visuals Integration with India Spatial Canvas
 
-NanoBanana acts as the high-performance map canvas, spatial cluster visualizer, and thumbnail gallery coordinator.
+India Spatial Canvas acts as the high-performance map canvas, spatial cluster visualizer, and thumbnail gallery coordinator.
 
-### 6.1 NanoBanana Configuration & Inputs
+### 6.1 India Spatial Canvas Configuration & Inputs
 ```typescript
-interface NanoBananaMapConfig {
+interface SpatialMapConfig {
   apiKey?: string;
   containerId: string;
   center: [number, number]; // [lat, lon] e.g. [28.6139, 77.2090]
@@ -268,10 +268,10 @@ interface NanoBananaMapConfig {
   maxBounds: [[6.5, 67.0], [38.5, 98.5]]; // India Bounding Box
   theme: 'museum-paper' | 'editorial-light';
   clusterRadius: 50;
-  markers: NanoBananaMarkerItem[];
+  markers: SpatialMarkerItem[];
 }
 
-interface NanoBananaMarkerItem {
+interface SpatialMarkerItem {
   id: string;
   coordinates: [number, number];
   title: string;
@@ -284,12 +284,12 @@ interface NanoBananaMarkerItem {
 
 ### 6.2 Layout Architecture
 - **Split Screen Layout:**
-  - NanoBanana map renders with smooth inertial zooming and custom heritage pin markers (using `--accent: #1F5F5B` and `--verified: #1B6B3A`).
+  - India Spatial Canvas map renders with smooth inertial zooming and custom heritage pin markers (using `--accent: #1F5F5B` and `--verified: #1B6B3A`).
   - Active marker displays animated pulse ring with thumbnail mini-preview.
-- **NanoBanana Gallery Modal:**
-  - Inside the museum detail modal, NanoBanana renders a responsive masonry/carousel gallery with progressive WebP image loading and curator attribution badges.
+- **India Spatial Canvas Gallery Modal:**
+  - Inside the museum detail modal, India Spatial Canvas renders a responsive masonry/carousel gallery with progressive WebP image loading and curator attribution badges.
 - **Graceful Fallback:**
-  - If `NANOBANANA_API_KEY` is missing or the CDN fails, the UI automatically falls back to an **interactive SVG schematic map** and standard CSS grid list without crashing.
+  - If `MAP_API_KEY` is missing or the CDN fails, the UI automatically falls back to an **interactive SVG schematic map** and standard CSS grid list without crashing.
 
 ---
 
@@ -315,7 +315,7 @@ interface NanoBananaMarkerItem {
 
 ### 8.1 Key Configuration
 - **Server Keys:** Stored in environment variables (`GEOCODING_API_KEY`, `PLACES_API_KEY`) without client exposure.
-- **Client Visual Keys:** `NEXT_PUBLIC_NANOBANANA_KEY` restricted by HTTP Referrer / Domain whitelist (e.g., `*.museum-muse.app`, `localhost:3000`).
+- **Client Visual Keys:** `NEXT_PUBLIC_MAP_KEY` restricted by HTTP Referrer / Domain whitelist (e.g., `*.museum-muse.app`, `localhost:3000`).
 
 ### 8.2 Privacy & Geolocation Protection
 - **No Coordinate Logging:** Visitor GPS coordinates are used purely in-memory for distance sorting and are never logged, stored in databases, or sent to analytics trackers.
@@ -331,7 +331,7 @@ interface NanoBananaMarkerItem {
 | **No museums in search radius** | `200 OK` (empty results) | "No museums found within [X] km of [Area]. Would you like to expand radius to 50 km or explore all museums in [State]?" |
 | **Geocoding query unresolved** | `404 / GEO_NOT_FOUND` | "We couldn't locate that specific area. Please try searching for a city (e.g., 'Kochi', 'Patna') or postal PIN code." |
 | **User denies Geolocation** | `CLIENT_GEO_DENIED` | Graceful prompt: "Location access disabled. Enter your city or PIN code to find nearby museums." |
-| **NanoBanana key missing / network drop** | `MAP_FALLBACK` | Displays clean schematic card list with distance badges and static SVG location indicators. |
+| **India Spatial Canvas key missing / network drop** | `MAP_FALLBACK` | Displays clean schematic card list with distance badges and static SVG location indicators. |
 | **Coordinates outside India** | `400 OUT_OF_BOUNDS` | "Discovery is currently limited to museums across India. Explore our curated collections in New Delhi, Kolkata, Chennai, and Mumbai." |
 
 ---
@@ -356,7 +356,7 @@ interface NanoBananaMarkerItem {
 
 1. **Dataset Seeding:** Bundle `data/indian-museums.json` containing verified records across major Indian cultural hubs.
 2. **Environment Variables Configuration:**
-   - `NEXT_PUBLIC_NANOBANANA_KEY=nb_live_xxx` (or left blank for offline fallback mode).
+   - `NEXT_PUBLIC_MAP_KEY=nb_live_xxx` (or left blank for offline fallback mode).
    - `GEOCODING_API_KEY=geo_xxx` (optional external geocoding provider).
 3. **Feature Flagging:** Feature flag `ENABLE_MUSEUM_GEO_DISCOVERY=true`.
 4. **Monitoring & Latency Alarms:**
@@ -370,7 +370,7 @@ interface NanoBananaMarkerItem {
 ### 12.1 Configuration Snippet (Environment Format)
 ```ini
 # Environment Configuration (.env.local)
-NEXT_PUBLIC_NANOBANANA_KEY=nb_live_sample_key_ind_2026
+NEXT_PUBLIC_MAP_KEY=nb_live_sample_key_ind_2026
 NEXT_PUBLIC_DEFAULT_SEARCH_REGION=IN
 GEOCODING_API_KEY=geo_provider_secure_key
 ENABLE_MUSEUM_GEO_DISCOVERY=true

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MuseumWithDistance } from '@/lib/museums';
+import { MuseumWithDistance, getMuseumNarrationText } from '@/lib/museums';
 import { Ticket, Sparkles, CheckCircle2, ChevronRight, HelpCircle } from 'lucide-react';
 import MuseumDoubtChat from '@/components/MuseumDoubtChat';
+import ReadAloudButton from '@/components/ReadAloudButton';
 
 interface MuseumCardProps {
   museum: MuseumWithDistance;
@@ -20,6 +21,7 @@ export default function MuseumCard({
 }: MuseumCardProps) {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const hasMuseArtifacts = museum.featured_artifacts && museum.featured_artifacts.length > 0;
+  const narrationText = getMuseumNarrationText(museum);
 
   return (
     <div
@@ -50,7 +52,7 @@ export default function MuseumCard({
           {/* Distance Pill if available */}
           {museum.distance_km !== undefined && (
             <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-[var(--ink)]/90 backdrop-blur-xs text-white text-[10px] font-semibold tracking-wide shadow-xs">
-              {museum.distance_km} km
+              {museum.distance_km} km away
             </div>
           )}
         </div>
@@ -102,7 +104,10 @@ export default function MuseumCard({
             </div>
 
             {/* Action Links */}
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2" onClick={(e) => e.stopPropagation()}>
+              {/* Text to Speech Read Aloud Narration */}
+              <ReadAloudButton textToRead={narrationText} />
+
               {/* Ask Doubt Toggle Button */}
               <button
                 type="button"

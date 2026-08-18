@@ -4,8 +4,9 @@ import React from 'react';
 import Sheet from './ui/Sheet';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MuseumWithDistance } from '@/lib/museums';
+import { MuseumWithDistance, getMuseumNarrationText } from '@/lib/museums';
 import { Landmark, MapPin, Clock, Ticket, Phone, Globe, Sparkles, Check, CheckCircle2, ChevronRight } from 'lucide-react';
+import ReadAloudButton from './ReadAloudButton';
 
 interface MuseumDetailModalProps {
   isOpen: boolean;
@@ -21,6 +22,7 @@ export default function MuseumDetailModal({
   if (!museum) return null;
 
   const hasMuseArtifacts = museum.featured_artifacts && museum.featured_artifacts.length > 0;
+  const narrationText = getMuseumNarrationText(museum);
 
   return (
     <Sheet
@@ -42,11 +44,14 @@ export default function MuseumDetailModal({
         </div>
       </div>
 
-      {/* Description */}
+      {/* Description & Audio Narration Bar */}
       <div className="space-y-2">
-        <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--ink-muted)]">
-          About The Institution
-        </h3>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--ink-muted)]">
+            About The Institution
+          </h3>
+          <ReadAloudButton textToRead={narrationText} />
+        </div>
         <p className="text-sm text-[var(--ink)] leading-relaxed">
           {museum.description}
         </p>

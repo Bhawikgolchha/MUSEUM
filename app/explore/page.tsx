@@ -9,7 +9,7 @@ import {
   findNearestMuseumForPincode,
 } from '@/lib/museums';
 import AreaSearchHeader from '@/components/AreaSearchHeader';
-import NanoBananaMap from '@/components/NanoBananaMap';
+import IndiaMuseumMap from '@/components/IndiaMuseumMap';
 import MuseumCard from '@/components/MuseumCard';
 import MuseumDetailModal from '@/components/MuseumDetailModal';
 import NearestMuseumModal from '@/components/NearestMuseumModal';
@@ -164,9 +164,9 @@ export default function ExploreMuseumsPage() {
 
       {/* Main Dual-Pane Responsive Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Left / Top: NanoBanana Interactive Map Canvas */}
+        {/* Left / Top: India Spatial Heritage Interactive Map Canvas */}
         <div className="lg:col-span-6 lg:sticky lg:top-24">
-          <NanoBananaMap
+          <IndiaMuseumMap
             museums={results}
             selectedMuseum={selectedMuseum}
             onSelectMuseum={(m) => {

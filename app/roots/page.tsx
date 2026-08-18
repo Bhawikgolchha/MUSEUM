@@ -5,6 +5,8 @@ import { resolveRootsByPincode, RootConnection, POSTAL_CIRCLE_MAP } from '@/lib/
 import { saveUserRootDiscovery } from '@/lib/supabase';
 import ArtifactCard from '@/components/ArtifactCard';
 import MuseumCard from '@/components/MuseumCard';
+import MuseumDetailModal from '@/components/MuseumDetailModal';
+import { MuseumWithDistance } from '@/lib/museums';
 import ReadAloudButton from '@/components/ReadAloudButton';
 import { Sparkles, Heart, MapPin, Search, Landmark, Layers, ChevronRight, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -13,6 +15,8 @@ export default function ConnectToRootsPage() {
   const [pincode, setPincode] = useState<string>('600008');
   const [rootData, setRootData] = useState<RootConnection | null>(() => resolveRootsByPincode('600008'));
   const [hasSearched, setHasSearched] = useState<boolean>(true);
+  const [selectedMuseum, setSelectedMuseum] = useState<MuseumWithDistance | null>(null);
+  const [isDetailModalOpen, setIsDetailModalOpen] = useState<boolean>(false);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -195,14 +199,24 @@ export default function ConnectToRootsPage() {
                   <MuseumCard
                     key={museum.id}
                     museum={museum}
-                    isSelected={false}
-                    onSelect={() => {}}
-                    onOpenDetails={() => {}}
+                    isSelected={selectedMuseum?.id === museum.id}
+                    onSelect={() => setSelectedMuseum(museum)}
+                    onOpenDetails={() => {
+                      setSelectedMuseum(museum);
+                      setIsDetailModalOpen(true);
+                    }}
                   />
                 ))}
               </div>
             </div>
           )}
+
+          {/* Museum Details Sheet Modal */}
+          <MuseumDetailModal
+            isOpen={isDetailModalOpen}
+            onClose={() => setIsDetailModalOpen(false)}
+            museum={selectedMuseum}
+          />
         </div>
       )}
     </div>

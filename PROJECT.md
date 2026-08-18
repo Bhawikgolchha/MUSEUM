@@ -1,117 +1,60 @@
-# Project: Indian Museum Directory, AI Doubt Chat & Spatial Fallback
+# Project: Museum Discovery Backend Heritage Service
 
 ## Architecture
-- **Framework & Runtime**: Next.js 16.3.1 (App Router, Turbopack), React 19.2.8, TypeScript, Tailwind CSS v4.
-- **Museum Data Layer**: `data/indian-museums.json` holding authentic museum records with strict schema validation.
-- **Geospatial & Spatial Search**: `lib/museums.ts` with Haversine distance calculation, postal circle centroid resolution for 6-digit Indian PIN codes, and city hub matching.
-- **AI Grounding & Chat Service**: `lib/openrouter.ts`, `app/api/museum-chat/route.ts` powered by OpenRouter API (`google/gemini-2.0-flash-exp:free`) with museum operational metadata context injection and offline deterministic fallback.
-- **UI & Presentation Layer**:
-  - `app/explore/page.tsx`: Spatial search, interactive map, list of cards, modal triggers.
-  - `components/MuseumCard.tsx`: Museum card with "Ask Doubt" toggle button and embedded chat drawer.
-  - `components/MuseumDoubtChat.tsx`: Expandable drawer with 5 preset doubt chips, chat stream, loading indicators, error recovery.
-  - `components/NearestMuseumModal.tsx`: "Not Found" modal for non-matching PIN searches showing nearest museum with Haversine distance and 1-click centering CTA.
-  - `components/NanoBananaMap.tsx`: Topographic India map with reactive markers and centering.
+- Framework: Next.js App Router (Next.js 16.3.1, TypeScript 5, React 19.2.8)
+- Primary Service Route: `app/api/heritage-service/route.ts` (POST & GET)
+- Subsystem Services:
+  - `lib/services/geocoding.ts`: Multi-tier geocoding resolution (LRU cache -> In-memory/DB -> National directory -> Nominatim/External provider) & multi-match disambiguation.
+  - `lib/services/artifacts.ts`: Strict PIN-linked artifact retrieval (zero fuzzy fallback), schema normalization, and `data_quality` metadata flagging.
+  - `lib/services/pii-redactor.ts`: PII sanitizer scrubbing curator/donor personal identifiers (names, emails, phone numbers).
+  - `lib/services/tts.ts`: IG API TTS client with exponential backoff retries (429, 500-504), full jitter, timeout handling, and partial failure fallback.
+  - `lib/services/logger.ts`: Security audit logger with API key masking (`ig-****1234`) and SHA-256 digest hashing.
+  - `lib/services/types.ts`: TypeScript contracts for requests, responses, artifacts, locations, TTS, and error taxonomy.
 
 ## Feature Inventory
 | # | Feature | Description | Milestone | Source |
 |---|---------|-------------|-----------|--------|
-| 1 | F1: Museum Dataset Expansion | Expand `data/indian-museums.json` from 8 to 21 authentic Indian museums across diverse states/UTs with complete verified metadata (PIN, coordinates, fees, schedule, accessibility, description). | M1 | ORIGINAL_REQUEST §R2 |
-| 2 | F2: Geospatial & PIN Centroid Resolver | Update `lib/museums.ts` with `POSTAL_PREFIX_CENTROIDS`, `findNearestMuseumForPincode()`, and expanded `KNOWN_INDIAN_LOCATIONS`. | M1 | ORIGINAL_REQUEST §R2, §R3 |
-| 3 | F3: PIN Code Search & Fallback Modal UI | Build `components/NearestMuseumModal.tsx` showing "No Museum Directly in PIN [PIN]" with calculated Haversine distance and 1-click CTA. | M2 | ORIGINAL_REQUEST §R3 |
-| 4 | F4: Explore Page PIN Search Integration | Update `app/explore/page.tsx` to detect 6-digit PIN code queries and trigger nearest fallback modal when 0 direct matches exist. | M2 | ORIGINAL_REQUEST §R3 |
-| 5 | F5: Museum Doubt Chat API Route | Create `app/api/museum-chat/route.ts` using OpenRouter with grounded system prompt, error handling, and offline fallback. | M3 | ORIGINAL_REQUEST §R1 |
-| 6 | F6: Inline Museum Doubt Chat Drawer | Create `components/MuseumDoubtChat.tsx` with 5 preset chips, chat history, and loading feedback. Integrate "Ask Doubt" toggle in `components/MuseumCard.tsx`. | M3 | ORIGINAL_REQUEST §R1 |
-| 7 | F7: E2E Test Suite & Verification | Comprehensive 4-tier test runner verifying chat API, dataset expansion (>=18 museums), PIN fallback calculation, and full `npm run build` compilation. | M4 | ORIGINAL_REQUEST §Acceptance Criteria |
+| 1 | Strict PIN Regex Validation | Validates 6-digit Indian PIN (`/^[1-9][0-9]{5}$/`), rejects non-digits and leading zeros with HTTP 400 `INVALID_PINCODE_FORMAT` | M1 | ORIGINAL_REQUEST §R1 |
+| 2 | Tier 1 In-Memory/DB Geocoding | Instant resolution against authoritative museum PIN dictionary and metro hubs | M1 | ORIGINAL_REQUEST §R1 |
+| 3 | Tier 2 National Postal Directory | Resolves 3-digit sorting district centroid and postal circle coordinates | M1 | ORIGINAL_REQUEST §R1 |
+| 4 | Tier 3 External Geocoder | Queries OpenStreetMap Nominatim / National Postal API for unmapped PINs | M1 | ORIGINAL_REQUEST §R1 |
+| 5 | Multi-Match Disambiguation | Returns `location_candidates` array with status `partial` when a PIN spans multiple areas | M1 | ORIGINAL_REQUEST §R1 |
+| 6 | LRU Low-Latency Cache | High-speed cache guaranteeing <=100ms response time on cached lookups | M1 | ORIGINAL_REQUEST §R1 |
+| 7 | Strict Exact-PIN Artifact Matching | Queries museum/artifact repository strictly matching PIN. ZERO fuzzy/distance fallback | M2 | ORIGINAL_REQUEST §R2 |
+| 8 | Explicit Zero-Match Reporting | Returns `museum_linked_artifacts: []`, `total_artifacts_found: 0`, and explicit indicator if no artifacts match | M2 | ORIGINAL_REQUEST §R2 |
+| 9 | Standardized Artifact Schema | Normalizes artifact records with complete metadata (id, title, description, museum info, licensing) | M2 | ORIGINAL_REQUEST §R2 |
+| 10 | Data Quality Metadata Flagging | Audits artifact records for missing critical fields and flags with `data_quality: { is_complete, missing_fields }` | M2 | ORIGINAL_REQUEST §R2 |
+| 11 | Automated PII Redaction | Scrubs curator, donor, and collector personal contact info (names, emails, phones) from text fields | M2 | ORIGINAL_REQUEST §R2 |
+| 12 | Spoken Narrative Text Composer | Assembles natural language spoken script from geographic location and artifact summaries | M3 | ORIGINAL_REQUEST §R3 |
+| 13 | IG API TTS Client | Invokes upstream IG API TTS REST endpoint with user API key, voice, language, and audio base64 output | M3 | ORIGINAL_REQUEST §R3 |
+| 14 | Exponential Backoff & Jitter | Retries transient errors (429, 500, 502, 503, 504) up to 3 times with exponential delays + jitter | M3 | ORIGINAL_REQUEST §R3 |
+| 15 | Key Masking & SHA-256 Audit | Strictly masks API keys (`ig-****1234`) and records SHA-256 hashes in audit logs | M3 | ORIGINAL_REQUEST §R3 |
+| 16 | Partial Failure Non-Fatal Degradation | Returns HTTP 200/207 with intact textual payload and error object if TTS generation fails | M3 | ORIGINAL_REQUEST §R3 |
+| 17 | Unified Heritage Service Route | Main Next.js API route (`app/api/heritage-service/route.ts`) supporting POST and GET | M4 | ORIGINAL_REQUEST §R4 |
+| 18 | Error Taxonomy & Response Modes | Standardized error taxonomy (`INVALID_PINCODE_FORMAT`, `PINCODE_NOT_FOUND`, `TTS_AUTH_ERROR`, etc.) and response modes (`text`, `tts`, `both`) | M4 | ORIGINAL_REQUEST §R4 |
+| 19 | 100% E2E Test Suite & Adversarial Hardening | Comprehensive 4-tier E2E test suite (Tiers 1-4) passing 100% + Tier 5 adversarial coverage hardening | M5 | ORIGINAL_REQUEST §Acceptance |
 
 ## Milestones
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| 1 | M1: Museum Dataset Expansion & Geospatial Resolver | Add 13 authentic Indian museums to `data/indian-museums.json` (total 21), add PIN prefix centroids & helper functions to `lib/museums.ts`. | None | PLANNED |
-| 2 | M2: PIN Code Search & Nearest Museum Fallback Modal | Create `components/NearestMuseumModal.tsx`, integrate PIN query detection and fallback modal in `app/explore/page.tsx`. | M1 | PLANNED |
-| 3 | M3: Museum Doubt Chat Box & OpenRouter Integration | Create `app/api/museum-chat/route.ts`, create `components/MuseumDoubtChat.tsx`, integrate into `components/MuseumCard.tsx`. | M1 | PLANNED |
-| 4 | M4: Final System Verification & E2E Testing | Execute full test suite, verify `npm run build` with 0 errors, perform challenger and forensic audit checks. | M1, M2, M3 | PLANNED |
-
-## Interface Contracts
-
-### `data/indian-museums.json` ↔ `lib/museums.ts`
-```typescript
-export interface Coordinates {
-  lat: number;
-  lon: number;
-}
-
-export interface Museum {
-  id: string;
-  name: string;
-  vernacular_names?: Record<string, string | undefined>;
-  address: string;
-  city: string;
-  state: string;
-  pincode: string; // 6-digit string: /^[1-9][0-9]{5}$/
-  coordinates: Coordinates;
-  category: string;
-  governance: string;
-  opening_hours: {
-    schedule: string;
-    closed_on: string[];
-    timings: string;
-  };
-  entry_fee: {
-    is_free: boolean;
-    domestic_inr: number;
-    foreign_inr: number;
-  };
-  accessibility_features: string[];
-  contact: {
-    phone?: string;
-    email?: string;
-    website?: string;
-  };
-  thumbnail_url: string;
-  gallery_urls: string[];
-  description: string;
-  artifact_count_approx: number;
-  muse_collection_id?: string;
-  featured_artifacts?: string[];
-  source: string;
-  last_updated: string;
-}
-```
-
-### `lib/museums.ts` ↔ Nearest Fallback Modal & Explore Page
-```typescript
-export function findNearestMuseumForPincode(pincode: string): {
-  nearestMuseum: MuseumWithDistance;
-  distanceKm: number;
-  searchedPin: string;
-  regionName: string;
-} | null;
-```
-
-### `components/MuseumCard.tsx` ↔ `app/api/museum-chat`
-```typescript
-// POST /api/museum-chat
-export interface MuseumChatRequest {
-  museumId: string;
-  question: string;
-  history?: Array<{ role: 'user' | 'assistant'; content: string }>;
-}
-
-export interface MuseumChatResponse {
-  status: 'ok' | 'fallback' | 'error';
-  reply: string;
-  museumId: string;
-  museumName: string;
-}
-```
+| E2E | E2E Testing Track | Mock harness, test runner, 82+ test cases (Tiers 1-4), `TEST_INFRA.md`, `TEST_READY.md` | none | IN_PROGRESS |
+| M1 | Geocoding & Postal Hierarchy | `lib/services/geocoding.ts`, regex validation, 3-tier lookup, multi-match disambiguation, LRU cache | none | IN_PROGRESS |
+| M2 | Museum Artifacts & PII Redaction | `lib/services/artifacts.ts`, `lib/services/pii-redactor.ts`, exact matching, zero-match reporting, data_quality flagging | none | IN_PROGRESS |
+| M3 | IG API TTS & Security Logger | `lib/services/tts.ts`, `lib/services/logger.ts`, exponential backoff, key masking, SHA-256 audit, partial failure fallback | none | IN_PROGRESS |
+| M4 | Unified API Route & Payload Formatter | `app/api/heritage-service/route.ts`, request parsing, response formatting (`text`/`tts`/`both`), error taxonomy | M1, M2, M3 | PLANNED |
+| M5 | Final Acceptance & Adversarial Verification | Pass 100% of E2E test suite (Tiers 1-4) + Tier 5 adversarial stress testing | E2E, M4 | PLANNED |
 
 ## Code Layout
-- `data/indian-museums.json`: Canonical repository of authentic Indian museum records.
-- `lib/museums.ts`: Spatial queries, Haversine calculations, postal centroids, and data access.
-- `lib/openrouter.ts`: OpenRouter API invocation client.
-- `app/api/museum-chat/route.ts`: Museum docent chat route handler with metadata prompt grounding.
-- `components/MuseumCard.tsx`: Museum card with doubt drawer toggle.
-- `components/MuseumDoubtChat.tsx`: Inline expandable chat drawer with preset chips.
-- `components/NearestMuseumModal.tsx`: Accessible modal for PIN code fallback.
-- `app/explore/page.tsx`: Spatial discovery page orchestrating search, map, cards, and modals.
-- `scripts/test-e2e-all.ts`: Opaque-box E2E test suite runner.
+- `lib/services/types.ts`: Central type definitions for the backend service.
+- `lib/services/geocoding.ts`: Geocoding service with 3-tier resolution, LRU cache, and candidate lists.
+- `lib/services/artifacts.ts`: Artifact query service with exact matching, zero-match reporting, and data quality checks.
+- `lib/services/pii-redactor.ts`: PII sanitization utility for donor/curator data.
+- `lib/services/tts.ts`: IG API TTS client with retry logic, backoff, and partial degradation.
+- `lib/services/logger.ts`: Masked security logging and SHA-256 hashing.
+- `app/api/heritage-service/route.ts`: Next.js App Router API endpoint.
+- `tests/e2e/backend_service.test.ts` & `tests/e2e/e2e_backend_runner.ts`: E2E test runner and test cases.
+
+## Interface Contracts
+### Types (`lib/services/types.ts`)
+- `PincodeRequest`: `{ pincode: string, response_format?: 'text' | 'tts' | 'both', api_key?: string, voice?: string, language?: string, max_artifacts?: number }`
+- `PincodeResponse`: `{ status: 'success' | 'partial' | 'error', request_id: string, pincode_valid: boolean, location: LocationData | null, museum_linked_artifacts: StandardizedArtifact[], total_artifacts_found: number, tts: TTSData | null, errors: ErrorDetail[] }`

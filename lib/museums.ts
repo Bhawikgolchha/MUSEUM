@@ -1,4 +1,5 @@
 import museumsData from '@/data/indian-museums.json';
+import { resolvePinToCoordinates } from './pincodes';
 
 export interface Coordinates {
   lat: number;
@@ -159,6 +160,18 @@ export const KNOWN_INDIAN_LOCATIONS: Record<string, Coordinates> = {
   'madurai': { lat: 9.9252, lon: 78.1198 },
   'mysuru': { lat: 12.2958, lon: 76.6394 },
   'mysore': { lat: 12.2958, lon: 76.6394 },
+  'leh': { lat: 34.1359, lon: 77.5385 },
+  'ladakh': { lat: 34.1359, lon: 77.5385 },
+  'prayagraj': { lat: 25.4549, lon: 81.8547 },
+  'allahabad': { lat: 25.4549, lon: 81.8547 },
+  'imphal': { lat: 24.8077, lon: 93.9388 },
+  'manipur': { lat: 24.8077, lon: 93.9388 },
+  'gangtok': { lat: 27.3160, lon: 88.6046 },
+  'sikkim': { lat: 27.3160, lon: 88.6046 },
+  'port blair': { lat: 11.6711, lon: 92.7265 },
+  'andaman': { lat: 11.6711, lon: 92.7265 },
+  'vijayawada': { lat: 16.5085, lon: 80.6334 },
+  'amaravati': { lat: 16.5131, lon: 80.5165 },
 };
 
 export interface PostalPrefixCentroid {
@@ -235,10 +248,11 @@ export function findNearestMuseumForPincode(pincode: string): {
   regionName: string;
 } | null {
   if (typeof pincode !== 'string') return null;
-  const cleanPin = pincode.trim();
-  if (!/^[1-9][0-9]{5}$/.test(cleanPin)) {
+  const digits = pincode.replace(/\D/g, '');
+  if (digits.length !== 6 || !/^[1-9][0-9]{5}$/.test(digits)) {
     return null;
   }
+  const cleanPin = digits;
 
   const allMuseums = getAllMuseums();
   if (allMuseums.length === 0) return null;
@@ -310,7 +324,16 @@ export function searchMuseums(params: MuseumSearchParams): {
 
   let center = params.center || null;
 
-  // If query matches a known city/landmark, resolve center
+  // 1. If query contains a 6-digit Indian PIN code, resolve center from PIN
+  const pinMatch = q.match(/\b([1-9][0-9]{5})\b/);
+  if (!center && pinMatch) {
+    const pinLocation = resolvePinToCoordinates(pinMatch[1]);
+    if (pinLocation) {
+      center = pinLocation.coords;
+    }
+  }
+
+  // 2. If query matches a known city/landmark, resolve center
   if (!center && q) {
     for (const [key, coords] of Object.entries(KNOWN_INDIAN_LOCATIONS)) {
       if (q.includes(key)) {
@@ -393,4 +416,21 @@ export function searchMuseums(params: MuseumSearchParams): {
     resolvedCenter: center,
     total: filtered.length,
   };
+}
+
+/**
+ * Assembles full archival text-to-speech narration script for a museum
+ */
+export function getMuseumNarrationText(museum: Museum | MuseumWithDistance): string {
+  const feeText = museum.entry_fee.is_free
+    ? 'Admission is free for all visitors.'
+    : `Entry fee is ${museum.entry_fee.domestic_inr} rupees for domestic visitors and ${museum.entry_fee.foreign_inr} rupees for foreign visitors.`;
+  const hoursText = `Visiting hours: ${museum.opening_hours.timings}. ${
+    museum.opening_hours.closed_on && museum.opening_hours.closed_on.length > 0
+      ? `Closed on ${museum.opening_hours.closed_on.join(', ')}.`
+      : 'Open all days.'
+  }`;
+  const addressText = `Located at ${museum.address}, ${museum.city}, ${museum.state}, PIN code ${museum.pincode}.`;
+
+  return `${museum.name}, located in ${museum.city}, ${museum.state}. ${museum.description} ${addressText} ${hoursText} ${feeText}`;
 }
