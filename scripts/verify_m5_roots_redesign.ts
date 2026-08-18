@@ -103,10 +103,10 @@ function runM5Verification() {
   );
 
   assert(
-    aiBriefContent.includes('Claim Verification Badge') &&
-      aiBriefContent.includes('100% Verified Archival Grounding') &&
+    aiBriefContent.includes('Factual Claim Ledger') &&
+      aiBriefContent.includes('Archival Historical Grounding') &&
       aiBriefContent.includes('0.0%'),
-    'AiHistoricalBrief provides claim verification badge and zero-hallucination audit scorecard'
+    'AiHistoricalBrief provides factual claim ledger and zero-hallucination audit scorecard'
   );
 
   // ==============================================================

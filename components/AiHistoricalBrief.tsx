@@ -703,8 +703,8 @@ export default function AiHistoricalBrief({
                 : 'bg-[var(--paper)] text-[var(--ink-muted)] hover:text-[var(--ink)] border border-[var(--rule)]'
             }`}
           >
-            <ShieldCheck className="w-3.5 h-3.5 text-[var(--verified)]" />
-            <span>Claim Verification Badge</span>
+            <BookOpen className="w-3.5 h-3.5 text-[var(--accent)]" />
+            <span>Factual Claim Ledger</span>
           </button>
         </div>
       )}
@@ -1008,7 +1008,7 @@ export default function AiHistoricalBrief({
                     National Cultural Integrity &amp; Factual Grounding
                   </div>
                   <h3 className="font-serif text-lg sm:text-xl font-semibold text-[var(--ink)]">
-                    100% Verified Archival Grounding
+                    Archival Historical Grounding
                   </h3>
                 </div>
               </div>

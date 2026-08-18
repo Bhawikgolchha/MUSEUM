@@ -47,14 +47,9 @@ export default function Footer() {
         {/* Bottom Row: Institutional Trust Badges & Colophon */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[11px] text-[var(--ink-faint)]">
           <div className="flex flex-wrap items-center gap-3">
-            <div className="inline-flex items-center gap-1.5 text-[var(--verified)] bg-[var(--verified-soft)] px-2.5 py-1 rounded-full border border-[var(--verified)]/20 font-mono">
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>100% Mathematical Factual Fidelity</span>
-            </div>
-            
-            <div className="inline-flex items-center gap-1 text-[var(--ink-muted)] bg-[var(--paper-subtle)] px-2.5 py-1 rounded-full border border-[var(--hairline)]">
+            <div className="inline-flex items-center gap-1.5 text-[var(--ink-muted)] bg-[var(--paper-subtle)] px-2.5 py-1 rounded-full border border-[var(--hairline)]">
               <Landmark className="w-3 h-3 text-[var(--accent)]" />
-              <span>35+ Verified Indian Institutions</span>
+              <span>35+ Indian Museum Institutions</span>
             </div>
           </div>
 

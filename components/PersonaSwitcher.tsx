@@ -147,12 +147,6 @@ export default function PersonaSwitcher({
             <Zap className="w-3 h-3 text-[var(--accent)]" />
             0ms Switch Latency
           </span>
-          {showGuarantee && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-[var(--verified-soft)] text-[var(--verified)] border border-[var(--verified)]/20">
-              <ShieldCheck className="w-3 h-3 text-[var(--verified)]" />
-              100% Fact Preserved
-            </span>
-          )}
           <button
             type="button"
             onClick={openContextSheet}

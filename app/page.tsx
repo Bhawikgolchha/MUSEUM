@@ -247,7 +247,7 @@ export default function CollectionPage() {
                   Masterworks
                 </div>
                 <div className="text-[10px] text-[var(--accent)]">
-                  100% Fact Claimed
+                  Curated Objects
                 </div>
               </div>
 
@@ -295,14 +295,11 @@ export default function CollectionPage() {
               {/* Top Meta Bar */}
               <div className="flex items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-[var(--verified)] animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-[var(--accent)]" />
                   <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-[var(--accent)]">
                     Featured Masterwork Plate
                   </span>
                 </div>
-                <span className="px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-[var(--verified-soft)] text-[var(--verified)] border border-[var(--verified)]/20">
-                  Canonical Plate
-                </span>
               </div>
 
               {/* Masterwork Photographic Plate */}
@@ -319,12 +316,6 @@ export default function CollectionPage() {
                 {/* Period Badge */}
                 <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-[var(--ink)]/85 backdrop-blur-xs text-[var(--paper)] text-[10px] font-mono uppercase tracking-wider shadow-xs">
                   {heroArtifact.period}
-                </div>
-
-                {/* Claim Count */}
-                <div className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-[var(--paper-surface)]/95 backdrop-blur-xs text-[var(--verified)] text-[11px] font-mono font-semibold border border-[var(--hairline)] shadow-xs">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[var(--verified)]" />
-                  <span>100% Verified · {heroArtifact.claims.length} Claims</span>
                 </div>
               </div>
 

@@ -95,12 +95,6 @@ export default function ArtifactCard({
           <span>{artifact.period}</span>
         </div>
 
-        {/* Top-Right: Verified Claim Count Badge */}
-        <div className="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[var(--paper-surface)]/95 backdrop-blur-md text-[var(--verified)] text-[11px] font-mono font-semibold border border-[var(--hairline)] shadow-xs">
-          <ShieldCheck className="w-3.5 h-3.5 text-[var(--verified)] shrink-0" />
-          <span>100% Verified · {claimCount} Claims</span>
-        </div>
-
         {/* Bottom-Left: Provenance Notice if applicable */}
         {artifact.sensitivityFlags?.includes('contested_provenance') && (
           <div className="absolute bottom-3 left-3 flex items-center gap-1 px-2.5 py-0.5 rounded bg-[var(--notice)]/95 text-white text-[10px] font-mono font-bold uppercase tracking-wider shadow-xs">
