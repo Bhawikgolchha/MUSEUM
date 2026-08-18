@@ -1,20 +1,30 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import {
-  searchMuseums,
+  getAllMuseums,
   Museum,
   MuseumWithDistance,
   Coordinates,
   findNearestMuseumForPincode,
+  calculateHaversineDistance,
+  isMuseumOpenToday,
 } from '@/lib/museums';
-import AreaSearchHeader from '@/components/AreaSearchHeader';
 import IndiaMuseumMap from '@/components/IndiaMuseumMap';
 import MuseumCard from '@/components/MuseumCard';
 import MuseumDetailModal from '@/components/MuseumDetailModal';
 import NearestMuseumModal from '@/components/NearestMuseumModal';
 import RegionalHistoricalContextBanner from '@/components/RegionalHistoricalContextBanner';
-import { Landmark, Compass, ArrowRight } from 'lucide-react';
+import AreaSearchHeader from '@/components/AreaSearchHeader';
+import {
+  Compass,
+  Landmark,
+  RotateCcw,
+  Sparkles,
+  ArrowRight,
+  MapPin,
+  Search,
+} from 'lucide-react';
 
 interface NearestFallbackState {
   searchedPin: string;
@@ -25,21 +35,29 @@ interface NearestFallbackState {
 
 export default function ExploreMuseumsPage() {
   const [query, setQuery] = useState<string>('');
-  const [radiusKm, setRadiusKm] = useState<number>(25);
+  const [selectedState, setSelectedState] = useState<string>('All States');
+  const [radiusKm, setRadiusKm] = useState<number>(50);
   const [category, setCategory] = useState<string>('all');
   const [openTodayOnly, setOpenTodayOnly] = useState<boolean>(false);
   const [accessibilityOnly, setAccessibilityOnly] = useState<boolean>(false);
+  const [freeOnly, setFreeOnly] = useState<boolean>(false);
+  const [masterworksOnly, setMasterworksOnly] = useState<boolean>(false);
 
   const [centerCoordinates, setCenterCoordinates] = useState<Coordinates | null>(null);
   const [isLocating, setIsLocating] = useState<boolean>(false);
+  const [gpsActive, setGpsActive] = useState<boolean>(false);
 
   const [selectedMuseum, setSelectedMuseum] = useState<MuseumWithDistance | null>(null);
+  const [hoveredMuseumId, setHoveredMuseumId] = useState<string | null>(null);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState<boolean>(false);
 
   // Fallback modal state for unindexed PIN code searches
   const [nearestFallback, setNearestFallback] = useState<NearestFallbackState | null>(null);
   const [isNearestModalOpen, setIsNearestModalOpen] = useState<boolean>(false);
   const lastPromptedPin = useRef<string | null>(null);
+
+  // References to museum card elements for auto-scrolling on map pin hover / click
+  const cardRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   // Extract 6-digit PIN code from user query (direct or substring)
   const searchedPin = useMemo(() => {
@@ -49,17 +67,113 @@ export default function ExploreMuseumsPage() {
     return match ? match[0] : null;
   }, [query]);
 
-  // Execute spatial search
+  // Execute spatial search and filtering
   const { results, resolvedCenter, total } = useMemo(() => {
-    return searchMuseums({
-      query,
-      center: centerCoordinates || undefined,
-      radiusKm,
-      category,
-      openTodayOnly,
-      accessibilityOnly,
+    const all = getAllMuseums();
+    const q = query.trim().toLowerCase();
+
+    let center = centerCoordinates;
+
+    // 1. If query contains a 6-digit Indian PIN code, resolve center from PIN
+    if (!center && searchedPin) {
+      const pinFallback = findNearestMuseumForPincode(searchedPin);
+      if (pinFallback) {
+        center = pinFallback.nearestMuseum.coordinates;
+      }
+    }
+
+    // Process all museums with calculated distances
+    const processed: MuseumWithDistance[] = all.map((m) => {
+      let dist: number | undefined;
+      if (center) {
+        dist = calculateHaversineDistance(center.lat, center.lon, m.coordinates.lat, m.coordinates.lon);
+      }
+      const openToday = isMuseumOpenToday(m.opening_hours.closed_on);
+      return {
+        ...m,
+        distance_km: dist,
+        isOpenToday: openToday,
+      };
     });
-  }, [query, centerCoordinates, radiusKm, category, openTodayOnly, accessibilityOnly]);
+
+    const filtered = processed.filter((m) => {
+      // 1. State filter
+      if (selectedState !== 'All States' && m.state.toLowerCase() !== selectedState.toLowerCase()) {
+        return false;
+      }
+
+      // 2. Text match filter if query given
+      if (q && q !== 'my location') {
+        const matchText = `${m.name} ${m.city} ${m.state} ${m.pincode} ${m.description} ${m.category}`.toLowerCase();
+        const directMatch = matchText.includes(q);
+        if (!directMatch && center && m.distance_km !== undefined && m.distance_km > radiusKm) {
+          return false;
+        }
+        if (!directMatch && !center) {
+          return false;
+        }
+      }
+
+      // 3. Radius boundary filter if GPS or center is active
+      if (center && radiusKm !== 2000 && m.distance_km !== undefined && m.distance_km > radiusKm) {
+        return false;
+      }
+
+      // 4. Category filter
+      if (category !== 'all' && m.category !== category) {
+        return false;
+      }
+
+      // 5. Open today filter
+      if (openTodayOnly && !m.isOpenToday) {
+        return false;
+      }
+
+      // 6. Accessibility filter
+      if (accessibilityOnly && (!m.accessibility_features || m.accessibility_features.length === 0)) {
+        return false;
+      }
+
+      // 7. Free entry filter
+      if (freeOnly && !m.entry_fee.is_free) {
+        return false;
+      }
+
+      // 8. Muse Masterworks filter
+      if (masterworksOnly && (!m.featured_artifacts || m.featured_artifacts.length === 0)) {
+        return false;
+      }
+
+      return true;
+    });
+
+    // Sort results: Distance first if center active, then masterworks, then alphabetical
+    filtered.sort((a, b) => {
+      if (a.distance_km !== undefined && b.distance_km !== undefined) {
+        return a.distance_km - b.distance_km;
+      }
+      if (a.featured_artifacts?.length && !b.featured_artifacts?.length) return -1;
+      if (!a.featured_artifacts?.length && b.featured_artifacts?.length) return 1;
+      return a.name.localeCompare(b.name);
+    });
+
+    return {
+      results: filtered,
+      resolvedCenter: center,
+      total: filtered.length,
+    };
+  }, [
+    query,
+    selectedState,
+    centerCoordinates,
+    radiusKm,
+    category,
+    openTodayOnly,
+    accessibilityOnly,
+    freeOnly,
+    masterworksOnly,
+    searchedPin,
+  ]);
 
   // Detect 6-digit PIN code search when 0 direct matches are found
   useEffect(() => {
@@ -76,7 +190,6 @@ export default function ExploreMuseumsPage() {
           distanceKm: fallbackResult.distanceKm,
         });
 
-        // Trigger modal once per unique unindexed PIN search
         if (lastPromptedPin.current !== cleanQuery) {
           setIsNearestModalOpen(true);
           lastPromptedPin.current = cleanQuery;
@@ -90,6 +203,18 @@ export default function ExploreMuseumsPage() {
     }
   }, [query, results.length]);
 
+  // Bidirectional hover synchronization: When map pin is hovered, scroll card into view
+  const handleMapPinHover = useCallback((id: string | null) => {
+    setHoveredMuseumId(id);
+    if (id && cardRefs.current[id]) {
+      cardRefs.current[id]?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+      });
+    }
+  }, []);
+
+  // Request user's live GPS Geolocation
   const handleRequestGeolocation = () => {
     if (!navigator.geolocation) {
       alert('Geolocation is not supported by your browser.');
@@ -104,7 +229,9 @@ export default function ExploreMuseumsPage() {
           lon: position.coords.longitude,
         };
         setCenterCoordinates(coords);
+        setGpsActive(true);
         setQuery('My Location');
+        setRadiusKm(100);
         setIsLocating(false);
       },
       (error) => {
@@ -114,6 +241,19 @@ export default function ExploreMuseumsPage() {
       },
       { timeout: 8000 }
     );
+  };
+
+  const handleClearSearch = () => {
+    setQuery('');
+    setSelectedState('All States');
+    setCenterCoordinates(null);
+    setGpsActive(false);
+    setCategory('all');
+    setOpenTodayOnly(false);
+    setAccessibilityOnly(false);
+    setFreeOnly(false);
+    setMasterworksOnly(false);
+    setRadiusKm(50);
   };
 
   const handleSelectNearestMuseum = (museum: Museum | MuseumWithDistance) => {
@@ -128,145 +268,197 @@ export default function ExploreMuseumsPage() {
   };
 
   const handleExpandRadius = () => {
-    setRadiusKm(100);
+    setRadiusKm(2000);
     setIsNearestModalOpen(false);
   };
 
+  const handleFocusMuseumOnMap = (museum: MuseumWithDistance) => {
+    setSelectedMuseum(museum);
+    setCenterCoordinates(museum.coordinates);
+  };
+
+  const hasActiveFilters = Boolean(
+    query ||
+      selectedState !== 'All States' ||
+      category !== 'all' ||
+      openTodayOnly ||
+      accessibilityOnly ||
+      freeOnly ||
+      masterworksOnly ||
+      centerCoordinates
+  );
+
   return (
-    <div className="space-y-6">
-      {/* Hero Header */}
-      <div className="max-w-2xl space-y-2">
+    <div className="space-y-6 max-w-7xl mx-auto pb-16">
+      {/* Editorial Header Section */}
+      <div className="max-w-3xl space-y-2">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--accent-soft)] text-[var(--accent)] text-xs font-semibold uppercase tracking-wider">
           <Compass className="w-3.5 h-3.5" />
-          <span>Spatial Heritage Discovery</span>
+          <span>Spatial Heritage Discovery Canvas</span>
         </div>
-        <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-[var(--ink)] tracking-tight">
-          Find Museums by Area
+        <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[var(--ink)] tracking-tight">
+          Explore India&apos;s Sacred Repositories
         </h1>
         <p className="text-sm sm:text-base text-[var(--ink-muted)] leading-relaxed">
-          Locate cultural institutions across India by city, PIN code, or radius. Tap any partner museum to explore its collection through verified adaptive interpretations.
+          Navigate 35+ verified archaeological and cultural institutions across the subcontinent.
+          Filter by state, search by city or 6-digit postal PIN, explore ancient cultural regions,
+          or enable live GPS for immediate proximity calculation.
         </p>
       </div>
 
-      {/* Filter & Search Header */}
-      <div className="p-4 sm:p-5 rounded-2xl bg-[var(--paper-raised)] border border-[var(--rule)] shadow-2xs">
-        <AreaSearchHeader
-          query={query}
-          onQueryChange={(q) => {
-            setQuery(q);
-            if (centerCoordinates && q !== 'My Location') {
-              setCenterCoordinates(null);
-            }
-          }}
-          radiusKm={radiusKm}
-          onRadiusChange={setRadiusKm}
-          selectedCategory={category}
-          onCategoryChange={setCategory}
-          openTodayOnly={openTodayOnly}
-          onToggleOpenToday={() => setOpenTodayOnly(!openTodayOnly)}
-          accessibilityOnly={accessibilityOnly}
-          onToggleAccessibility={() => setAccessibilityOnly(!accessibilityOnly)}
-          onRequestGeolocation={handleRequestGeolocation}
-          isLocating={isLocating}
-        />
-      </div>
+      {/* Comprehensive Search & Multi-Filter Control Hub Component */}
+      <AreaSearchHeader
+        query={query}
+        onQueryChange={(q) => {
+          setQuery(q);
+          if (centerCoordinates && q !== 'My Location') {
+            setCenterCoordinates(null);
+            setGpsActive(false);
+          }
+        }}
+        selectedState={selectedState}
+        onStateChange={setSelectedState}
+        radiusKm={radiusKm}
+        onRadiusChange={setRadiusKm}
+        selectedCategory={category}
+        onCategoryChange={setCategory}
+        openTodayOnly={openTodayOnly}
+        onToggleOpenToday={() => setOpenTodayOnly(!openTodayOnly)}
+        accessibilityOnly={accessibilityOnly}
+        onToggleAccessibility={() => setAccessibilityOnly(!accessibilityOnly)}
+        freeOnly={freeOnly}
+        onToggleFreeOnly={() => setFreeOnly(!freeOnly)}
+        masterworksOnly={masterworksOnly}
+        onToggleMasterworks={() => setMasterworksOnly(!masterworksOnly)}
+        onRequestGeolocation={handleRequestGeolocation}
+        isLocating={isLocating}
+        gpsActive={gpsActive}
+        onResetFilters={handleClearSearch}
+        hasActiveFilters={hasActiveFilters}
+        resultsCount={results.length}
+        totalCount={getAllMuseums().length}
+      />
 
       {/* Main Dual-Pane Responsive Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Left / Top: India Spatial Heritage Interactive Map Canvas */}
+        {/* Left / Top Pane: India Spatial Heritage Interactive Map Canvas */}
         <div className="lg:col-span-6 lg:sticky lg:top-24">
           <IndiaMuseumMap
             museums={results}
             selectedMuseum={selectedMuseum}
+            hoveredMuseumId={hoveredMuseumId}
             onSelectMuseum={(m) => {
               setSelectedMuseum(m);
+              setCenterCoordinates(m.coordinates);
+              // Scroll card into view
+              if (cardRefs.current[m.id]) {
+                cardRefs.current[m.id]?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'nearest',
+                });
+              }
             }}
+            onHoverMuseum={handleMapPinHover}
             centerCoordinates={resolvedCenter || centerCoordinates}
           />
         </div>
 
-        {/* Right / Bottom: Museum Result Cards Stream */}
+        {/* Right / Bottom Pane: Synchronized Museum Directory Stream */}
         <div className="lg:col-span-6 space-y-4">
           {/* Regional Historical Context Banner for 6-Digit PIN Search */}
           {searchedPin && (
             <RegionalHistoricalContextBanner pincode={searchedPin} />
           )}
 
-          <div className="flex items-center justify-between text-xs font-semibold text-[var(--ink-muted)] uppercase tracking-wider pb-1">
-            <span>
-              Showing {results.length} of {total} Institutions
+          {/* Directory Status Header */}
+          <div className="flex items-center justify-between text-xs font-semibold text-[var(--ink-muted)] uppercase tracking-wider pb-1 px-1">
+            <span className="flex items-center gap-1.5">
+              <Landmark className="w-3.5 h-3.5 text-[var(--accent)]" />
+              <span>
+                Showing {results.length} of {getAllMuseums().length} Institutions
+              </span>
             </span>
-            {query && (
-              <span className="text-[var(--accent)]">
-                Query: &ldquo;{query}&rdquo;
+            {selectedState !== 'All States' && (
+              <span className="text-[var(--accent)] font-bold">
+                State: {selectedState}
               </span>
             )}
           </div>
 
+          {/* Museum Cards List */}
           {results.length > 0 ? (
-            <div className="space-y-3.5">
+            <div className="space-y-4">
               {results.map((museum) => (
-                <MuseumCard
+                <div
                   key={museum.id}
-                  museum={museum}
-                  isSelected={selectedMuseum?.id === museum.id}
-                  onSelect={() => setSelectedMuseum(museum)}
-                  onOpenDetails={() => {
-                    setSelectedMuseum(museum);
-                    setIsDetailModalOpen(true);
+                  ref={(el) => {
+                    cardRefs.current[museum.id] = el;
                   }}
-                />
+                >
+                  <MuseumCard
+                    museum={museum}
+                    isSelected={selectedMuseum?.id === museum.id}
+                    isHovered={hoveredMuseumId === museum.id}
+                    onSelect={() => setSelectedMuseum(museum)}
+                    onHover={setHoveredMuseumId}
+                    onOpenDetails={() => {
+                      setSelectedMuseum(museum);
+                      setIsDetailModalOpen(true);
+                    }}
+                    onFocusOnMap={() => handleFocusMuseumOnMap(museum)}
+                  />
+                </div>
               ))}
             </div>
           ) : (
-            /* Empty State */
-            <div className="p-8 rounded-2xl bg-[var(--paper-raised)] border border-[var(--rule)] text-center space-y-4">
-              <div className="w-12 h-12 rounded-xl bg-[var(--accent-soft)] text-[var(--accent)] flex items-center justify-center mx-auto">
-                <Landmark className="w-6 h-6" />
+            /* Tactile Empty State */
+            <div className="p-8 rounded-2xl bg-[var(--paper-surface)] border border-[var(--rule)] text-center space-y-4 shadow-card">
+              <div className="w-14 h-14 rounded-2xl bg-[var(--accent-soft)] text-[var(--accent)] flex items-center justify-center mx-auto shadow-xs">
+                <Landmark className="w-7 h-7" />
               </div>
-              <h3 className="font-serif text-lg font-semibold text-[var(--ink)]">
-                {nearestFallback
-                  ? `No museum situated directly in PIN ${nearestFallback.searchedPin}`
-                  : 'No museums found in this radius'}
-              </h3>
-              <p className="text-xs text-[var(--ink-muted)] max-w-sm mx-auto leading-relaxed">
-                {nearestFallback
-                  ? `The region ${nearestFallback.locationName} has no direct museum on file. The closest partner institution is ${nearestFallback.nearestMuseum.name} (${nearestFallback.distanceKm.toFixed(1)} km away).`
-                  : 'Try expanding your search radius to 50 km or 100 km, or select one of the major cultural hubs above.'}
-              </p>
+
+              <div className="space-y-1">
+                <h3 className="font-serif text-xl font-semibold text-[var(--ink)]">
+                  {nearestFallback
+                    ? `No Museum Situated Directly in PIN ${nearestFallback.searchedPin}`
+                    : 'No Institutions Found with Current Filters'}
+                </h3>
+                <p className="text-xs sm:text-sm text-[var(--ink-muted)] max-w-md mx-auto leading-relaxed">
+                  {nearestFallback
+                    ? `The region "${nearestFallback.locationName}" has no immediate indexed museum. The closest partner institution is ${nearestFallback.nearestMuseum.name} (${nearestFallback.distanceKm.toFixed(1)} km away).`
+                    : 'Try clearing selected category tags, expanding your proximity radius, or resetting to "All States".'}
+                </p>
+              </div>
 
               {nearestFallback ? (
-                <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-2">
+                <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-2.5">
                   <button
                     type="button"
                     onClick={() => setIsNearestModalOpen(true)}
-                    className="px-4 py-2.5 rounded-xl border border-[var(--rule)] text-[var(--ink)] text-xs font-semibold hover:bg-[var(--paper)] transition-colors"
+                    className="px-4 py-2.5 rounded-xl border border-[var(--rule)] text-[var(--ink)] text-xs font-semibold hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer tactile-press"
                   >
                     View Fallback Details
                   </button>
                   <button
                     type="button"
                     onClick={() => handleSelectNearestMuseum(nearestFallback.nearestMuseum)}
-                    className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[var(--accent)] text-white text-xs font-semibold hover:bg-[var(--accent)]/90 transition-colors shadow-xs"
+                    className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[var(--accent)] text-white text-xs font-semibold hover:bg-[var(--accent)]/90 transition-colors shadow-xs cursor-pointer tactile-press"
                   >
                     <span>Switch to {nearestFallback.nearestMuseum.name.split('(')[0].trim()}</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
                 </div>
               ) : (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setRadiusKm(100);
-                    setCategory('all');
-                    setOpenTodayOnly(false);
-                    setAccessibilityOnly(false);
-                    setQuery('');
-                  }}
-                  className="px-4 py-2 rounded-xl bg-[var(--accent)] text-white text-xs font-semibold hover:bg-[var(--accent)]/90 transition-colors"
-                >
-                  Reset Filters &amp; Expand Radius
-                </button>
+                <div className="pt-2">
+                  <button
+                    type="button"
+                    onClick={handleClearSearch}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[var(--accent)] text-white text-xs font-semibold hover:bg-[var(--accent)]/90 transition-all shadow-xs cursor-pointer tactile-press"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    <span>Reset Filters &amp; View All 35+ Institutions</span>
+                  </button>
+                </div>
               )}
             </div>
           )}

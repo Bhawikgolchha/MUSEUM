@@ -1,82 +1,99 @@
-# Project: AI-Powered Historical Briefing Engine (PIN Code Grounded)
+# Project: Digital Muse Frontend Redesign
 
 ## Architecture
-- **Backend Service Layer (`app/api/pincode-history/route.ts`)**:
-  - `GET` and `POST` handlers accepting 6-digit Indian PIN codes.
-  - Regex validation `/^[1-9][0-9]{5}$/` returning HTTP 400 with `{ status: 'error', error: 'INVALID_PINCODE_FORMAT' }` on malformed inputs.
-  - Geocoding & hierarchy resolution via `lib/pincodes.ts`, `lib/services/geocoding.ts`, `lib/roots.ts`, and `data/indian-museums.json`.
-  - LLM Grounding pipeline via `lib/openrouter.ts` using model `openrouter/free` with JSON response mode and deterministic offline fallback.
-  - In-memory LRU cache (<10ms repeat responses, ≤20ms warm latency, verified at ~0.05ms).
-- **Frontend Presentation Layer (`app/roots/page.tsx`, `app/explore/page.tsx`, `components/`)**:
-  - `/roots` page: `<AiHistoricalBrief>` section below search bar with 3-part structured card (*Ancient Foundations*, *Living Traditions*, *Sacred Landmarks*), badges for key dynasties, traditional crafts, and notable monuments, shimmer skeleton loading, and Web Speech API narration button.
-  - `/explore` page: `<RegionalHistoricalContextBanner>` expandable banner above museum cards synchronized with spatial distances.
-  - Shared audio narration: Reusable Web Speech API integration (`components/ReadAloudButton.tsx`).
-- **E2E Testing Harness (`tests/e2e/e2e_pincode_history_runner.ts`)**:
-  - 5-Tier requirement-driven opaque-box verification suite (Feature coverage, Boundary/Corner, Cross-Feature/Performance, Real-World scenarios, Adversarial Hardening) passing 62/62 (100%).
+Digital Muse is a Next.js 16 (App Router) / React 19 / Tailwind CSS v4 frontend platform for Indian museum discovery and adaptive interpretation. It features 5 primary user-facing screens backed by deterministic fallback synthesis, rich precomputed artifact claim ledgers, and spatial/ancestral PIN code resolvers.
+
+- **Theme Paradigm**: Editorial Heritage & Tactile Museum
+- **Color Palette**:
+  - Background Ground: Warm Museum Paper (`#FAF8F4`)
+  - Elevated Surfaces: Pure Surface (`#FFFFFF`), Recessed Subtle (`#F4F0E8`)
+  - Primary Ink: Deep Charcoal Ink (`#18181B`) — Contrast 16.2:1 AAA
+  - Secondary Ink: Muted Stone (`#71717A`) — Contrast 4.65:1 AA
+  - Primary Accent: Ancient Verdigris Patina (`#1F5F5B`) — Contrast 6.88:1 AAA Large
+  - Secondary Accent: Ancient Bronze / Terracotta (`#9C6644`) — Contrast 4.72:1 AA
+  - Whisper Hairlines: `rgba(24, 24, 27, 0.08)` (Active: `rgba(24, 24, 27, 0.16)`)
+  - Fidelity Indicators: Verified Forest (`#166534`), Flagged Oxide (`#991B1B`), Antiquity Amber (`#8A5A00`)
+- **Typography Stack**:
+  - Display Modern Serif: `Fraunces` (variable optical size `opsz` 9..144, italic angles)
+  - Body Grotesk: `Geist` (clean high-clarity sans)
+  - Monospace: `Geist Mono` (claim IDs, coordinates, postal PINs)
+- **Micro-Interactions**: Spring-physics micro-interactions (`stiffness: 100, damping: 20`, `.tactile-press`, `.museum-card-lift`).
 
 ## Feature Inventory
 | # | Feature | Description | Milestone | Source |
 |---|---------|-------------|-----------|--------|
-| 1 | PIN Code Regex Validation | Strict validation of 6-digit PIN code `/^[1-9][0-9]{5}$/`, rejects malformed with HTTP 400 `INVALID_PINCODE_FORMAT` | M1 | ORIGINAL_REQUEST §R1 |
-| 2 | Geographic & Hierarchy Resolution | Resolves district, state, postal circle, and cultural anchors from `lib/pincodes.ts`, `lib/roots.ts`, `data/indian-museums.json` | M1 | ORIGINAL_REQUEST §R1 |
-| 3 | OpenRouter AI Synthesis | Invokes OpenRouter `openrouter/free` with grounded prompt and structured JSON schema, with deterministic offline fallback | M1 | ORIGINAL_REQUEST §R1 |
-| 4 | In-Memory Performance Caching | Fast in-memory LRU cache ensuring repeat queries respond in <10ms (SLA ≤20ms) | M1 | ORIGINAL_REQUEST §R1 |
-| 5 | Structured API Response Schema | JSON output with `pincode`, `location_name`, `state`, `district`, `postal_circle`, `historical_brief`, `key_dynasties`, `traditional_crafts`, `notable_monuments` | M1 | ORIGINAL_REQUEST §R1 |
-| 6 | 3-Part AI Brief Card on /roots | Renders 3 sections (*Ancient Foundations*, *Living Traditions*, *Sacred Landmarks*) with badges on `/roots` | M2 | ORIGINAL_REQUEST §R2 |
-| 7 | Loading Skeletons & Error Recovery on /roots | Shimmer loading skeletons during AI fetch and retry/error state handling on `/roots` | M2 | ORIGINAL_REQUEST §R2 |
-| 8 | Web Speech Audio Narration on /roots | "Read Aloud" button narrating the structured brief with speech synthesis and playing indicators | M2 | ORIGINAL_REQUEST §R2 |
-| 9 | Regional Historical Context Banner on /explore | Expandable historical banner above museum stream on `/explore` when a valid 6-digit PIN is entered | M3 | ORIGINAL_REQUEST §R3 |
-| 10 | Spatial Sync with Explore Distance Cards & Modals | Harmonizes banner with museum distance sorting and nearest-fallback modals | M3 | ORIGINAL_REQUEST §R3 |
-| 11 | Full E2E Test Suite (Tiers 1-4) & Adversarial Hardening (Tier 5) | Comprehensive opaque-box and white-box test verification passing 100% | M4 | ORIGINAL_REQUEST §Acceptance Criteria |
+| 1 | Stitch Design Tokens & CSS Variables | Full palette, hairlines, and typography variables in `app/globals.css` | M1 | ORIGINAL_REQUEST §Theme |
+| 2 | Fraunces & Geist Typography Setup | Font imports and CSS variables in `app/layout.tsx` replacing Inter | M1 | ORIGINAL_REQUEST §Theme |
+| 3 | Stitch DESIGN.md Token Spec | Authoritative DESIGN.md spec for Google Stitch compliance | M1 | ORIGINAL_REQUEST §R3 |
+| 4 | Header & Navigation Bar | Warm editorial header with tactile navigation, brand mark, and persona indicator | M1 | ORIGINAL_REQUEST §R1 |
+| 5 | Asymmetric Split Editorial Hero | 7:5 asymmetric split layout with inline visual punctuation and left narrative intro | M2 | ORIGINAL_REQUEST §R1.1 |
+| 6 | Floating Persona Mode Switcher | In-situ pill switcher (Adult, Child, Specialist, Accessibility) | M2 | ORIGINAL_REQUEST §R1.1 |
+| 7 | Staggered Diagonal Masonry Grid | Masterworks gallery with period badges, medium tags, hover depth, and museum tabs | M2 | ORIGINAL_REQUEST §R1.1 |
+| 8 | Dual-Column Exhibition Split-Screen | Sticky high-res photographic masterwork plate on left, scrollable editorial panel on right | M3 | ORIGINAL_REQUEST §R1.2 |
+| 9 | 'Look Closer' Observational Callouts | Interactive hotspot pins directly on photographic masterwork plate | M3 | ORIGINAL_REQUEST §R1.2 |
+| 10 | 4-Persona Voice Tab Switcher | Seamless tab bar on editorial panel with 0ms verbatim source toggle | M3 | ORIGINAL_REQUEST §R1.2 |
+| 11 | Slide-over Factual Fidelity Audit Drawer | Slide-over sheet displaying atomic claim checklist, verification badges, and audit tests | M3 | ORIGINAL_REQUEST §R1.2 |
+| 12 | Interactive India SVG Canvas | Authentic India SVG with pan/zoom (1x-4x), river overlays, and custom patina pins | M4 | ORIGINAL_REQUEST §R1.3 |
+| 13 | Live GPS 'Near Me' Proximity Sorting | Geolocation distance calculation and sorting of verified museums | M4 | ORIGINAL_REQUEST §R1.3 |
+| 14 | Bidirectional Card-Pin Hover Sync | Hovering card pulses corresponding map pin; hovering map pin highlights card | M4 | ORIGINAL_REQUEST §R1.3 |
+| 15 | 6-Digit Postal PIN Ancestral Resolver | Resolves postal PIN to civilizational eras (Chola, Mauryan, Gupta, etc.) | M5 | ORIGINAL_REQUEST §R1.4 |
+| 16 | Personalized Cultural Narrative & TTS | AI-curated lineage card with Web Speech API audio narration and sentence tracking | M5 | ORIGINAL_REQUEST §R1.4 |
+| 17 | Interactive Regional Craft Traditions | Tactile craft cards detailing historical techniques, materials, and living master artisans | M5 | ORIGINAL_REQUEST §R1.4 |
+| 18 | Tactile Multi-Step Ingestion Wizard | 4-step wizard for ingesting new museum pieces, claims, and media | M6 | ORIGINAL_REQUEST §R1.5 |
+| 19 | Atomic Claim Builder & Synthesizer | Interactive claim authoring with live validation and synthesis preview | M6 | ORIGINAL_REQUEST §R1.5 |
+| 20 | Multi-Persona Live Preview Tabs | Simultaneous preview of 4 persona adaptations with claim verification scorecards | M6 | ORIGINAL_REQUEST §R1.5 |
+| 21 | E2E Build, Typecheck & Quality Gate | 0 tsc errors, 0 build errors, 100% test pass rate, mobile responsiveness (<768px) | M7 | ORIGINAL_REQUEST §Acceptance |
 
 ## Milestones
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| M1 | Backend Historical Brief API | Build `app/api/pincode-history/route.ts` with validation, hierarchy resolution, OpenRouter grounding, caching, and fallback | none | DONE |
-| M2 | Roots Page AI Brief & Narration | Build `<AiHistoricalBrief>` component in `components/AiHistoricalBrief.tsx` and integrate into `app/roots/page.tsx` | M1 | DONE |
-| M3 | Explore Page Historical Banner | Build `<RegionalHistoricalContextBanner>` component in `components/RegionalHistoricalContextBanner.tsx` and integrate into `app/explore/page.tsx` | M1 | DONE |
-| M4 | E2E Testing & Adversarial Hardening | Verify 100% pass on Tiers 1-5, Reviewers, Challengers, and Forensic Auditor verification | M1, M2, M3 | DONE |
-
-## Interface Contracts
-### Client ↔ `/api/pincode-history`
-- **Request**:
-  - `GET /api/pincode-history?pincode=<6-digit-pin>`
-  - `POST /api/pincode-history` with JSON body `{ "pincode": "<6-digit-pin>" }`
-- **Response (HTTP 200 OK)**:
-  ```json
-  {
-    "status": "success",
-    "pincode": "110001",
-    "location_name": "New Delhi GPO (Central Delhi)",
-    "state": "Delhi",
-    "district": "Central Delhi",
-    "postal_circle": "Northern Region",
-    "historical_brief": {
-      "ancient_foundations": "...",
-      "living_culture_crafts": "...",
-      "famous_lore_landmarks": "...",
-      "summary_one_liner": "..."
-    },
-    "key_dynasties": ["Mughals", "Tomaras", "Chauhans"],
-    "traditional_crafts": ["Zari & Zardozi Embroidery", "Meenakari", "Ivory Carving"],
-    "notable_monuments": ["Red Fort", "Qutub Minar", "Humayun's Tomb"],
-    "cached": false,
-    "source": "openrouter_ai"
-  }
-  ```
-- **Error Response (HTTP 400 Bad Request)**:
-  ```json
-  {
-    "status": "error",
-    "error": "INVALID_PINCODE_FORMAT",
-    "message": "PIN code must be a valid 6-digit Indian postal code (/^[1-9][0-9]{5}$/)"
-  }
-  ```
+| M1 | Design System & Layout Foundation | `DESIGN.md`, `app/globals.css`, `app/layout.tsx`, `components/Navbar.tsx`, `components/Footer.tsx` | none | DONE |
+| M2 | Screen 1: Gallery Showcase (`app/page.tsx`) | Asymmetric Split Hero, floating persona switcher, staggered diagonal masonry grid, `components/ArtifactCard.tsx`, `components/PersonaSwitcher.tsx` | M1 | DONE |
+| M3 | Screen 2: Artifact Detail & Auditor (`app/artifact/[id]/page.tsx`) | Dual-column exhibition split, Look Closer hotspot pins, 4-persona voice tabs, 0ms verbatim source toggle, fidelity audit drawer | M1 | DONE |
+| M4 | Screen 3: Spatial Heritage Canvas (`app/explore/page.tsx`) | Interactive India SVG with pan/zoom, patina pins, GPS Near Me, bidirectional card-pin hover sync | M1 | DONE |
+| M5 | Screen 4: Ancestral Roots (`app/roots/page.tsx`) | 6-digit PIN civilizational resolver, Web Speech TTS narration, interactive craft traditions | M1 | DONE |
+| M6 | Screen 5: Curator Ingestion Studio (`app/add/page.tsx`) | Tactile 4-step ingestion wizard, atomic claim builder, live multi-persona preview tabs | M1 | DONE |
+| M7 | E2E Verification & Forensic Audit | `npx tsc --noEmit`, `npm run build`, E2E test suites, mobile responsiveness (<768px), forensic integrity audit | M1-M6 | IN_PROGRESS |
 
 ## Code Layout
-- `app/api/pincode-history/route.ts` - Backend endpoint (Worker M1)
-- `components/AiHistoricalBrief.tsx` - Roots UI card component (Worker M2)
-- `components/RegionalHistoricalContextBanner.tsx` - Explore banner component (Worker M3)
-- `app/roots/page.tsx` - Roots page integration (Worker M2)
-- `app/explore/page.tsx` - Explore page integration (Worker M3)
-- `tests/e2e/e2e_pincode_history_runner.ts` - E2E test runner (Test Writer M4)
+- `app/`
+  - `layout.tsx` — Global root layout with Fraunces/Geist font declarations and header
+  - `globals.css` — Stitch theme tokens, hairlines, paper surfaces, typography variables, spring micro-interactions
+  - `page.tsx` — Screen 1: Collection & Gallery Showcase (Asymmetric Hero + Diagonal Masonry)
+  - `artifact/[id]/page.tsx` — Screen 2: Artifact Detail Server Page
+  - `explore/page.tsx` — Screen 3: Spatial Heritage Discovery Canvas
+  - `roots/page.tsx` — Screen 4: Connect to Your Roots (PIN Code Resolver)
+  - `add/page.tsx` — Screen 5: Curator Ingestion Studio Wizard
+- `components/`
+  - `Navbar.tsx` — Warm editorial top bar with tactile navigation and persona indicator
+  - `Footer.tsx` — Tactile museum colophon and institutional acknowledgements
+  - `ArtifactCard.tsx` — Editorial card with period badge, medium tag, hover depth
+  - `ArtifactDetailClient.tsx` — Dual-column split screen with sticky plate and voice tabs
+  - `LookCloserPins.tsx` — Hotspot observational pins on masterwork photographic plate
+  - `FidelityReportSheet.tsx` — Slide-over atomic claim audit drawer
+  - `SourceToggle.tsx` — 0ms verbatim source toggle
+  - `IndiaMuseumMap.tsx` — Interactive India SVG map with patina pins and pan/zoom
+  - `MuseumCard.tsx` — Spatial museum card with distance badge and hover link
+  - `AiHistoricalBrief.tsx` — Cultural lineage narrative with Web Speech TTS audio
+  - `CraftTraditions.tsx` — Interactive regional craft cards with technique steps
+  - `PersonaSwitcher.tsx` — In-situ floating persona mode pill switcher
+- `lib/`
+  - `persona.tsx` — Persona context provider (Adult, Child, Specialist, Accessibility)
+  - `roots.ts` — 6-digit postal PIN circle mappings, civilizational eras, Haversine distance
+- `data/`
+  - `artifacts.json` — 10 canonical Indian museum masterworks with claim ledgers
+  - `variants.json` — 90+ precomputed audience adaptations and fidelity reports
+  - `indian-museums.json` — 35+ verified institutions across India
+- `DESIGN.md` — Authoritative Google Stitch design token specification
+
+## Interface Contracts
+### Persona State
+- `usePersona()` provides `{ persona: PersonaId, setPersona: (p: PersonaId) => void }`
+- `PersonaId`: `'adult' | 'child' | 'specialist' | 'accessibility'`
+
+### Artifact Data Model
+- `Artifact`: `{ id: string, title: string, subtitle?: string, period: string, date: string, medium: string, dimensions?: string, location: string, museum: string, imageUrl: string, creditLine?: string, description: string, claims: Claim[], lookCloser?: LookCloserItem[] }`
+
+### Verification Contract
+- `npm run build` and `npx tsc --noEmit` must pass with 0 errors.
+- Mobile responsiveness: `min-h-[100dvh]` with 0 horizontal overflow at `<768px`.

@@ -1,66 +1,219 @@
 @import "tailwindcss";
 
 :root {
+  /* Surfaces & Paper Grounds */
   --paper: #FAF8F4;
+  --paper-surface: #FFFFFF;
   --paper-raised: #FFFFFF;
-  --ink: #1A1A18;
-  --ink-muted: #5C5A54;
-  --rule: #E2DED6;
+  --paper-subtle: #F4F0E8;
+
+  /* Typography & Ink Hierarchy */
+  --ink: #18181B;
+  --ink-primary: #18181B;
+  --ink-muted: #71717A;
+  --ink-faint: #A1A1AA;
+
+  /* Structural Hairlines & Borders */
+  --rule: rgba(24, 24, 27, 0.08);
+  --hairline: rgba(24, 24, 27, 0.08);
+  --hairline-strong: rgba(24, 24, 27, 0.16);
+
+  /* Heritage Brand Accents */
   --accent: #1F5F5B;
+  --accent-patina: #1F5F5B;
   --accent-soft: #E6EFEE;
-  --verified: #1B6B3A;
-  --flagged: #A62A21;
+  --accent-bronze: #9C6644;
+  --accent-bronze-soft: #F7EFE9;
+
+  /* Factual Fidelity & Audit States */
+  --verified: #166534;
+  --verified-soft: #F0FDF4;
+  --flagged: #991B1B;
+  --flagged-soft: #FEF2F2;
   --notice: #8A5A00;
+  --notice-soft: #FEF9C3;
+
+  /* Tactile Shadows & Museum Elevation */
+  --shadow-card: 0 8px 24px -6px rgba(24, 24, 27, 0.04), 0 2px 6px -2px rgba(24, 24, 27, 0.02);
+  --shadow-museum: 0 20px 40px -15px rgba(24, 24, 27, 0.06), 0 0 0 1px rgba(24, 24, 27, 0.04);
+  --shadow-plate: 0 24px 48px -12px rgba(24, 24, 27, 0.08), 0 8px 16px -4px rgba(24, 24, 27, 0.03);
+  --shadow-popover: 0 12px 32px -4px rgba(24, 24, 27, 0.10), 0 4px 12px -2px rgba(24, 24, 27, 0.05);
+  --shadow-drawer: -10px 0 40px -10px rgba(24, 24, 27, 0.12);
+
+  /* Spring Physics Motion Easings (stiffness: 100, damping: 20) */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring-snappy: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 @theme {
   --color-paper: var(--paper);
+  --color-paper-surface: var(--paper-surface);
   --color-paper-raised: var(--paper-raised);
+  --color-paper-subtle: var(--paper-subtle);
+
   --color-ink: var(--ink);
+  --color-ink-primary: var(--ink-primary);
   --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+
   --color-rule: var(--rule);
+  --color-hairline: var(--hairline);
+  --color-hairline-strong: var(--hairline-strong);
+
   --color-accent: var(--accent);
+  --color-accent-patina: var(--accent-patina);
   --color-accent-soft: var(--accent-soft);
+  --color-accent-bronze: var(--accent-bronze);
+  --color-accent-bronze-soft: var(--accent-bronze-soft);
+
   --color-verified: var(--verified);
+  --color-verified-soft: var(--verified-soft);
   --color-flagged: var(--flagged);
+  --color-flagged-soft: var(--flagged-soft);
   --color-notice: var(--notice);
+  --color-notice-soft: var(--notice-soft);
+
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-museum: var(--shadow-museum);
+  --shadow-plate: var(--shadow-plate);
+  --shadow-popover: var(--shadow-popover);
+  --shadow-drawer: var(--shadow-drawer);
 }
 
+/* Base Body Surface */
 body {
   background-color: var(--paper);
   color: var(--ink);
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
-  font-size: 1.0625rem; /* 17px base */
+  font-family: var(--font-sans), "Geist", system-ui, -apple-system, sans-serif;
+  font-size: 1.0625rem; /* 17px editorial base */
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  overflow-x: hidden;
 }
 
-/* Editorial Serif Headings and Canonical Text */
+/* Editorial Typography Utilities */
 .font-serif {
-  font-family: var(--font-serif), Georgia, Cambria, serif;
+  font-family: var(--font-serif), "Fraunces", Georgia, Cambria, serif;
+  font-optical-sizing: auto;
 }
 
 .font-sans {
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans), "Geist", system-ui, -apple-system, sans-serif;
 }
 
-/* Global Focus Ring (2px accent, 2px offset) */
+.font-mono {
+  font-family: var(--font-mono), "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Text Selection in Editorial Verdigris Patina */
+::selection {
+  background-color: var(--accent-soft);
+  color: var(--accent-patina);
+}
+
+/* Global Focus Rings: 2px solid patina with 2px offset */
 *:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-/* Measure cap for readability */
+/* Measure cap for optimal editorial reading comfort */
 .max-measure {
   max-width: 68ch;
 }
 
-/* Smooth motion for sheet animations */
+/* Tactile Spring Micro-Interactions & Physical Press States */
+.tactile-press {
+  transition: transform 120ms var(--ease-spring), box-shadow 120ms ease, border-color 120ms ease, background-color 120ms ease;
+}
+
+.tactile-press:active {
+  transform: scale(0.98) translateY(0.5px);
+}
+
+.tactile-card {
+  background-color: var(--paper-surface);
+  border: 1px solid var(--hairline);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 220ms var(--ease-spring), box-shadow 220ms var(--ease-spring), border-color 200ms ease;
+}
+
+.tactile-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-museum);
+  border-color: rgba(31, 95, 91, 0.35);
+}
+
+.museum-card-lift {
+  transition: transform 250ms var(--ease-spring), box-shadow 250ms var(--ease-spring), border-color 200ms ease;
+}
+
+.museum-card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-museum);
+  border-color: rgba(31, 95, 91, 0.35);
+}
+
+/* Whisper Hairline Border Helper */
+.whisper-border {
+  border-color: var(--hairline);
+}
+
+.whisper-border-strong {
+  border-color: var(--hairline-strong);
+}
+
+/* Spring Transition Utilities */
+.transition-spring {
+  transition-property: transform, opacity, box-shadow, border-color, background-color;
+  transition-timing-function: var(--ease-spring);
+  transition-duration: 200ms;
+}
+
+.transition-spring-slow {
+  transition-property: transform, opacity, box-shadow, border-color, background-color;
+  transition-timing-function: var(--ease-spring);
+  transition-duration: 350ms;
+}
+
+/* Custom Sleek Museum Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--paper-subtle);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(24, 24, 27, 0.18);
+  border-radius: 9999px;
+  border: 2px solid var(--paper-subtle);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Custom Scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(24, 24, 27, 0.18) var(--paper-subtle);
+}
+
+/* Accessibility Reduced Motion Handling */
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
