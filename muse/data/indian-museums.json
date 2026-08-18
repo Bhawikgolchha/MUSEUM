@@ -1,0 +1,370 @@
+[
+  {
+    "id": "mus-in-del-001",
+    "name": "National Museum, New Delhi",
+    "vernacular_names": {
+      "hi": "राष्ट्रीय संग्रहालय, नई दिल्ली"
+    },
+    "address": "Janpath, Rajpath Area, Central Secretariat",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "pincode": "110011",
+    "coordinates": {
+      "lat": 28.6118,
+      "lon": 77.2193
+    },
+    "category": "archaeology",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "10:00 - 18:00",
+      "closed_on": ["Monday", "National Holidays"],
+      "timings": "Tuesday to Sunday (10:00 AM – 6:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 20,
+      "foreign_inr": 650
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible Elevators",
+      "Anubhav Tactile Gallery for Visually Impaired",
+      "Braille Labeling",
+      "Audio Guide App"
+    ],
+    "contact": {
+      "phone": "+91 11 2301 9272",
+      "email": "contact@nationalmuseumindia.gov.in",
+      "website": "https://nationalmuseumindia.gov.in"
+    },
+    "thumbnail_url": "/images/dancing_girl.jpg",
+    "gallery_urls": [
+      "/images/dancing_girl.jpg",
+      "/images/ashoka_lion_capital.jpg"
+    ],
+    "description": "India's premier cultural repository housing over 200,000 works of art spanning 5,000 years of civilization, from the Indus Valley Dancing Girl to sacred Buddhist relics and Mughal miniature paintings.",
+    "artifact_count_approx": 200000,
+    "muse_collection_id": "art-001",
+    "featured_artifacts": ["art-001"],
+    "source": "National Museum Official Directory",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-che-001",
+    "name": "Government Museum Chennai (Egmore)",
+    "vernacular_names": {
+      "ta": "அரசு அருங்காட்சியகம் சென்னை"
+    },
+    "address": "Pantheon Road, Egmore",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "pincode": "600008",
+    "coordinates": {
+      "lat": 13.0694,
+      "lon": 80.2569
+    },
+    "category": "archaeology",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "09:30 - 17:00",
+      "closed_on": ["Friday", "National Holidays"],
+      "timings": "Saturday to Thursday (9:30 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 15,
+      "foreign_inr": 250
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible Ground Floor",
+      "Tactile Bronze Replicas",
+      "Braille Guide"
+    ],
+    "contact": {
+      "phone": "+91 44 2819 3238",
+      "website": "https://govtmuseumchennai.org"
+    },
+    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "gallery_urls": [
+      "/images/chola_nataraja.jpg"
+    ],
+    "description": "Established in 1851, India's second oldest museum houses the world's most famous collection of Chola Bronzes, including the iconic Nataraja, alongside the Amaravati Buddhist sculptural gallery.",
+    "artifact_count_approx": 46000,
+    "muse_collection_id": "art-002",
+    "featured_artifacts": ["art-002"],
+    "source": "Government Museum Registry",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-pat-001",
+    "name": "Bihar Museum, Patna",
+    "vernacular_names": {
+      "hi": "बिहार संग्रहालय, पटना"
+    },
+    "address": "Bailey Road, Kidwaipuri",
+    "city": "Patna",
+    "state": "Bihar",
+    "pincode": "800001",
+    "coordinates": {
+      "lat": 25.6093,
+      "lon": 85.1235
+    },
+    "category": "art_sculpture",
+    "governance": "state_government",
+    "opening_hours": {
+      "schedule": "10:00 - 17:00",
+      "closed_on": ["Monday"],
+      "timings": "Tuesday to Sunday (10:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 100,
+      "foreign_inr": 500
+    },
+    "accessibility_features": [
+      "Fully Wheelchair Accessible",
+      "Sensory Audio Lounges",
+      "Braille Signage",
+      "Accessible Elevators"
+    ],
+    "contact": {
+      "phone": "+91 612 254 5022",
+      "website": "https://biharmuseum.org"
+    },
+    "thumbnail_url": "/images/didarganj_yakshi.jpg",
+    "gallery_urls": [
+      "/images/didarganj_yakshi.jpg"
+    ],
+    "description": "State-of-the-art Maki and Associates designed world-class museum celebrating the deep heritage of ancient Magadha, Pataliputra, and the Mauryan masterpiece Didarganj Yakshi.",
+    "artifact_count_approx": 25000,
+    "muse_collection_id": "art-003",
+    "featured_artifacts": ["art-003"],
+    "source": "Bihar Museum Official",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-sar-001",
+    "name": "Sarnath Archaeological Museum",
+    "vernacular_names": {
+      "hi": "पुरातत्व संग्रहालय सारनाथ, वाराणसी"
+    },
+    "address": "Sarnath, Near Dharmarajika Stupa",
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "pincode": "221007",
+    "coordinates": {
+      "lat": 25.3811,
+      "lon": 83.0227
+    },
+    "category": "archaeology",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "09:00 - 17:00",
+      "closed_on": ["Friday"],
+      "timings": "Saturday to Thursday (9:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 25,
+      "foreign_inr": 300
+    },
+    "accessibility_features": [
+      "Ramp Access to Main Central Hall",
+      "Tactile Braille Orientation Map"
+    ],
+    "contact": {
+      "phone": "+91 542 259 5095",
+      "website": "https://asi.nic.in"
+    },
+    "thumbnail_url": "/images/ashoka_lion_capital.jpg",
+    "gallery_urls": [
+      "/images/ashoka_lion_capital.jpg",
+      "/images/sarnath_buddha.jpg"
+    ],
+    "description": "Oldest site museum of the Archaeological Survey of India (ASI), housing the original 3rd century BCE Lion Capital of Ashoka (National Emblem of India) and masterworks of Gupta Buddhist art.",
+    "artifact_count_approx": 6800,
+    "muse_collection_id": "art-004",
+    "featured_artifacts": ["art-004", "art-005"],
+    "source": "Archaeological Survey of India",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-kol-001",
+    "name": "Indian Museum, Kolkata",
+    "vernacular_names": {
+      "bn": "भारतीय জাদুঘর, কলকাতা"
+    },
+    "address": "27 Jawaharlal Nehru Road, Park Street",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "pincode": "700016",
+    "coordinates": {
+      "lat": 22.5579,
+      "lon": 88.3511
+    },
+    "category": "multidisciplinary",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "10:00 - 18:00",
+      "closed_on": ["Monday", "National Holidays"],
+      "timings": "Tuesday to Sunday (10:00 AM – 6:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 50,
+      "foreign_inr": 500
+    },
+    "accessibility_features": [
+      "Wheelchair Elevators",
+      "Tactile Gallery",
+      "Braille Information Guides"
+    ],
+    "contact": {
+      "phone": "+91 33 2252 1790",
+      "website": "https://indianmuseumkolkata.org"
+    },
+    "thumbnail_url": "/images/sultanganj_buddha.jpg",
+    "gallery_urls": [
+      "/images/sultanganj_buddha.jpg"
+    ],
+    "description": "Founded in 1814 by the Asiatic Society of Bengal, it is the ninth oldest museum in the world and the largest in India, featuring monumental Bharhut Buddhist railings, fossils, and antiquities.",
+    "artifact_count_approx": 100000,
+    "muse_collection_id": "c-kolkata-001",
+    "source": "Indian Museum Official",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-mum-001",
+    "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS)",
+    "vernacular_names": {
+      "mr": "छत्रपती शिवाजी महाराज वस्तु संग्रहालय, मुंबई"
+    },
+    "address": "159-161 Mahatma Gandhi Road, Kala Ghoda, Fort",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400023",
+    "coordinates": {
+      "lat": 18.9268,
+      "lon": 72.8327
+    },
+    "category": "art_sculpture",
+    "governance": "private_trust",
+    "opening_hours": {
+      "schedule": "10:15 - 18:00",
+      "closed_on": ["National Holidays"],
+      "timings": "Open 7 Days a week (10:15 AM – 6:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 150,
+      "foreign_inr": 700
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible Ramps & Elevators",
+      "Children's Creative Centre",
+      "Tactile Audio Guides"
+    ],
+    "contact": {
+      "phone": "+91 22 2284 4484",
+      "website": "https://csmvs.in"
+    },
+    "thumbnail_url": "/images/sarnath_buddha.jpg",
+    "gallery_urls": [
+      "/images/sarnath_buddha.jpg"
+    ],
+    "description": "UNESCO-recognized Indo-Saracenic masterpiece holding over 70,000 treasures of Indian art, Himalayan bronzes, European paintings, and natural history specimens in South Mumbai.",
+    "artifact_count_approx": 70000,
+    "muse_collection_id": "c-csmvs-001",
+    "source": "CSMVS Mumbai Trust",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-blr-001",
+    "name": "Visvesvaraya Industrial and Technological Museum (VITM)",
+    "vernacular_names": {
+      "kn": "ವಿಶ್ವೇಶ್ವರಯ್ಯ ಕೈಗಾರಿಕಾ ಮತ್ತು ತಾಂತ್ರಿಕ ವಸ್ತುಸಂಗ್ರಹಾಲಯ"
+    },
+    "address": "Kasturba Road, Near Cubbon Park",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560001",
+    "coordinates": {
+      "lat": 12.9752,
+      "lon": 77.5963
+    },
+    "category": "science_technology",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "09:30 - 18:00",
+      "closed_on": ["Diwali", "Ganesh Chaturthi"],
+      "timings": "Open Daily (9:30 AM – 6:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 85,
+      "foreign_inr": 85
+    },
+    "accessibility_features": [
+      "Wheelchair Accessible",
+      "Interactive Touch Exhibits",
+      "Accessible Restrooms"
+    ],
+    "contact": {
+      "phone": "+91 80 2286 6414",
+      "website": "https://vismuseum.gov.in"
+    },
+    "thumbnail_url": "/images/dancing_girl.jpg",
+    "gallery_urls": [
+      "/images/dancing_girl.jpg"
+    ],
+    "description": "Dynamic interactive science centre with full-scale Wright Brothers simulator, Engine Hall, Space Gallery, and hands-on technological experiments in Cubbon Park.",
+    "artifact_count_approx": 12000,
+    "muse_collection_id": "c-vitm-001",
+    "source": "National Council of Science Museums",
+    "last_updated": "2026-08-18T10:00:00Z"
+  },
+  {
+    "id": "mus-in-hyd-001",
+    "name": "Salar Jung Museum",
+    "vernacular_names": {
+      "te": "సాలార్ జంగ్ మ్యూజియం"
+    },
+    "address": "Salar Jung Road, Darulshifa",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500002",
+    "coordinates": {
+      "lat": 17.3713,
+      "lon": 78.4804
+    },
+    "category": "art_sculpture",
+    "governance": "national_asi",
+    "opening_hours": {
+      "schedule": "10:00 - 17:00",
+      "closed_on": ["Friday"],
+      "timings": "Saturday to Thursday (10:00 AM – 5:00 PM)"
+    },
+    "entry_fee": {
+      "is_free": false,
+      "domestic_inr": 50,
+      "foreign_inr": 500
+    },
+    "accessibility_features": [
+      "Wheelchairs Available at Entrance",
+      "Braille Information Gallery",
+      "Battery-Operated Vehicles"
+    ],
+    "contact": {
+      "phone": "+91 40 2452 3211",
+      "website": "https://salarjungmuseum.in"
+    },
+    "thumbnail_url": "/images/chola_nataraja.jpg",
+    "gallery_urls": [
+      "/images/chola_nataraja.jpg"
+    ],
+    "description": "One of the world's largest one-man art collections, featuring the famous 19th-century Musical Clock, the Veiled Rebecca marble statue, and royal Nizami jade and weaponry.",
+    "artifact_count_approx": 43000,
+    "muse_collection_id": "c-salarjung-001",
+    "source": "Salar Jung Board",
+    "last_updated": "2026-08-18T10:00:00Z"
+  }
+]

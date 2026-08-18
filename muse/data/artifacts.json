@@ -1,0 +1,350 @@
+[
+  {
+    "id": "art-001",
+    "museumName": "National Museum, New Delhi",
+    "title": "Dancing Girl of Mohenjo-daro",
+    "imageUrl": "/images/dancing_girl.jpg",
+    "curatorAltText": "A 10.5 centimetre tall ancient Indus Valley bronze statuette of a standing young woman with arm bangles and confident posture.",
+    "period": "c. 2300–1750 BCE",
+    "material": "Bronze (lost-wax casting)",
+    "culture": "Indus Valley Civilization",
+    "provenanceLine": "Excavated at Mohenjo-daro (HR area) in 1926 by Ernest J. H. Mackay; allocated to the National Museum, New Delhi following partition agreements.",
+    "canonicalText": "Discovered in 1926 at Mohenjo-daro, this rare 10.5-centimetre bronze statuette represents a masterpiece of lost-wax casting from the Mature Harappan period, dated to circa 2300–1750 BCE. The sculpture portrays a young woman standing in a dynamic, confident posture with her right hand resting on her hip and her left arm almost completely covered in bangles. The naturalistic modelling of the limbs and the lively tilt of the head suggest a performer pausing between movements. Her hair is elaborately dressed in a heavy bun resting on the shoulder, and she wears a small necklace with three pendant beads.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Discovered in 1926 at Mohenjo-daro in the HR area by Ernest Mackay.",
+        "type": "provenance",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c2",
+        "text": "Measures 10.5 centimetres in height.",
+        "type": "dimension",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c3",
+        "text": "Created using the lost-wax casting technique in bronze.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c4",
+        "text": "Her left arm is adorned with bangles almost to the shoulder.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c5",
+        "text": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c6",
+        "text": "The dynamic posture suggests a performer or dancer pausing between movements.",
+        "type": "function",
+        "criticality": "contextual",
+        "hedge": "suggests"
+      }
+    ]
+  },
+  {
+    "id": "art-002",
+    "museumName": "Government Museum, Chennai",
+    "title": "Chola Bronze Nataraja",
+    "imageUrl": "/images/chola_nataraja.jpg",
+    "curatorAltText": "A 10th-century Chola bronze sculpture of Shiva dancing within a flaming halo, balancing on the dwarf of ignorance.",
+    "period": "c. 10th–11th Century CE",
+    "material": "Bronze (cupro-alloy casting)",
+    "culture": "Chola Dynasty, Tamil Nadu",
+    "provenanceLine": "Recovered from temple treasury hoard in Thanjavur district; accessioned into Government Museum Chennai in the early 20th century.",
+    "canonicalText": "This 10th-century bronze sculpture of Shiva as Nataraja, Lord of the Dance, exemplifies the technical and iconographical zenith of Chola metalwork. Cast in solid bronze using the cire perdue process, Shiva is depicted dancing the Anandatandava within an aureole of flames (prabhamandala). His upper right hand holds the damaru drum signifying creation, while the upper left cradles the fire of dissolution. The lower right hand displays the abhaya mudra of reassurance, and the lower left points toward the raised left foot of salvation, while trampling Apasmara Purusha, the dwarf representing cosmic ignorance.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Cast in solid bronze using the cire perdue (lost-wax) process.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c2",
+        "text": "Dated to circa the 10th–11th century CE during the Chola dynasty.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c3",
+        "text": "Shiva holds the damaru drum in the upper right hand and cosmic fire in the upper left.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c4",
+        "text": "The lower right hand shows abhaya mudra and lower left points to the raised foot.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c5",
+        "text": "Shiva dances upon the dwarf Apasmara Purusha, symbol of ignorance.",
+        "type": "function",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c6",
+        "text": "The surrounding circle of fire is called the prabhamandala.",
+        "type": "attribution",
+        "criticality": "contextual",
+        "hedge": "attributed_to"
+      }
+    ]
+  },
+  {
+    "id": "art-003",
+    "museumName": "Bihar Museum, Patna",
+    "title": "Didarganj Yakshi",
+    "imageUrl": "/images/didarganj_yakshi.jpg",
+    "curatorAltText": "A life-size polished Chunar sandstone sculpture of a female figure holding a fly-whisk, showing characteristic Mauryan mirror polish.",
+    "period": "c. 3rd–2nd Century BCE",
+    "material": "Polished Chunar Sandstone",
+    "culture": "Mauryan / Early Shunga Horizon",
+    "provenanceLine": "Discovered on the banks of the Ganges at Didarganj, Patna in October 1917 by Ghulam Rasul; moved to Patna Museum in 1917 and transferred to Bihar Museum in 2017.",
+    "canonicalText": "Found in 1917 on the banks of the river Ganges at Didarganj, this monumental 162-centimetre sculpture of a Yakshi holding a chauri (fly-whisk) is among the crowning achievements of ancient Indian stone carving. Carved from a single block of buff-coloured Chunar sandstone, the sculpture is celebrated for its radiant 'Mauryan polish' that imparts a mirror-like sheen to the stone. The figure is realistically rendered with a slender waist, elaborate jewelry, and finely pleated drapery that folds gracefully around the ankles. A damaged nose and chin bear witness to ancient exposure, yet the monumental grace remains intact.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Discovered in 1917 on the banks of the Ganges at Didarganj, Patna.",
+        "type": "provenance",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c2",
+        "text": "Measures 162 centimetres in height, carved from Chunar sandstone.",
+        "type": "dimension",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c3",
+        "text": "Features the distinctive mirror-like Mauryan polish.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c4",
+        "text": "Holds a chauri (fly-whisk) in her right hand.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c5",
+        "text": "Dated to circa the 3rd to 2nd century BCE.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c6",
+        "text": "Stylistically attributed to courtly sculpture of the Mauryan-Shunga transition.",
+        "type": "attribution",
+        "criticality": "contextual",
+        "hedge": "attributed_to"
+      }
+    ]
+  },
+  {
+    "id": "art-004",
+    "museumName": "Sarnath Archaeological Museum",
+    "title": "Lion Capital of Ashoka",
+    "imageUrl": "/images/ashoka_lion_capital.jpg",
+    "curatorAltText": "Carved Chunar sandstone capital with four Asiatic lions back-to-back over a drum with wheels and animals, resting on an inverted bell lotus.",
+    "period": "c. 250 BCE",
+    "material": "Polished Chunar Sandstone",
+    "culture": "Mauryan Empire (Reign of Ashoka)",
+    "provenanceLine": "Excavated at Sarnath in 1905 by F. O. Oertel; preserved permanently in Sarnath Archaeological Museum.",
+    "canonicalText": "Erected around 250 BCE at the sacred Deer Park in Sarnath where Gautama Buddha delivered his first sermon, this world-renowned sandstone capital stood atop the Ashoka Pillar. Carved from a single block of polished Chunar sandstone, it features four magnificent Asiatic lions seated back-to-back on a circular abacus. The frieze below depicts four high-relief animals—an elephant, a galloping horse, a bull, and a lion—separated by four 24-spoked Dharma chakras (wheels of law), all resting on an inverted lotus bell. Adopted in 1950 as the National Emblem of the Republic of India, the capital symbolizes sovereign duty, righteousness, and peace.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Erected around 250 BCE at Sarnath by Emperor Ashoka.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c2",
+        "text": "Carved from a single monolith of polished Chunar sandstone.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c3",
+        "text": "Features four Asiatic lions standing back-to-back on a circular abacus.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c4",
+        "text": "The base frieze shows an elephant, a galloping horse, a bull, and a lion.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c5",
+        "text": "Separated by 24-spoked Dharma chakras above an inverted lotus bell.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c6",
+        "text": "Adopted in 1950 as the official National Emblem of the Republic of India.",
+        "type": "function",
+        "criticality": "must_include",
+        "hedge": null
+      }
+    ]
+  },
+  {
+    "id": "art-005",
+    "museumName": "Sarnath Archaeological Museum",
+    "title": "Standing Buddha of Sarnath",
+    "imageUrl": "/images/sarnath_buddha.jpg",
+    "curatorAltText": "A 5th-century Gupta sandstone sculpture of the standing Buddha with transparent cling drapery and an elaborately carved circular halo.",
+    "period": "c. 5th Century CE",
+    "material": "Chunar Sandstone",
+    "culture": "Gupta Period, Sarnath School",
+    "provenanceLine": "Excavated from the monastic ruins at Sarnath in the early 20th century; catalogued into the collection of Sarnath Archaeological Museum.",
+    "canonicalText": "Dating to the golden age of the Gupta Empire in the 5th century CE, this standing image of Buddha represents the refined aesthetic climax of the Sarnath sculptural school. Carved from pale pinkish Chunar sandstone, the figure exhibits the signature 'wet drapery' technique, wherein the monastic sanghati robe clings seamlessly to the torso without heavy fold lines. The Buddha's right hand was raised in abhaya mudra granting protection, while the left holds the hem of the robe. Behind the head radiates a large circular nimbus ornamented with concentric bands of delicate lotus petals and floral arabesques.",
+    "sensitivityFlags": [],
+    "contentNoticeText": null,
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Dating to circa the 5th century CE during the Gupta period.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c2",
+        "text": "Carved from pale Chunar sandstone in the Sarnath sculptural tradition.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c3",
+        "text": "Features transparent clinging monastic robes without heavy incised folds.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c4",
+        "text": "Left hand grasps the gathered hem of the sanghati robe.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c5",
+        "text": "Framed by a large circular carved halo with concentric lotus bands.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c6",
+        "text": "Attributed to the monastic workshop patronage of the classic Gupta era.",
+        "type": "attribution",
+        "criticality": "contextual",
+        "hedge": "attributed_to"
+      }
+    ]
+  },
+  {
+    "id": "art-006",
+    "museumName": "Birmingham Museum & Art Gallery",
+    "title": "Sultanganj Bronze Buddha",
+    "imageUrl": "/images/sultanganj_buddha.jpg",
+    "curatorAltText": "A monumental 2.3-metre tall copper-bronze standing Buddha statue with raised right hand, discovered in Bihar in 1861.",
+    "period": "c. 500–700 CE",
+    "material": "Copper (lost-wax casting)",
+    "culture": "Gupta-Pala Transition, Bihar",
+    "provenanceLine": "Found during railway construction in Sultanganj, Bhagalpur district, Bihar in 1861 by E. B. Harris; purchased by Samuel Thornton and shipped to Birmingham in 1864.",
+    "canonicalText": "The Sultanganj Buddha is an extraordinary monumental copper statue of the Buddha, standing 2.3 metres tall and weighing over 500 kilograms. Discovered in 1861 during British railway construction at an abandoned Buddhist monastery in Sultanganj, Bihar, it is the largest complete Indian bronze statue known from antiquity. Cast through the lost-wax method in pure unrefined copper over a clay core, the Buddha stands serenely with his right hand raised in abhaya mudra (fearlessness) and left hand gracefully holding his sheer robe. Dating to the transition between Gupta and early Pala periods, it provides vital evidence of early medieval metallurgy in eastern India.",
+    "sensitivityFlags": ["contested_provenance"],
+    "contentNoticeText": "Provenance & Repatriation Notice: This monumental sculpture was removed from Sultanganj, Bihar in 1861 during British colonial railway excavation and transported to Birmingham in 1864. The Government of India has formally registered diplomatic inquiries regarding its colonial acquisition.",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Found in 1861 during railway construction at Sultanganj, Bihar.",
+        "type": "provenance",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c2",
+        "text": "Measures 2.3 metres in height and weighs over 500 kilograms.",
+        "type": "dimension",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c3",
+        "text": "Cast in copper using lost-wax technique over a clay core.",
+        "type": "material",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c4",
+        "text": "Right hand displays the abhaya mudra granting fearlessness.",
+        "type": "attribution",
+        "criticality": "must_include",
+        "hedge": null
+      },
+      {
+        "id": "c5",
+        "text": "Dated to circa 500–700 CE during the Gupta-Pala transition.",
+        "type": "date",
+        "criticality": "must_include",
+        "hedge": "circa"
+      },
+      {
+        "id": "c6",
+        "text": "Shipped to Birmingham in 1864, subject to modern diplomatic inquiries.",
+        "type": "provenance",
+        "criticality": "must_include",
+        "hedge": null
+      }
+    ]
+  }
+]

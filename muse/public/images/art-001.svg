@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#2D2822" />
+      <stop offset="100%" stop-color="#141210" />
+    </radialGradient>
+    <linearGradient id="bronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8C704B" />
+      <stop offset="50%" stop-color="#5E482D" />
+      <stop offset="100%" stop-color="#362919" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)" />
+  <circle cx="400" cy="300" r="230" fill="none" stroke="#8C704B" stroke-width="1" stroke-opacity="0.2" />
+  <circle cx="400" cy="300" r="220" fill="none" stroke="#8C704B" stroke-width="1" stroke-dasharray="4 8" stroke-opacity="0.15" />
+  
+  <!-- Silhouette Representation of Dancing Girl of Mohenjo-daro -->
+  <g transform="translate(400, 300) scale(1.1)" stroke="none">
+    <!-- Bun over shoulder -->
+    <ellipse cx="28" cy="-145" rx="22" ry="18" fill="url(#bronze)" />
+    <!-- Head tilted slightly -->
+    <ellipse cx="6" cy="-140" rx="18" ry="22" fill="url(#bronze)" />
+    <!-- Neck with cowrie necklace -->
+    <path d="M-4,-120 Q6,-115 16,-120 L18,-95 Q6,-90 -6,-95 Z" fill="url(#bronze)" />
+    <circle cx="0" cy="-100" r="4" fill="#C2A675" />
+    <circle cx="6" cy="-97" r="4" fill="#C2A675" />
+    <circle cx="12" cy="-100" r="4" fill="#C2A675" />
+    
+    <!-- Torso and confident stance -->
+    <path d="M-15,-95 Q-18,-50 -8,0 L18,0 Q15,-50 22,-95 Z" fill="url(#bronze)" />
+    
+    <!-- Right arm bent, hand on hip -->
+    <path d="M-15,-90 Q-48,-65 -45,-30 Q-42,0 -20,-10 L-14,-22 Q-30,-15 -32,-35 Q-34,-58 -8,-78 Z" fill="url(#bronze)" />
+    <circle cx="-20" cy="-14" r="5" fill="#A88B5D" />
+    
+    <!-- Left arm straight down, covered in 25 bangles -->
+    <path d="M22,-90 Q38,-40 32,20 L20,20 Q24,-35 15,-78 Z" fill="url(#bronze)" />
+    <!-- Bangles stack -->
+    <rect x="18" y="-70" width="14" height="75" rx="4" fill="#C2A675" fill-opacity="0.8" />
+    <line x1="18" y1="-60" x2="32" y2="-60" stroke="#362919" stroke-width="1.5" />
+    <line x1="18" y1="-50" x2="32" y2="-50" stroke="#362919" stroke-width="1.5" />
+    <line x1="18" y1="-40" x2="32" y2="-40" stroke="#362919" stroke-width="1.5" />
+    <line x1="18" y1="-30" x2="32" y2="-30" stroke="#362919" stroke-width="1.5" />
+    <line x1="18" y1="-20" x2="32" y2="-20" stroke="#362919" stroke-width="1.5" />
+    <line x1="18" y1="-10" x2="32" y2="-10" stroke="#362919" stroke-width="1.5" />
+    <line x1="18" y1="0" x2="32" y2="0" stroke="#362919" stroke-width="1.5" />
+    <line x1="18" y1="10" x2="32" y2="10" stroke="#362919" stroke-width="1.5" />
+    
+    <!-- Legs in slight relaxed bend -->
+    <path d="M-10,0 Q-15,60 -8,130 L4,130 Q-2,60 4,0 Z" fill="url(#bronze)" />
+    <path d="M6,0 Q12,60 18,130 L28,130 Q20,60 16,0 Z" fill="url(#bronze)" />
+    <!-- Plinth base -->
+    <ellipse cx="6" cy="138" rx="45" ry="10" fill="#241B10" stroke="#5E482D" stroke-width="2" />
+  </g>
+  
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#E2DED6" letter-spacing="3">DANCING GIRL OF MOHENJO-DARO</text>
+  <text x="400" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#8C704B" letter-spacing="2">NATIONAL MUSEUM, NEW DELHI · c. 2300–1750 BCE</text>
+</svg>

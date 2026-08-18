@@ -1,0 +1,86 @@
+{
+  "adult": {
+    "quick": {
+      "target_grade": 8,
+      "max_words": 140,
+      "tone": "conversational and concise",
+      "structure": ["What you're looking at", "Key significance"],
+      "look_closer_count": 2
+    },
+    "standard": {
+      "target_grade": 9,
+      "max_words": 220,
+      "tone": "conversational, confident, and balanced",
+      "structure": ["What you're looking at", "Why it matters", "Artistry and context"],
+      "look_closer_count": 2
+    },
+    "deep": {
+      "target_grade": 11,
+      "max_words": 340,
+      "tone": "rich, essayistic, and reflective",
+      "structure": ["What you're looking at", "Why it matters", "Artistic technique and symbolism", "Provenance and history"],
+      "look_closer_count": 2
+    }
+  },
+  "child": {
+    "quick": {
+      "target_grade": 3,
+      "max_words": 90,
+      "tone": "warm, curious, second-person, exciting",
+      "structure": ["Can you spot this?", "What was it used for?"],
+      "look_closer_count": 2,
+      "max_sentence_words": 12
+    },
+    "standard": {
+      "target_grade": 4,
+      "max_words": 130,
+      "tone": "warm, curious, second-person with spotting questions",
+      "structure": ["Take a close look", "How it was made", "Why it is special"],
+      "look_closer_count": 2,
+      "max_sentence_words": 14
+    },
+    "deep": {
+      "target_grade": 5,
+      "max_words": 180,
+      "tone": "inquisitive and engaging for curious young minds",
+      "structure": ["Spot the details", "The ancient story", "How archaeologists found it"],
+      "look_closer_count": 2,
+      "max_sentence_words": 15
+    }
+  },
+  "specialist": {
+    "quick": {
+      "target_grade": 12,
+      "max_words": 200,
+      "tone": "scholarly, concise, and technically precise",
+      "structure": ["Material and formal analysis", "Historiographical significance"],
+      "look_closer_count": 2
+    },
+    "standard": {
+      "target_grade": 13,
+      "max_words": 320,
+      "tone": "academic, methodologically rigorous, unembellished",
+      "structure": ["Formal and material analysis", "Cultural and religious context", "Historiography and attribution"],
+      "look_closer_count": 2
+    },
+    "deep": {
+      "target_grade": 14,
+      "max_words": 450,
+      "tone": "comprehensive scholarly treatise with explicit evidentiary nuances",
+      "structure": ["Formal and material analysis", "Iconographical and religious context", "Historiographical debates and uncertainty", "Provenance and archaeological context"],
+      "look_closer_count": 2
+    }
+  },
+  "accessibility": {
+    "target_grade": 7,
+    "max_words": 200,
+    "tone": "literal, clear, front-loaded, and spatial",
+    "structure": ["What this object looks like", "What it is and why it matters"],
+    "look_closer_count": 2,
+    "rules": [
+      "Visual description is first",
+      "Use object-relative spatial terms instead of layout-relative terms",
+      "Expand abbreviations for screen reader pronunciation clarity"
+    ]
+  }
+}

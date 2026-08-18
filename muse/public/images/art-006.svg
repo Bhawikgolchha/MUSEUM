@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg6" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#242220" />
+      <stop offset="100%" stop-color="#0E0D0C" />
+    </radialGradient>
+    <linearGradient id="copperBronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C67D5A" />
+      <stop offset="50%" stop-color="#8F4F32" />
+      <stop offset="100%" stop-color="#542B1A" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg6)" />
+  <circle cx="400" cy="270" r="220" fill="none" stroke="#C67D5A" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Monumental Sultanganj Copper Buddha -->
+  <g transform="translate(400, 270) scale(1.2)" stroke="none">
+    <!-- Serene Head with Hair Curls and Ushnisha -->
+    <ellipse cx="0" cy="-105" rx="20" ry="24" fill="url(#copperBronze)" />
+    <ellipse cx="0" cy="-132" rx="9" ry="8" fill="url(#copperBronze)" />
+    <!-- Elongated Earlobes -->
+    <path d="M-20,-105 Q-24,-85 -20,-80" stroke="#542B1A" stroke-width="2.5" fill="none" />
+    <path d="M20,-105 Q24,-85 20,-80" stroke="#542B1A" stroke-width="2.5" fill="none" />
+
+    <!-- Broad Shoulders and Flowing Sanghati (Robe) -->
+    <path d="M-32,-75 Q-38,-10 -22,70 L22,70 Q38,-10 32,-75 Z" fill="url(#copperBronze)" />
+    <!-- Translucent robe folds contour lines -->
+    <path d="M-25,-40 Q0,-20 25,-40" stroke="#542B1A" stroke-width="1.5" fill="none" opacity="0.6" />
+    <path d="M-28,-10 Q0,10 28,-10" stroke="#542B1A" stroke-width="1.5" fill="none" opacity="0.6" />
+    <path d="M-22,25 Q0,45 22,25" stroke="#542B1A" stroke-width="1.5" fill="none" opacity="0.6" />
+
+    <!-- Right Hand in Abhaya Mudra (Raised palm) -->
+    <path d="M30,-65 Q50,-35 48,-5 L38,-5 Q38,-30 20,-55 Z" fill="url(#copperBronze)" />
+    <ellipse cx="46" cy="-12" rx="7" ry="10" fill="#E29E7D" />
+
+    <!-- Left Hand held downwards grasping robe hem (Varada / holding robe) -->
+    <path d="M-30,-65 Q-50,-20 -40,25 L-32,20 Q-38,-15 -20,-55 Z" fill="url(#copperBronze)" />
+    <ellipse cx="-38" cy="28" rx="6" ry="8" fill="#E29E7D" />
+
+    <!-- Lower Robe Sheath down to bare feet -->
+    <path d="M-22,70 Q-28,130 -18,170 L18,170 Q28,130 22,70 Z" fill="url(#copperBronze)" />
+    <!-- Feet on Bronze Base -->
+    <rect x="-35" y="170" width="70" height="12" rx="4" fill="#3D1D10" />
+  </g>
+
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#E2DED6" letter-spacing="3">SULTANGANJ BRONZE BUDDHA</text>
+  <text x="400" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#C67D5A" letter-spacing="2">BIRMINGHAM MUSEUM &amp; ART GALLERY · c. 500–700 CE</text>
+</svg>

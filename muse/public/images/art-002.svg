@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#221C16" />
+      <stop offset="100%" stop-color="#0E0B08" />
+    </radialGradient>
+    <linearGradient id="cholaBronze" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D49A50" />
+      <stop offset="50%" stop-color="#8E5E28" />
+      <stop offset="100%" stop-color="#462C10" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg2)" />
+  
+  <!-- Flaming Aureole (Prabhamandala) -->
+  <circle cx="400" cy="270" r="180" fill="none" stroke="url(#cholaBronze)" stroke-width="8" stroke-opacity="0.8" />
+  <!-- Flame tongues around rim -->
+  <g transform="translate(400,270)">
+    <circle cx="0" cy="0" r="190" fill="none" stroke="#D49A50" stroke-width="2" stroke-dasharray="8 12" />
+    <path d="M-130,-130 Q-150,-150 -140,-165 Q-120,-150 -125,-125" fill="#D49A50" />
+    <path d="M0,-185 Q0,-210 12,-205 Q0,-180 5,-175" fill="#D49A50" />
+    <path d="M130,-130 Q150,-150 165,-140 Q150,-120 125,-125" fill="#D49A50" />
+    <path d="M185,0 Q210,0 205,12 Q180,0 175,5" fill="#D49A50" />
+    <path d="M-185,0 Q-210,0 -205,-12 Q-180,0 -175,-5" fill="#D49A50" />
+    <path d="M-130,130 Q-150,150 -165,140 Q-150,120 -125,125" fill="#D49A50" />
+    <path d="M130,130 Q150,150 140,165 Q120,150 125,125" fill="#D49A50" />
+  </g>
+
+  <!-- Shiva Nataraja Pose -->
+  <g transform="translate(400, 270)" stroke="none">
+    <!-- Torso and Head with Jatamukuta -->
+    <path d="M-8,-60 Q0,-95 8,-60 L14,-10 Q0,5 -14,-10 Z" fill="url(#cholaBronze)" />
+    <!-- Crown -->
+    <path d="M-12,-65 L0,-115 L12,-65 Z" fill="#D49A50" />
+    <!-- Flying Locks of Hair (Jata) -->
+    <path d="M-10,-55 Q-70,-70 -120,-45 Q-70,-55 -10,-50" fill="#8E5E28" />
+    <path d="M10,-55 Q70,-70 120,-45 Q70,-55 10,-50" fill="#8E5E28" />
+    
+    <!-- 4 Arms -->
+    <!-- Upper Right (Damaru Drum) -->
+    <path d="M12,-40 Q65,-65 95,-75 L90,-85 Q55,-55 8,-30" fill="url(#cholaBronze)" />
+    <ellipse cx="98" cy="-80" rx="8" ry="14" fill="#D49A50" />
+    
+    <!-- Upper Left (Agni Flame) -->
+    <path d="M-12,-40 Q-65,-65 -95,-75 L-90,-85 Q-55,-55 -8,-30" fill="url(#cholaBronze)" />
+    <path d="M-102,-88 Q-98,-105 -90,-95 Q-85,-110 -80,-90 Z" fill="#E8B068" />
+    
+    <!-- Lower Right (Abhaya Mudra) -->
+    <path d="M10,-25 Q45,-15 48,15 L38,18 Q35,-5 6,-15" fill="url(#cholaBronze)" />
+    <!-- Lower Left (Gajahasta pointing to raised foot) -->
+    <path d="M-10,-20 Q-25,15 -75,45 L-70,55 Q-20,25 -5,-10" fill="url(#cholaBronze)" />
+    
+    <!-- Legs -->
+    <!-- Right Leg standing on Apasmara -->
+    <path d="M0,0 Q-5,50 0,90 L12,90 Q12,50 5,0" fill="url(#cholaBronze)" />
+    <!-- Left Leg lifted diagonally across -->
+    <path d="M-2,5 Q-45,20 -85,25 L-88,12 Q-45,8 2,-2" fill="url(#cholaBronze)" />
+    
+    <!-- Apasmara Dwarf -->
+    <ellipse cx="2" cy="100" rx="35" ry="12" fill="#5E3F1C" />
+    <!-- Lotus Pedestal -->
+    <path d="M-70,115 Q0,95 70,115 L80,135 Q0,125 -80,135 Z" fill="url(#cholaBronze)" />
+  </g>
+
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#E2DED6" letter-spacing="3">CHOLA BRONZE NATARAJA</text>
+  <text x="400" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#D49A50" letter-spacing="2">GOVERNMENT MUSEUM, CHENNAI · c. 11TH CENTURY CE</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#26221C" />
+      <stop offset="100%" stop-color="#100E0B" />
+    </radialGradient>
+    <linearGradient id="mauryanStone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFCFB7" />
+      <stop offset="50%" stop-color="#AD9675" />
+      <stop offset="100%" stop-color="#6E583B" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg4)" />
+  <circle cx="400" cy="260" r="210" fill="none" stroke="#AD9675" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Lion Capital of Ashoka -->
+  <g transform="translate(400, 260)" stroke="none">
+    <!-- 4 Lions Seated Back to Back -->
+    <!-- Left Lion Profile -->
+    <path d="M-60,-90 Q-105,-80 -95,-35 Q-90,-10 -65,-5 L-40,-5 Q-45,-40 -50,-80 Z" fill="url(#mauryanStone)" />
+    <!-- Right Lion Profile -->
+    <path d="M60,-90 Q105,-80 95,-35 Q90,-10 65,-5 L40,-5 Q45,-40 50,-80 Z" fill="url(#mauryanStone)" />
+    <!-- Front Central Lion Head & Mane -->
+    <path d="M-45,-125 Q0,-145 45,-125 Q55,-70 40,-5 L-40,-5 Q-55,-70 -45,-125 Z" fill="url(#mauryanStone)" />
+    <!-- Mane Stylized Curls -->
+    <circle cx="-25" cy="-90" r="8" fill="#8C7452" />
+    <circle cx="0" cy="-95" r="9" fill="#8C7452" />
+    <circle cx="25" cy="-90" r="8" fill="#8C7452" />
+    <circle cx="-20" cy="-65" r="9" fill="#8C7452" />
+    <circle cx="20" cy="-65" r="9" fill="#8C7452" />
+    <circle cx="0" cy="-55" r="10" fill="#8C7452" />
+    
+    <!-- Circular Abacus Drum -->
+    <rect x="-115" y="-5" width="230" height="42" rx="4" fill="url(#mauryanStone)" stroke="#5A4730" stroke-width="1.5" />
+    
+    <!-- Central 24-Spoked Ashoka Chakra Wheel -->
+    <circle cx="0" cy="16" r="16" fill="none" stroke="#5A4730" stroke-width="3" />
+    <circle cx="0" cy="16" r="4" fill="#5A4730" />
+    <!-- Spokes representation -->
+    <line x1="0" y1="2" x2="0" y2="30" stroke="#5A4730" stroke-width="1.5" />
+    <line x1="-14" y1="16" x2="14" y2="16" stroke="#5A4730" stroke-width="1.5" />
+    <line x1="-10" y1="6" x2="10" y2="26" stroke="#5A4730" stroke-width="1.5" />
+    <line x1="-10" y1="26" x2="10" y2="6" stroke="#5A4730" stroke-width="1.5" />
+    
+    <!-- Bull & Horse Relievos (Flanking) -->
+    <ellipse cx="-65" cy="16" rx="20" ry="10" fill="#8C7452" />
+    <ellipse cx="65" cy="16" rx="20" ry="10" fill="#8C7452" />
+    
+    <!-- Inverted Lotus Bell Base -->
+    <path d="M-95,37 Q-120,80 -130,120 Q0,105 130,120 Q120,80 95,37 Z" fill="url(#mauryanStone)" />
+    <!-- Fluted Petals -->
+    <line x1="-60" y1="40" x2="-80" y2="115" stroke="#5A4730" stroke-width="2" />
+    <line x1="-20" y1="40" x2="-25" y2="110" stroke="#5A4730" stroke-width="2" />
+    <line x1="20" y1="40" x2="25" y2="110" stroke="#5A4730" stroke-width="2" />
+    <line x1="60" y1="40" x2="80" y2="115" stroke="#5A4730" stroke-width="2" />
+  </g>
+
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#E2DED6" letter-spacing="3">LION CAPITAL OF ASHOKA</text>
+  <text x="400" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#AD9675" letter-spacing="2">SARNATH ARCHAEOLOGICAL MUSEUM · c. 250 BCE</text>
+</svg>

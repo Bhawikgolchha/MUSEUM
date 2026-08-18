@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg5" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#2B241E" />
+      <stop offset="100%" stop-color="#120E0A" />
+    </radialGradient>
+    <linearGradient id="guptaBuff" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DEC4" />
+      <stop offset="50%" stop-color="#CBB191" />
+      <stop offset="100%" stop-color="#8E7250" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg5)" />
+
+  <!-- Standing Buddha of Sarnath with Halo -->
+  <g transform="translate(400, 270) scale(1.1)" stroke="none">
+    <!-- Prabhavali (Elaborate Ornate Halo) -->
+    <circle cx="0" cy="-90" r="95" fill="none" stroke="#CBB191" stroke-width="6" stroke-opacity="0.7" />
+    <circle cx="0" cy="-90" r="105" fill="none" stroke="#F2DEC4" stroke-width="2" stroke-dasharray="6 8" />
+    <!-- Radiating Lotus Petal ring in halo -->
+    <circle cx="0" cy="-90" r="70" fill="none" stroke="#8E7250" stroke-width="2" stroke-dasharray="4 6" />
+
+    <!-- Head and Ushnisha -->
+    <ellipse cx="0" cy="-90" rx="22" ry="26" fill="url(#guptaBuff)" />
+    <!-- Ushnisha bump -->
+    <ellipse cx="0" cy="-120" rx="10" ry="8" fill="url(#guptaBuff)" />
+    <!-- Elongated Earlobes -->
+    <path d="M-22,-90 Q-26,-65 -22,-60" stroke="#8E7250" stroke-width="3" fill="none" />
+    <path d="M22,-90 Q26,-65 22,-60" stroke="#8E7250" stroke-width="3" fill="none" />
+
+    <!-- Torso in Smooth Wet-Drapery Style -->
+    <path d="M-28,-60 Q-32,20 -15,100 L15,100 Q32,20 28,-60 Z" fill="url(#guptaBuff)" />
+    
+    <!-- Right Arm in Abhaya Mudra (Hand raised, palm forward) -->
+    <path d="M28,-50 Q48,-20 45,10 L35,10 Q36,-15 18,-45 Z" fill="url(#guptaBuff)" />
+    <!-- Open palm -->
+    <ellipse cx="44" cy="5" rx="7" ry="10" fill="#F2DEC4" />
+    
+    <!-- Left Arm gathering robe hem -->
+    <path d="M-28,-50 Q-48,-10 -38,35 L-30,30 Q-38,-5 -18,-45 Z" fill="url(#guptaBuff)" />
+
+    <!-- Long Smooth Robe Flowing to Feet -->
+    <path d="M-18,100 Q-25,160 -15,200 L15,200 Q25,160 18,100 Z" fill="url(#guptaBuff)" />
+    
+    <!-- Double Lotus Base (Padmapitha) -->
+    <ellipse cx="0" cy="210" rx="55" ry="14" fill="#6B5338" />
+    <ellipse cx="0" cy="216" rx="65" ry="10" fill="#423220" />
+  </g>
+
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#E2DED6" letter-spacing="3">STANDING BUDDHA OF SARNATH</text>
+  <text x="400" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#CBB191" letter-spacing="2">SARNATH ARCHAEOLOGICAL MUSEUM · c. 5TH CENTURY CE</text>
+</svg>

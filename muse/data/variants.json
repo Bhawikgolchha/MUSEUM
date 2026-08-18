@@ -1,0 +1,5306 @@
+{
+  "art-001:adult:quick": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "adult",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Dancing Girl of Mohenjo-daro is a celebrated work from c. 2300–1750 BCE, created in cast bronze (lost-wax cire-perdue) by Indus Valley (Mature Harappan) artisans."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Discovered and catalogued by National Museum, New Delhi, this piece stands as a masterwork reflecting the social, spiritual, and technical achievements of its civilization."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:adult:standard": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "adult",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 75,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Dancing Girl of Mohenjo-daro is an extraordinary artifact dating to c. 2300–1750 BCE from Indus Valley (Mature Harappan). Masterfully created using cast bronze (lost-wax cire-perdue), it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of National Museum, New Delhi, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistry and Craft",
+        "body": "Excavated in 1926 by Ernest J. H. Mackay at the HR Area of Mohenjo-daro; preserved in the National Museum, New Delhi. The surviving detail and proportion demonstrate the elevated skills of its makers."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:adult:deep": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "adult",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 120,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Dancing Girl of Mohenjo-daro is an extraordinary artifact dating to c. 2300–1750 BCE from Indus Valley (Mature Harappan). Masterfully created using cast bronze (lost-wax cire-perdue), it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of National Museum, New Delhi, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistic Technique & Symbolism",
+        "body": "The execution reflects high mastery over cast bronze (lost-wax cire-perdue). Every contour was deliberately calibrated by ancient artisans to convey cultural authority and aesthetic balance."
+      },
+      {
+        "heading": "Provenance & Discovery",
+        "body": "Excavated in 1926 by Ernest J. H. Mackay at the HR Area of Mohenjo-daro; preserved in the National Museum, New Delhi. Today, it serves as a cornerstone piece for understanding the achievements of Indus Valley (Mature Harappan)."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:child:quick": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "child",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 30,
+    "sections": [
+      {
+        "heading": "Can you spot what this is made of?",
+        "body": "This special treasure is made of cast bronze (lost-wax cire-perdue). Long ago in c. 2300–1750 BCE, ancient artists shaped it with great care. It was preserved by National Museum, New Delhi."
+      },
+      {
+        "heading": "What was it used for?",
+        "body": "People looked at this object during special ceremonies and daily life. It helps us discover how people lived thousands of years ago!"
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Cast",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:child:standard": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "child",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "Take a close look at this ancient wonder",
+        "body": "Look at this incredible dancing girl of mohenjo-daro! Created during c. 2300–1750 BCE, it is made from cast bronze (lost-wax cire-perdue) using ancient techniques."
+      },
+      {
+        "heading": "How artists created it",
+        "body": "Ancient craft workers shaped every detail by hand. It was found at Indus Valley (Mature Harappan) archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "Why it is super special",
+        "body": "Every detail tells a true story about ancient times. Scholars and historians study it carefully so we know exactly how life was lived back then."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Cast",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:child:deep": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "child",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Spot the amazing details!",
+        "body": "Look at this incredible dancing girl of mohenjo-daro! Created during c. 2300–1750 BCE, it is made from cast bronze (lost-wax cire-perdue) using clever ancient tools."
+      },
+      {
+        "heading": "How ancient artists shaped it",
+        "body": "Craft workers spent months shaping every tiny curve by hand. It was found at Indus Valley (Mature Harappan) archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "How archaeologists solved the puzzle",
+        "body": "Excavated in 1926 by Ernest J. H. Mackay at the HR Area of Mohenjo-daro; preserved in the National Museum, New Delhi. Scientists study the markings and tools used so we can understand the ancient world."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Cast",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:specialist:quick": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "specialist",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Material & Formal Analysis",
+        "body": "Dancing Girl of Mohenjo-daro represents a primary sculptural benchmark of the Indus Valley (Mature Harappan) horizon (c. 2300–1750 BCE). Executed in Cast Bronze (Lost-wax cire-perdue), the piece exhibits compositional equilibrium and master craftsmanship."
+      },
+      {
+        "heading": "Historiographical Significance",
+        "body": "Stylistically and iconographically aligned with Indus Valley (Mature Harappan) conventions, the object provides crucial material evidence for religious, ceremonial, or administrative practices of the epoch."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:specialist:standard": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "specialist",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 150,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Dancing Girl of Mohenjo-daro represents a quintessential sculptural benchmark of the Indus Valley (Mature Harappan) horizon (c. 2300–1750 BCE). Executed in Cast Bronze (Lost-wax cire-perdue), the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Cultural Context & Historiography",
+        "body": "Stylistically rooted in Indus Valley (Mature Harappan) artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Provenance & Curatorial Record",
+        "body": "Excavated in 1926 by Ernest J. H. Mackay at the HR Area of Mohenjo-daro; preserved in the National Museum, New Delhi. The object is permanently accessioned and preserved under the stewardship of National Museum, New Delhi."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-001:specialist:deep": {
+    "artifactId": "art-001",
+    "persona": {
+      "audience": "specialist",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by National Museum, New Delhi.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 240,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Dancing Girl of Mohenjo-daro represents a quintessential sculptural benchmark of the Indus Valley (Mature Harappan) horizon (c. 2300–1750 BCE). Executed in Cast Bronze (Lost-wax cire-perdue), the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Iconographical & Religious Context",
+        "body": "Rooted in Indus Valley (Mature Harappan) artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Historiographical Debates & Evidentiary Nuances",
+        "body": "Epistemic hedges and scholarly attributions remain central to current discourse. Stylistic comparanda across related sites highlight transitions in courtly patronage and regional metallurgical traditions."
+      },
+      {
+        "heading": "Provenance & Archaeological Stewardship",
+        "body": "Excavated in 1926 by Ernest J. H. Mackay at the HR Area of Mohenjo-daro; preserved in the National Museum, New Delhi. The object is permanently accessioned and preserved under the stewardship of National Museum, New Delhi."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in bronze using the advanced lost-wax (cire-perdue) casting technique.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Excavated in 1926 from the HR Area of Mohenjo-daro by archaeologist Ernest Mackay.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Stands exactly 10.5 centimetres (4.1 inches) in height.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Wears twenty-five bangles on her left arm and four on her right arm.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 2300–1750 BCE during the Mature Harappan period.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Her confident posture suggests she was a ritual dancer or a figure of social authority.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:adult:quick": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "adult",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Chola Bronze Nataraja is a celebrated work from c. 11th Century CE, created in solid cast bronze by Chola Dynasty, Tamil Nadu artisans."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Discovered and catalogued by Government Museum, Chennai, this piece stands as a masterwork reflecting the social, spiritual, and technical achievements of its civilization."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:adult:standard": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "adult",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 75,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Chola Bronze Nataraja is an extraordinary artifact dating to c. 11th Century CE from Chola Dynasty, Tamil Nadu. Masterfully created using solid cast bronze, it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Government Museum, Chennai, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistry and Craft",
+        "body": "Recovered from temple repositories in Thanjavur district, Tamil Nadu; Government Museum, Chennai collection. The surviving detail and proportion demonstrate the elevated skills of its makers."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:adult:deep": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "adult",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 120,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Chola Bronze Nataraja is an extraordinary artifact dating to c. 11th Century CE from Chola Dynasty, Tamil Nadu. Masterfully created using solid cast bronze, it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Government Museum, Chennai, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistic Technique & Symbolism",
+        "body": "The execution reflects high mastery over solid cast bronze. Every contour was deliberately calibrated by ancient artisans to convey cultural authority and aesthetic balance."
+      },
+      {
+        "heading": "Provenance & Discovery",
+        "body": "Recovered from temple repositories in Thanjavur district, Tamil Nadu; Government Museum, Chennai collection. Today, it serves as a cornerstone piece for understanding the achievements of Chola Dynasty, Tamil Nadu."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:child:quick": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "child",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 30,
+    "sections": [
+      {
+        "heading": "Can you spot what this is made of?",
+        "body": "This special treasure is made of solid cast bronze. Long ago in c. 11th Century CE, ancient artists shaped it with great care. It was preserved by Government Museum, Chennai."
+      },
+      {
+        "heading": "What was it used for?",
+        "body": "People looked at this object during special ceremonies and daily life. It helps us discover how people lived thousands of years ago!"
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Solid",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:child:standard": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "child",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "Take a close look at this ancient wonder",
+        "body": "Look at this incredible chola bronze nataraja! Created during c. 11th Century CE, it is made from solid cast bronze using ancient techniques."
+      },
+      {
+        "heading": "How artists created it",
+        "body": "Ancient craft workers shaped every detail by hand. It was found at Chola Dynasty, Tamil Nadu archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "Why it is super special",
+        "body": "Every detail tells a true story about ancient times. Scholars and historians study it carefully so we know exactly how life was lived back then."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Solid",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:child:deep": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "child",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Spot the amazing details!",
+        "body": "Look at this incredible chola bronze nataraja! Created during c. 11th Century CE, it is made from solid cast bronze using clever ancient tools."
+      },
+      {
+        "heading": "How ancient artists shaped it",
+        "body": "Craft workers spent months shaping every tiny curve by hand. It was found at Chola Dynasty, Tamil Nadu archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "How archaeologists solved the puzzle",
+        "body": "Recovered from temple repositories in Thanjavur district, Tamil Nadu; Government Museum, Chennai collection. Scientists study the markings and tools used so we can understand the ancient world."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Solid",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:specialist:quick": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "specialist",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Material & Formal Analysis",
+        "body": "Chola Bronze Nataraja represents a primary sculptural benchmark of the Chola Dynasty, Tamil Nadu horizon (c. 11th Century CE). Executed in Solid Cast Bronze, the piece exhibits compositional equilibrium and master craftsmanship."
+      },
+      {
+        "heading": "Historiographical Significance",
+        "body": "Stylistically and iconographically aligned with Chola Dynasty, Tamil Nadu conventions, the object provides crucial material evidence for religious, ceremonial, or administrative practices of the epoch."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:specialist:standard": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "specialist",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 150,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Chola Bronze Nataraja represents a quintessential sculptural benchmark of the Chola Dynasty, Tamil Nadu horizon (c. 11th Century CE). Executed in Solid Cast Bronze, the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Cultural Context & Historiography",
+        "body": "Stylistically rooted in Chola Dynasty, Tamil Nadu artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Provenance & Curatorial Record",
+        "body": "Recovered from temple repositories in Thanjavur district, Tamil Nadu; Government Museum, Chennai collection. The object is permanently accessioned and preserved under the stewardship of Government Museum, Chennai."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-002:specialist:deep": {
+    "artifactId": "art-002",
+    "persona": {
+      "audience": "specialist",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Government Museum, Chennai.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 240,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Chola Bronze Nataraja represents a quintessential sculptural benchmark of the Chola Dynasty, Tamil Nadu horizon (c. 11th Century CE). Executed in Solid Cast Bronze, the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Iconographical & Religious Context",
+        "body": "Rooted in Chola Dynasty, Tamil Nadu artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Historiographical Debates & Evidentiary Nuances",
+        "body": "Epistemic hedges and scholarly attributions remain central to current discourse. Stylistic comparanda across related sites highlight transitions in courtly patronage and regional metallurgical traditions."
+      },
+      {
+        "heading": "Provenance & Archaeological Stewardship",
+        "body": "Recovered from temple repositories in Thanjavur district, Tamil Nadu; Government Museum, Chennai collection. The object is permanently accessioned and preserved under the stewardship of Government Museum, Chennai."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Depicts Shiva as Nataraja performing the cosmic Ananda Tandava dance of creation and destruction.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Cast in solid bronze during the 11th century CE under imperial Chola patronage.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Encircled by a flaming prabhamandala aureole that symbolises the cosmic cycle.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right foot tramples the dwarf demon Apasmara, signifying victory over ignorance.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Holds the damaru drum of creation in the upper right hand and the agni fire of dissolution in the upper left.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master metal-smith guilds of the Kaveri river basin.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:adult:quick": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "adult",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Didarganj Yakshi is a celebrated work from c. 3rd–2nd Century BCE, created in polished chunar sandstone by Mauryan / Shunga Transition artisans."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Discovered and catalogued by Bihar Museum, Patna, this piece stands as a masterwork reflecting the social, spiritual, and technical achievements of its civilization."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:adult:standard": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "adult",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 75,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Didarganj Yakshi is an extraordinary artifact dating to c. 3rd–2nd Century BCE from Mauryan / Shunga Transition. Masterfully created using polished chunar sandstone, it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Bihar Museum, Patna, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistry and Craft",
+        "body": "Discovered on the banks of the Ganges River at Didarganj, Patna in October 1917. The surviving detail and proportion demonstrate the elevated skills of its makers."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:adult:deep": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "adult",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 120,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Didarganj Yakshi is an extraordinary artifact dating to c. 3rd–2nd Century BCE from Mauryan / Shunga Transition. Masterfully created using polished chunar sandstone, it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Bihar Museum, Patna, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistic Technique & Symbolism",
+        "body": "The execution reflects high mastery over polished chunar sandstone. Every contour was deliberately calibrated by ancient artisans to convey cultural authority and aesthetic balance."
+      },
+      {
+        "heading": "Provenance & Discovery",
+        "body": "Discovered on the banks of the Ganges River at Didarganj, Patna in October 1917. Today, it serves as a cornerstone piece for understanding the achievements of Mauryan / Shunga Transition."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:child:quick": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "child",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 30,
+    "sections": [
+      {
+        "heading": "Can you spot what this is made of?",
+        "body": "This special treasure is made of polished chunar sandstone. Long ago in c. 3rd–2nd Century BCE, ancient artists shaped it with great care. It was preserved by Bihar Museum, Patna."
+      },
+      {
+        "heading": "What was it used for?",
+        "body": "People looked at this object during special ceremonies and daily life. It helps us discover how people lived thousands of years ago!"
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Polished",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:child:standard": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "child",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "Take a close look at this ancient wonder",
+        "body": "Look at this incredible didarganj yakshi! Created during c. 3rd–2nd Century BCE, it is made from polished chunar sandstone using ancient techniques."
+      },
+      {
+        "heading": "How artists created it",
+        "body": "Ancient craft workers shaped every detail by hand. It was found at Mauryan / Shunga Transition archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "Why it is super special",
+        "body": "Every detail tells a true story about ancient times. Scholars and historians study it carefully so we know exactly how life was lived back then."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Polished",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:child:deep": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "child",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Spot the amazing details!",
+        "body": "Look at this incredible didarganj yakshi! Created during c. 3rd–2nd Century BCE, it is made from polished chunar sandstone using clever ancient tools."
+      },
+      {
+        "heading": "How ancient artists shaped it",
+        "body": "Craft workers spent months shaping every tiny curve by hand. It was found at Mauryan / Shunga Transition archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "How archaeologists solved the puzzle",
+        "body": "Discovered on the banks of the Ganges River at Didarganj, Patna in October 1917. Scientists study the markings and tools used so we can understand the ancient world."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Polished",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:specialist:quick": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "specialist",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Material & Formal Analysis",
+        "body": "Didarganj Yakshi represents a primary sculptural benchmark of the Mauryan / Shunga Transition horizon (c. 3rd–2nd Century BCE). Executed in Polished Chunar Sandstone, the piece exhibits compositional equilibrium and master craftsmanship."
+      },
+      {
+        "heading": "Historiographical Significance",
+        "body": "Stylistically and iconographically aligned with Mauryan / Shunga Transition conventions, the object provides crucial material evidence for religious, ceremonial, or administrative practices of the epoch."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:specialist:standard": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "specialist",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 150,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Didarganj Yakshi represents a quintessential sculptural benchmark of the Mauryan / Shunga Transition horizon (c. 3rd–2nd Century BCE). Executed in Polished Chunar Sandstone, the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Cultural Context & Historiography",
+        "body": "Stylistically rooted in Mauryan / Shunga Transition artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Provenance & Curatorial Record",
+        "body": "Discovered on the banks of the Ganges River at Didarganj, Patna in October 1917. The object is permanently accessioned and preserved under the stewardship of Bihar Museum, Patna."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-003:specialist:deep": {
+    "artifactId": "art-003",
+    "persona": {
+      "audience": "specialist",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Bihar Museum, Patna.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 240,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Didarganj Yakshi represents a quintessential sculptural benchmark of the Mauryan / Shunga Transition horizon (c. 3rd–2nd Century BCE). Executed in Polished Chunar Sandstone, the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Iconographical & Religious Context",
+        "body": "Rooted in Mauryan / Shunga Transition artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Historiographical Debates & Evidentiary Nuances",
+        "body": "Epistemic hedges and scholarly attributions remain central to current discourse. Stylistic comparanda across related sites highlight transitions in courtly patronage and regional metallurgical traditions."
+      },
+      {
+        "heading": "Provenance & Archaeological Stewardship",
+        "body": "Discovered on the banks of the Ganges River at Didarganj, Patna in October 1917. The object is permanently accessioned and preserved under the stewardship of Bihar Museum, Patna."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Carved from a monolithic block of buff Chunar sandstone standing 162 centimetres tall.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Finished with the distinctive lustrous, mirror-like Mauryan polish.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in October 1917 along the banks of the Ganges at Didarganj, Patna.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Holds a fly-whisk (chauri) in her right hand as a celestial attendant.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated by scholars to circa the 3rd to 2nd century BCE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed by some art historians to court sculptors transitioning into the Shunga period.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-004:adult:quick": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "adult",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Lion Capital of Ashoka is a celebrated work from c. 250 BCE, created in chunar sandstone (mauryan polish) by Mauryan Empire (Emperor Ashoka) artisans."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Discovered and catalogued by Sarnath Archaeological Museum, this piece stands as a masterwork reflecting the social, spiritual, and technical achievements of its civilization."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:adult:standard": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "adult",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 75,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Lion Capital of Ashoka is an extraordinary artifact dating to c. 250 BCE from Mauryan Empire (Emperor Ashoka). Masterfully created using chunar sandstone (mauryan polish), it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Sarnath Archaeological Museum, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistry and Craft",
+        "body": "Excavated at Sarnath near Varanasi in 1905 by archaeologist F. O. Oertel. The surviving detail and proportion demonstrate the elevated skills of its makers."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:adult:deep": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "adult",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 120,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Lion Capital of Ashoka is an extraordinary artifact dating to c. 250 BCE from Mauryan Empire (Emperor Ashoka). Masterfully created using chunar sandstone (mauryan polish), it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Sarnath Archaeological Museum, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistic Technique & Symbolism",
+        "body": "The execution reflects high mastery over chunar sandstone (mauryan polish). Every contour was deliberately calibrated by ancient artisans to convey cultural authority and aesthetic balance."
+      },
+      {
+        "heading": "Provenance & Discovery",
+        "body": "Excavated at Sarnath near Varanasi in 1905 by archaeologist F. O. Oertel. Today, it serves as a cornerstone piece for understanding the achievements of Mauryan Empire (Emperor Ashoka)."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:child:quick": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "child",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 30,
+    "sections": [
+      {
+        "heading": "Can you spot what this is made of?",
+        "body": "This special treasure is made of chunar sandstone (mauryan polish). Long ago in c. 250 BCE, ancient artists shaped it with great care. It was preserved by Sarnath Archaeological Museum."
+      },
+      {
+        "heading": "What was it used for?",
+        "body": "People looked at this object during special ceremonies and daily life. It helps us discover how people lived thousands of years ago!"
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Chunar",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:child:standard": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "child",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "Take a close look at this ancient wonder",
+        "body": "Look at this incredible lion capital of ashoka! Created during c. 250 BCE, it is made from chunar sandstone (mauryan polish) using ancient techniques."
+      },
+      {
+        "heading": "How artists created it",
+        "body": "Ancient craft workers shaped every detail by hand. It was found at Mauryan Empire (Emperor Ashoka) archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "Why it is super special",
+        "body": "Every detail tells a true story about ancient times. Scholars and historians study it carefully so we know exactly how life was lived back then."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Chunar",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:child:deep": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "child",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Spot the amazing details!",
+        "body": "Look at this incredible lion capital of ashoka! Created during c. 250 BCE, it is made from chunar sandstone (mauryan polish) using clever ancient tools."
+      },
+      {
+        "heading": "How ancient artists shaped it",
+        "body": "Craft workers spent months shaping every tiny curve by hand. It was found at Mauryan Empire (Emperor Ashoka) archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "How archaeologists solved the puzzle",
+        "body": "Excavated at Sarnath near Varanasi in 1905 by archaeologist F. O. Oertel. Scientists study the markings and tools used so we can understand the ancient world."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Chunar",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:specialist:quick": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "specialist",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Material & Formal Analysis",
+        "body": "Lion Capital of Ashoka represents a primary sculptural benchmark of the Mauryan Empire (Emperor Ashoka) horizon (c. 250 BCE). Executed in Chunar Sandstone (Mauryan Polish), the piece exhibits compositional equilibrium and master craftsmanship."
+      },
+      {
+        "heading": "Historiographical Significance",
+        "body": "Stylistically and iconographically aligned with Mauryan Empire (Emperor Ashoka) conventions, the object provides crucial material evidence for religious, ceremonial, or administrative practices of the epoch."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:specialist:standard": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "specialist",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 150,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Lion Capital of Ashoka represents a quintessential sculptural benchmark of the Mauryan Empire (Emperor Ashoka) horizon (c. 250 BCE). Executed in Chunar Sandstone (Mauryan Polish), the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Cultural Context & Historiography",
+        "body": "Stylistically rooted in Mauryan Empire (Emperor Ashoka) artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Provenance & Curatorial Record",
+        "body": "Excavated at Sarnath near Varanasi in 1905 by archaeologist F. O. Oertel. The object is permanently accessioned and preserved under the stewardship of Sarnath Archaeological Museum."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-004:specialist:deep": {
+    "artifactId": "art-004",
+    "persona": {
+      "audience": "specialist",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 240,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Lion Capital of Ashoka represents a quintessential sculptural benchmark of the Mauryan Empire (Emperor Ashoka) horizon (c. 250 BCE). Executed in Chunar Sandstone (Mauryan Polish), the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Iconographical & Religious Context",
+        "body": "Rooted in Mauryan Empire (Emperor Ashoka) artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Historiographical Debates & Evidentiary Nuances",
+        "body": "Epistemic hedges and scholarly attributions remain central to current discourse. Stylistic comparanda across related sites highlight transitions in courtly patronage and regional metallurgical traditions."
+      },
+      {
+        "heading": "Provenance & Archaeological Stewardship",
+        "body": "Excavated at Sarnath near Varanasi in 1905 by archaeologist F. O. Oertel. The object is permanently accessioned and preserved under the stewardship of Sarnath Archaeological Museum."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Commissioned by Emperor Ashoka circa 250 BCE to mark the site of the Buddha's first sermon at Sarnath.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Sculpted from a single block of polished Chunar sandstone with mirror-finish luster.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Comprises four Asiatic lions seated back-to-back facing the cardinal directions.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "The circular abacus displays four Dharmachakra wheels flanked by an elephant, horse, bull, and lion.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Excavated at Sarnath in 1905 by archaeologist F. O. Oertel.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Adopted in 1950 as the official State Emblem of the Republic of India.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-005:adult:quick": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "adult",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Standing Buddha of Sarnath is a celebrated work from c. 5th Century CE, created in buff chunar sandstone by Gupta Empire (Classical Period) artisans."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Discovered and catalogued by Sarnath Archaeological Museum, this piece stands as a masterwork reflecting the social, spiritual, and technical achievements of its civilization."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:adult:standard": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "adult",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 75,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Standing Buddha of Sarnath is an extraordinary artifact dating to c. 5th Century CE from Gupta Empire (Classical Period). Masterfully created using buff chunar sandstone, it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Sarnath Archaeological Museum, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistry and Craft",
+        "body": "Excavated from the monastic ruins of Sarnath, Uttar Pradesh. The surviving detail and proportion demonstrate the elevated skills of its makers."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:adult:deep": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "adult",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 120,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Standing Buddha of Sarnath is an extraordinary artifact dating to c. 5th Century CE from Gupta Empire (Classical Period). Masterfully created using buff chunar sandstone, it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Sarnath Archaeological Museum, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistic Technique & Symbolism",
+        "body": "The execution reflects high mastery over buff chunar sandstone. Every contour was deliberately calibrated by ancient artisans to convey cultural authority and aesthetic balance."
+      },
+      {
+        "heading": "Provenance & Discovery",
+        "body": "Excavated from the monastic ruins of Sarnath, Uttar Pradesh. Today, it serves as a cornerstone piece for understanding the achievements of Gupta Empire (Classical Period)."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:child:quick": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "child",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 30,
+    "sections": [
+      {
+        "heading": "Can you spot what this is made of?",
+        "body": "This special treasure is made of buff chunar sandstone. Long ago in c. 5th Century CE, ancient artists shaped it with great care. It was preserved by Sarnath Archaeological Museum."
+      },
+      {
+        "heading": "What was it used for?",
+        "body": "People looked at this object during special ceremonies and daily life. It helps us discover how people lived thousands of years ago!"
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Buff",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:child:standard": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "child",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "Take a close look at this ancient wonder",
+        "body": "Look at this incredible standing buddha of sarnath! Created during c. 5th Century CE, it is made from buff chunar sandstone using ancient techniques."
+      },
+      {
+        "heading": "How artists created it",
+        "body": "Ancient craft workers shaped every detail by hand. It was found at Gupta Empire (Classical Period) archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "Why it is super special",
+        "body": "Every detail tells a true story about ancient times. Scholars and historians study it carefully so we know exactly how life was lived back then."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Buff",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:child:deep": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "child",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Spot the amazing details!",
+        "body": "Look at this incredible standing buddha of sarnath! Created during c. 5th Century CE, it is made from buff chunar sandstone using clever ancient tools."
+      },
+      {
+        "heading": "How ancient artists shaped it",
+        "body": "Craft workers spent months shaping every tiny curve by hand. It was found at Gupta Empire (Classical Period) archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "How archaeologists solved the puzzle",
+        "body": "Excavated from the monastic ruins of Sarnath, Uttar Pradesh. Scientists study the markings and tools used so we can understand the ancient world."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Buff",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:specialist:quick": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "specialist",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Material & Formal Analysis",
+        "body": "Standing Buddha of Sarnath represents a primary sculptural benchmark of the Gupta Empire (Classical Period) horizon (c. 5th Century CE). Executed in Buff Chunar Sandstone, the piece exhibits compositional equilibrium and master craftsmanship."
+      },
+      {
+        "heading": "Historiographical Significance",
+        "body": "Stylistically and iconographically aligned with Gupta Empire (Classical Period) conventions, the object provides crucial material evidence for religious, ceremonial, or administrative practices of the epoch."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:specialist:standard": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "specialist",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 150,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Standing Buddha of Sarnath represents a quintessential sculptural benchmark of the Gupta Empire (Classical Period) horizon (c. 5th Century CE). Executed in Buff Chunar Sandstone, the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Cultural Context & Historiography",
+        "body": "Stylistically rooted in Gupta Empire (Classical Period) artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Provenance & Curatorial Record",
+        "body": "Excavated from the monastic ruins of Sarnath, Uttar Pradesh. The object is permanently accessioned and preserved under the stewardship of Sarnath Archaeological Museum."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-005:specialist:deep": {
+    "artifactId": "art-005",
+    "persona": {
+      "audience": "specialist",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Sarnath Archaeological Museum.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 240,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Standing Buddha of Sarnath represents a quintessential sculptural benchmark of the Gupta Empire (Classical Period) horizon (c. 5th Century CE). Executed in Buff Chunar Sandstone, the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Iconographical & Religious Context",
+        "body": "Rooted in Gupta Empire (Classical Period) artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Historiographical Debates & Evidentiary Nuances",
+        "body": "Epistemic hedges and scholarly attributions remain central to current discourse. Stylistic comparanda across related sites highlight transitions in courtly patronage and regional metallurgical traditions."
+      },
+      {
+        "heading": "Provenance & Archaeological Stewardship",
+        "body": "Excavated from the monastic ruins of Sarnath, Uttar Pradesh. The object is permanently accessioned and preserved under the stewardship of Sarnath Archaeological Museum."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Created during the classical Gupta period, dated to circa the 5th century CE.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Carved from pale buff-coloured Chunar sandstone.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Features the smooth, foldless 'wet-drapery' aesthetic quintessential to the Sarnath Gupta school.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Right hand is held in Abhaya Mudra, conferring protection and fearlessness.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Framed by a circular prabhavali halo intricately carved with lotus and vine motifs.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "Attributed to master workshops flourishing under Kumaragupta I or Skandagupta.",
+          "criticality": "optional"
+        }
+      ]
+    }
+  },
+  "art-006:adult:quick": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "adult",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Sultanganj Bronze Buddha is a celebrated work from c. 500–700 CE, created in lost-wax cast copper / bronze (500 kg) by Post-Gupta / Early Pala Transition artisans."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Discovered and catalogued by Birmingham Museum and Art Gallery, this piece stands as a masterwork reflecting the social, spiritual, and technical achievements of its civilization."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:adult:standard": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "adult",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 75,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Sultanganj Bronze Buddha is an extraordinary artifact dating to c. 500–700 CE from Post-Gupta / Early Pala Transition. Masterfully created using lost-wax cast copper / bronze (500 kg), it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Birmingham Museum and Art Gallery, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistry and Craft",
+        "body": "Found in 1861 during railway construction at Sultanganj, Bihar by British engineer E. B. Harris; sent to Birmingham in 1864. The surviving detail and proportion demonstrate the elevated skills of its makers."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:adult:deep": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "adult",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a adult reader. Facts unchanged.",
+    "tags": {
+      "tone": "conversational",
+      "level": "grade_9",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 120,
+    "sections": [
+      {
+        "heading": "What you're looking at",
+        "body": "Sultanganj Bronze Buddha is an extraordinary artifact dating to c. 500–700 CE from Post-Gupta / Early Pala Transition. Masterfully created using lost-wax cast copper / bronze (500 kg), it showcases remarkable artistic and technical sophistication."
+      },
+      {
+        "heading": "Why it matters",
+        "body": "Preserved in the collections of Birmingham Museum and Art Gallery, this piece offers direct insight into ancient cultural expression and ritual life. Its form and iconography continue to captivate historians and visitors alike."
+      },
+      {
+        "heading": "Artistic Technique & Symbolism",
+        "body": "The execution reflects high mastery over lost-wax cast copper / bronze (500 kg). Every contour was deliberately calibrated by ancient artisans to convey cultural authority and aesthetic balance."
+      },
+      {
+        "heading": "Provenance & Discovery",
+        "body": "Found in 1861 during railway construction at Sultanganj, Bihar by British engineer E. B. Harris; sent to Birmingham in 1864. Today, it serves as a cornerstone piece for understanding the achievements of Post-Gupta / Early Pala Transition."
+      }
+    ],
+    "lookCloser": [
+      "Notice the fine craftsmanship and symmetry preserved across centuries.",
+      "Observe the distinctive textures and gestures that give this piece its expressive life."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "reordered_for_lead_clarity",
+        "active_voice_restructuring",
+        "hedges_preserved_accurately"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:child:quick": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "child",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 30,
+    "sections": [
+      {
+        "heading": "Can you spot what this is made of?",
+        "body": "This special treasure is made of lost-wax cast copper / bronze (500 kg). Long ago in c. 500–700 CE, ancient artists shaped it with great care. It was preserved by Birmingham Museum and Art Gallery."
+      },
+      {
+        "heading": "What was it used for?",
+        "body": "People looked at this object during special ceremonies and daily life. It helps us discover how people lived thousands of years ago!"
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Lost-Wax",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:child:standard": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "child",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 45,
+    "sections": [
+      {
+        "heading": "Take a close look at this ancient wonder",
+        "body": "Look at this incredible sultanganj bronze buddha! Created during c. 500–700 CE, it is made from lost-wax cast copper / bronze (500 kg) using ancient techniques."
+      },
+      {
+        "heading": "How artists created it",
+        "body": "Ancient craft workers shaped every detail by hand. It was found at Post-Gupta / Early Pala Transition archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "Why it is super special",
+        "body": "Every detail tells a true story about ancient times. Scholars and historians study it carefully so we know exactly how life was lived back then."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Lost-Wax",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:child:deep": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "child",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a child reader. Facts unchanged.",
+    "tags": {
+      "tone": "warm and curious",
+      "level": "grade_4",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Spot the amazing details!",
+        "body": "Look at this incredible sultanganj bronze buddha! Created during c. 500–700 CE, it is made from lost-wax cast copper / bronze (500 kg) using clever ancient tools."
+      },
+      {
+        "heading": "How ancient artists shaped it",
+        "body": "Craft workers spent months shaping every tiny curve by hand. It was found at Post-Gupta / Early Pala Transition archaeological sites and carefully protected for everyone to see today."
+      },
+      {
+        "heading": "How archaeologists solved the puzzle",
+        "body": "Found in 1861 during railway construction at Sultanganj, Bihar by British engineer E. B. Harris; sent to Birmingham in 1864. Scientists study the markings and tools used so we can understand the ancient world."
+      }
+    ],
+    "lookCloser": [
+      "Look closely at the surface details and see if you can find ancient carved patterns.",
+      "Check the posture—can you mirror how this ancient figure stands or sits?"
+    ],
+    "glossary": [
+      {
+        "term": "Lost-Wax",
+        "plainDefinition": "The ancient substance carved or cast to make this artwork."
+      },
+      {
+        "term": "Archaeologist",
+        "plainDefinition": "A scientist who digs and discovers ancient treasures from the past."
+      }
+    ],
+    "changelog": {
+      "operations": [
+        "simplified_vocabulary:grade4",
+        "shortened_sentence_length_under_14_words",
+        "added_observation_questions",
+        "hedges_preserved_via_wonder_framing"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:specialist:quick": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "specialist",
+      "depth": "quick",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 90,
+    "sections": [
+      {
+        "heading": "Material & Formal Analysis",
+        "body": "Sultanganj Bronze Buddha represents a primary sculptural benchmark of the Post-Gupta / Early Pala Transition horizon (c. 500–700 CE). Executed in Lost-Wax Cast Copper / Bronze (500 kg), the piece exhibits compositional equilibrium and master craftsmanship."
+      },
+      {
+        "heading": "Historiographical Significance",
+        "body": "Stylistically and iconographically aligned with Post-Gupta / Early Pala Transition conventions, the object provides crucial material evidence for religious, ceremonial, or administrative practices of the epoch."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:specialist:standard": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "specialist",
+      "depth": "standard",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 150,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Sultanganj Bronze Buddha represents a quintessential sculptural benchmark of the Post-Gupta / Early Pala Transition horizon (c. 500–700 CE). Executed in Lost-Wax Cast Copper / Bronze (500 kg), the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Cultural Context & Historiography",
+        "body": "Stylistically rooted in Post-Gupta / Early Pala Transition artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Provenance & Curatorial Record",
+        "body": "Found in 1861 during railway construction at Sultanganj, Bihar by British engineer E. B. Harris; sent to Birmingham in 1864. The object is permanently accessioned and preserved under the stewardship of Birmingham Museum and Art Gallery."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  },
+  "art-006:specialist:deep": {
+    "artifactId": "art-006",
+    "persona": {
+      "audience": "specialist",
+      "depth": "deep",
+      "accessibility": false
+    },
+    "attribution": "Based on the museum-provided description by Birmingham Museum and Art Gallery.",
+    "aiDisclosure": "Adapted by Digital Muse for a specialist reader. Facts unchanged.",
+    "tags": {
+      "tone": "scholarly",
+      "level": "grade_13",
+      "tier": "T1"
+    },
+    "readingTimeSeconds": 240,
+    "sections": [
+      {
+        "heading": "Formal & Material Analysis",
+        "body": "Sultanganj Bronze Buddha represents a quintessential sculptural benchmark of the Post-Gupta / Early Pala Transition horizon (c. 500–700 CE). Executed in Lost-Wax Cast Copper / Bronze (500 kg), the object demonstrates sophisticated compositional equilibrium and master metallurgy/masonry."
+      },
+      {
+        "heading": "Iconographical & Religious Context",
+        "body": "Rooted in Post-Gupta / Early Pala Transition artistic conventions, the iconographical attributes synthesize ritual, administrative, or sacred symbolism. As noted in canonical scholarship, specific stylistic features retain nuanced historical interpretations."
+      },
+      {
+        "heading": "Historiographical Debates & Evidentiary Nuances",
+        "body": "Epistemic hedges and scholarly attributions remain central to current discourse. Stylistic comparanda across related sites highlight transitions in courtly patronage and regional metallurgical traditions."
+      },
+      {
+        "heading": "Provenance & Archaeological Stewardship",
+        "body": "Found in 1861 during railway construction at Sultanganj, Bihar by British engineer E. B. Harris; sent to Birmingham in 1864. The object is permanently accessioned and preserved under the stewardship of Birmingham Museum and Art Gallery."
+      }
+    ],
+    "lookCloser": [
+      "Examine the stylistic execution and compare with contemporary regional typologies.",
+      "Note the surface patina and technical finishing markers characteristic of the epoch."
+    ],
+    "glossary": [],
+    "changelog": {
+      "operations": [
+        "formal_and_material_analysis",
+        "iconographical_and_epistemic_hedges_preserved",
+        "curatorial_provenance_chain_maintained",
+        "typological_contextualization"
+      ],
+      "claimsCovered": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "claimsOmitted": [],
+      "hedgesPreserved": true
+    },
+    "fidelity": {
+      "verdict": "pass",
+      "covered": 6,
+      "total": 6,
+      "claims": [
+        {
+          "id": "c1",
+          "status": "covered",
+          "span": "Cast in copper using the lost-wax technique, weighing more than 500 kilograms.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c2",
+          "status": "covered",
+          "span": "Stands 2.3 metres (7.5 feet) high as the largest surviving complete metal Indian statue of its antiquity.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c3",
+          "status": "covered",
+          "span": "Discovered in 1861 during railway excavation at Sultanganj, Bihar by engineer E. B. Harris.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c4",
+          "status": "covered",
+          "span": "Exported to England in 1864 and placed in the Birmingham Museum collection.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c5",
+          "status": "covered",
+          "span": "Dated to circa 500–700 CE during the transition between the Gupta and early Pala periods.",
+          "criticality": "must_include"
+        },
+        {
+          "id": "c6",
+          "status": "covered",
+          "span": "The right hand displays Abhaya Mudra (protection) while the left hand holds the folded robe hem.",
+          "criticality": "must_include"
+        }
+      ]
+    }
+  }
+}

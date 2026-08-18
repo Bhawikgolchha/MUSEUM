@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#282622" />
+      <stop offset="100%" stop-color="#12110F" />
+    </radialGradient>
+    <linearGradient id="sandstone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5D1B5" />
+      <stop offset="50%" stop-color="#B89F7D" />
+      <stop offset="100%" stop-color="#7A6447" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg3)" />
+  <circle cx="400" cy="280" r="210" fill="none" stroke="#B89F7D" stroke-width="1" stroke-opacity="0.25" />
+  
+  <!-- Didarganj Yakshi with Chauri -->
+  <g transform="translate(400, 270) scale(1.15)" stroke="none">
+    <!-- Hair bun with ornamental garland -->
+    <ellipse cx="-5" cy="-140" rx="20" ry="18" fill="#5A4730" />
+    <circle cx="-16" cy="-135" r="8" fill="#E5D1B5" />
+    <!-- Graceful Head and Face -->
+    <ellipse cx="0" cy="-115" rx="16" ry="18" fill="url(#sandstone)" />
+    <!-- Heavy Ear Ornaments (Kundalas) -->
+    <ellipse cx="-16" cy="-110" rx="5" ry="9" fill="#E5D1B5" />
+    <ellipse cx="16" cy="-110" rx="5" ry="9" fill="#E5D1B5" />
+    
+    <!-- Torso with slight tribhanga bend -->
+    <path d="M-14,-95 Q-18,-60 -8,-20 L16,-20 Q12,-60 18,-95 Z" fill="url(#sandstone)" />
+    
+    <!-- Right Arm holding Chauri (Fly-whisk) over shoulder -->
+    <path d="M15,-90 Q38,-65 32,-35 L22,-38 Q25,-60 8,-80 Z" fill="url(#sandstone)" />
+    <!-- Fly-whisk plume over right shoulder -->
+    <path d="M30,-45 Q42,-110 25,-140 Q15,-120 22,-60 Z" fill="#F4EADB" />
+    <line x1="28" y1="-40" x2="32" y2="-10" stroke="#7A6447" stroke-width="3" />
+    
+    <!-- Left Arm resting along thigh -->
+    <path d="M-15,-90 Q-28,-50 -24,-10 L-14,-12 Q-18,-45 -8,-80 Z" fill="url(#sandstone)" />
+    
+    <!-- Multi-strand beaded girdle (Mekhala) -->
+    <rect x="-18" y="-22" width="38" height="12" rx="4" fill="#E5D1B5" />
+    <circle cx="-10" cy="-16" r="2.5" fill="#7A6447" />
+    <circle cx="0" cy="-16" r="2.5" fill="#7A6447" />
+    <circle cx="10" cy="-16" r="2.5" fill="#7A6447" />
+    
+    <!-- Lower body in sheer pleated dhoti -->
+    <path d="M-16,-10 Q-22,60 -10,130 L18,130 Q12,60 18,-10 Z" fill="url(#sandstone)" />
+    <!-- Heavy Anklets -->
+    <rect x="-14" y="120" width="12" height="8" rx="2" fill="#E5D1B5" />
+    <rect x="8" y="120" width="12" height="8" rx="2" fill="#E5D1B5" />
+    <!-- Base -->
+    <rect x="-35" y="132" width="75" height="14" rx="4" fill="#5A4730" />
+  </g>
+
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#E2DED6" letter-spacing="3">DIDARGANJ YAKSHI</text>
+  <text x="400" y="548" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#B89F7D" letter-spacing="2">BIHAR MUSEUM, PATNA · c. 3RD–2ND CENTURY BCE</text>
+</svg>
