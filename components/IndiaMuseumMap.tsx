@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
+import Image from 'next/image';
 import { MuseumWithDistance, Coordinates } from '@/lib/museums';
 import {
   MapPin,
@@ -121,6 +122,7 @@ export default function IndiaMuseumMap({
   const [pan, setPan] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const [showCulturalRegions, setShowCulturalRegions] = useState<boolean>(false);
+  const [mapViewMode, setMapViewMode] = useState<'archival' | 'vector'>('archival');
   const [hoveredRegionId, setHoveredRegionId] = useState<string | null>(null);
   const [selectedRegionId, setSelectedRegionId] = useState<string | null>(null);
 
@@ -128,22 +130,30 @@ export default function IndiaMuseumMap({
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Geographic projection bounds for Indian Subcontinent:
-  // Longitude: 68.0°E to 97.5°E (Span: 29.5°)
-  // Latitude: 7.0°N to 37.5°N (Span: 30.5°)
   const minLon = 68.0;
   const maxLon = 97.5;
   const minLat = 7.0;
   const maxLat = 37.5;
 
-  const projectToPercent = useCallback((lat: number, lon: number) => {
-    const x = ((lon - minLon) / (maxLon - minLon)) * 100;
-    // Invert Y because latitude increases northward (upward)
-    const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
-    return {
-      x: Math.max(2, Math.min(98, x)),
-      y: Math.max(2, Math.min(98, y)),
-    };
-  }, []);
+  const projectToPercent = useCallback(
+    (lat: number, lon: number) => {
+      if (mapViewMode === 'archival') {
+        const x = 20.5 + ((lon - 68.0) / (97.5 - 68.0)) * 64.5;
+        const y = 86.5 - ((lat - 7.0) / (37.5 - 7.0)) * 71.5;
+        return {
+          x: Math.max(5, Math.min(95, x)),
+          y: Math.max(5, Math.min(95, y)),
+        };
+      }
+      const x = ((lon - minLon) / (maxLon - minLon)) * 100;
+      const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
+      return {
+        x: Math.max(2, Math.min(98, x)),
+        y: Math.max(2, Math.min(98, y)),
+      };
+    },
+    [mapViewMode]
+  );
 
   // Smooth center on coordinate updates
   useEffect(() => {
@@ -270,18 +280,30 @@ export default function IndiaMuseumMap({
 
       {/* Transformed Map & Markers Canvas */}
       <div
-        className="absolute inset-0 origin-center transition-transform duration-150 ease-out"
+        className="absolute inset-0 origin-center transition-transform duration-150 ease-out flex items-center justify-center"
         style={{
           transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
           transformOrigin: '50% 50%',
         }}
       >
-        {/* Authoritative High-Precision SVG Map of India (1000 x 1000 ViewBox) */}
-        <svg
-          viewBox="0 0 1000 1000"
-          className="absolute inset-0 w-full h-full"
-          style={{ filter: 'drop-shadow(0 12px 32px rgba(31,95,91,0.08))' }}
-        >
+        {mapViewMode === 'archival' ? (
+          <div className="relative w-full h-full min-h-[520px] max-w-[860px] aspect-square flex items-center justify-center pointer-events-none select-none">
+            <Image
+              src="/images/india-cartography-map.jpg"
+              alt="Archival Cartographic Map of India"
+              fill
+              sizes="(max-width: 1024px) 100vw, 860px"
+              className="object-contain select-none pointer-events-none shadow-2xl rounded-2xl"
+              priority
+            />
+          </div>
+        ) : (
+          /* Authoritative High-Precision SVG Map of India (1000 x 1000 ViewBox) */
+          <svg
+            viewBox="0 0 1000 1000"
+            className="absolute inset-0 w-full h-full"
+            style={{ filter: 'drop-shadow(0 12px 32px rgba(31,95,91,0.08))' }}
+          >
           <defs>
             {/* Landmass Shading Gradient */}
             <linearGradient id="indiaLandfill" x1="15%" y1="5%" x2="85%" y2="95%">
@@ -628,6 +650,7 @@ export default function IndiaMuseumMap({
             </g>
           </g>
         </svg>
+        )}
 
         {/* Mathematically Projected Museum Markers */}
         <div className="absolute inset-0 pointer-events-none">
@@ -745,20 +768,37 @@ export default function IndiaMuseumMap({
             </span>
           </div>
 
-          {/* Cultural Regions Layer Toggle */}
+          {/* Map View Mode Switcher */}
           <button
             type="button"
-            onClick={() => setShowCulturalRegions(!showCulturalRegions)}
+            onClick={() => setMapViewMode(mapViewMode === 'archival' ? 'vector' : 'archival')}
             className={`px-3 py-2 rounded-xl text-xs font-semibold border transition-all flex items-center gap-1.5 shadow-sm cursor-pointer ${
-              showCulturalRegions
-                ? 'bg-[var(--accent)] text-white border-[var(--accent)]'
-                : 'bg-[var(--paper-surface)]/95 backdrop-blur-md text-[var(--ink-muted)] border-[var(--hairline)] hover:text-[var(--ink)]'
+              mapViewMode === 'archival'
+                ? 'bg-[var(--accent-bronze)] text-white border-[var(--accent-bronze)]'
+                : 'bg-[var(--paper-surface)]/95 backdrop-blur-md text-[var(--ink)] border-[var(--hairline)] hover:text-[var(--accent)]'
             }`}
-            title="Toggle Cultural & Dynastic Regions Overlay"
+            title="Switch between Archival Cartography and Vector Blueprint"
           >
-            <MapIcon className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Cultural Regions</span>
+            <Compass className="w-3.5 h-3.5" />
+            <span>{mapViewMode === 'archival' ? 'Archival Map' : 'Vector Blueprint'}</span>
           </button>
+
+          {/* Cultural Regions Layer Toggle (Only in Vector Mode) */}
+          {mapViewMode === 'vector' && (
+            <button
+              type="button"
+              onClick={() => setShowCulturalRegions(!showCulturalRegions)}
+              className={`px-3 py-2 rounded-xl text-xs font-semibold border transition-all flex items-center gap-1.5 shadow-sm cursor-pointer ${
+                showCulturalRegions
+                  ? 'bg-[var(--accent)] text-white border-[var(--accent)]'
+                  : 'bg-[var(--paper-surface)]/95 backdrop-blur-md text-[var(--ink-muted)] border-[var(--hairline)] hover:text-[var(--ink)]'
+              }`}
+              title="Toggle Cultural & Dynastic Regions Overlay"
+            >
+              <MapIcon className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Cultural Regions</span>
+            </button>
+          )}
         </div>
 
         {/* Active Region Toast Indicator */}
