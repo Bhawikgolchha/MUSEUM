@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getArtifactById } from '@/lib/artifacts';
 import { getAnthropicClient } from '@/lib/anthropic';
+import { callOpenRouter } from '@/lib/openrouter';
 import { FidelityReport, Variant, ClaimAuditItem } from '@/lib/types';
 
 export async function POST(req: NextRequest) {
@@ -35,10 +36,7 @@ export async function POST(req: NextRequest) {
 
     const combinedVariantText = variant.sections.map((s) => `${s.heading} ${s.body}`).join(' ');
 
-    const client = getAnthropicClient();
-    if (client) {
-      try {
-        const prompt = `
+    const prompt = `
 You are a strict fact-fidelity auditor for museum artifact descriptions.
 Compare the generated variant text against the canonical claim ledger.
 
